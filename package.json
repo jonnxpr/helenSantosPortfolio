@@ -1,0 +1,41 @@
+{
+  "name": "helen-santos-portfolio",
+  "version": "1.0.0",
+  "description": "Single page experience portfolio for Helen Santos with i18n, responsive design, and GitHub Pages CI/CD",
+  "author": "Helen Santos",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonnxpr/helenSantosPortfolio.git"
+  },
+  "keywords": [
+    "helen-santos",
+    "massagem-tantrica",
+    "experiencias-sensoriais",
+    "portfolio",
+    "responsive",
+    "i18n",
+    "github-pages",
+    "html5",
+    "css3",
+    "javascript"
+  ],
+  "scripts": {
+    "start": "python -m http.server 8000 --bind localhost",
+    "start:localhost": "python -m http.server 8000 --bind localhost",
+    "start:127": "python -m http.server 8000 --bind 127.0.0.1",
+    "start:all": "python -m http.server 8000 --bind 0.0.0.0",
+    "verify:metadata": "node scripts/verify-metadata-sync.mjs",
+    "prepare:pages": "node scripts/prepare-pages-artifact.mjs",
+    "verify:metadata:artifact": "node scripts/verify-metadata-sync.mjs --root .pages-artifact --label Pages-artifact-metadata",
+    "build:css": "cleancss css/styles.css -o css/styles.min.css",
+    "watch:css": "chokidar \"css/styles.css\" --initial -c \"npm run build:css\"",
+    "build:js": "terser js/navigation.js js/i18n.js js/animations.js js/chrome.js js/hero.js js/sections.js js/projects.js js/skills.js js/main.js -o js/main.min.js -c -m",
+    "build": "npm run verify:metadata && npm run build:css && npm run build:js"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "clean-css-cli": "^5.6.1",
+    "terser": "^5.16.0"
+  }
+}

@@ -1,0 +1,35 @@
+HELEN SANTOS PORTFOLIO - ESTRUTURA DE REFERENCIA
+=================================================
+
+Projeto single page estatico inspirado no Portfolio original, com a mesma base de build,
+i18n, minificacao e deploy para GitHub Pages.
+
+ARQUIVOS CENTRAIS
+-----------------
+- index.html               -> entrada principal da aplicacao
+- css/styles.css           -> fonte visual principal
+- css/styles.min.css       -> CSS minificado usado em runtime
+- js/*.js                  -> modulos vanilla separados por responsabilidade
+- js/main.min.js           -> bundle minificado usado em runtime
+- data/*.json              -> conteudo, traducoes, branding e SEO
+- scripts/*.mjs            -> validacao de metadata e preparo do artifact
+- .github/workflows/*      -> CI/CD e enforcement de preflight
+
+SECOES DA PAGINA
+----------------
+1. Navbar fixa com idiomas e contatos
+2. Hero imersiva com proposta de valor e CTAs
+3. Pilares da experiencia
+4. Jornada da vivencia
+5. Cards de vivencias autorais
+6. CTA final de contato
+7. Footer com contatos globais
+
+CHECKLIST DE EXECUCAO
+---------------------
+- Atualizar mocks em data/chrome.json quando os contatos reais existirem
+- Substituir placeholders de imagem por materiais definitivos
+- Rodar npm install
+- Rodar npm run build
+- Validar npm run prepare:pages
+- Publicar no repositorio helenSantosPortfolio

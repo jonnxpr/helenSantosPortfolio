@@ -1,0 +1,37 @@
+# Git ignore patterns
+node_modules/
+dist/
+build/
+.pages-artifact/
+.history/
+.playwright-mcp/
+.DS_Store
+*.log
+.env
+.env.local
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-workspace
+
+# AI instruction and governance files (must be versioned)
+!.copilot/
+!.copilot/**
+!.github/
+!.github/**
+!.agent/
+!.agent/**
+!AGENTS.md
+!CLAUDE.md
+!GEMINI.md
+!PRE-FLIGHT.md
+!PRE-FLIGHT-PROMPT.md
+!opencode.json
+!tasks/
+!tasks/**
+tasks/*.sarif
+!scripts/jdk-env.ps1
+!scripts/gradlew-jdk.ps1
+!scripts/mvn-jdk.ps1

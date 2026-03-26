@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "pt-BR": "Ritual de Desaceleracao",
+      "en": "Deceleration ritual",
+      "es": "Ritual de desaceleracion"
+    },
+    "description": {
+      "pt-BR": "Uma vivencia pensada para quem chega com a mente acelerada e precisa voltar ao proprio ritmo. O foco esta em respiracao, aterramento e relaxamento profundo.",
+      "en": "An experience designed for those who arrive mentally overloaded and need to return to their own rhythm. The focus is on breathing, grounding, and deep relaxation.",
+      "es": "Una vivencia pensada para quienes llegan con la mente acelerada y necesitan volver a su propio ritmo. El foco esta en respiracion, arraigo y relajacion profunda."
+    },
+    "technologies": {
+      "pt-BR": ["75 min", "individual", "acolhimento inicial", "atmosfera serena"],
+      "en": ["75 min", "individual", "welcome intake", "serene atmosphere"],
+      "es": ["75 min", "individual", "acogida inicial", "atmosfera serena"]
+    },
+    "icon": "<i class='fas fa-feather-pointed'></i>",
+    "current": false,
+    "links": {
+      "WhatsApp": "https://wa.me/5531999999999?text=Ola%20Helen,%20quero%20conhecer%20suas%20vivencias.",
+      "Instagram": "https://www.instagram.com/helen.santos.oficial/"
+    }
+  },
+  {
+    "id": 2,
+    "title": {
+      "pt-BR": "Sessao Tantrica Signature",
+      "en": "Signature tantric session",
+      "es": "Sesion tantrica signature"
+    },
+    "description": {
+      "pt-BR": "A proposta central da casa: um ritual autoral que combina presenca, toque sensorial e profundidade emocional para criar uma experiencia marcante.",
+      "en": "The core proposal of the studio: an authorial ritual that combines presence, sensory touch, and emotional depth to create a memorable experience.",
+      "es": "La propuesta central del espacio: un ritual autoral que combina presencia, toque sensorial y profundidad emocional para crear una experiencia memorable."
+    },
+    "technologies": {
+      "pt-BR": ["90 min", "individual", "ritual autoral", "vivencia em destaque"],
+      "en": ["90 min", "individual", "authorial ritual", "featured experience"],
+      "es": ["90 min", "individual", "ritual autoral", "vivencia destacada"]
+    },
+    "icon": "<i class='fas fa-spa'></i>",
+    "current": true,
+    "links": {
+      "WhatsApp": "https://wa.me/5531999999999?text=Ola%20Helen,%20quero%20conhecer%20suas%20vivencias.",
+      "Telegram": "https://t.me/helensantosportal"
+    }
+  },
+  {
+    "id": 3,
+    "title": {
+      "pt-BR": "Vivencia para Casais",
+      "en": "Experience for couples",
+      "es": "Vivencia para parejas"
+    },
+    "description": {
+      "pt-BR": "Uma experiencia guiada para casais que desejam reconectar intimidade, presenca e comunicacao corporal em um ambiente seguro e sofisticado.",
+      "en": "A guided experience for couples who wish to reconnect intimacy, presence, and embodied communication in a safe and refined environment.",
+      "es": "Una experiencia guiada para parejas que desean reconectar intimidad, presencia y comunicacion corporal en un ambiente seguro y refinado."
+    },
+    "technologies": {
+      "pt-BR": ["120 min", "casais", "ritual compartilhado", "conversacao previa"],
+      "en": ["120 min", "couples", "shared ritual", "pre-session conversation"],
+      "es": ["120 min", "parejas", "ritual compartido", "conversacion previa"]
+    },
+    "icon": "<i class='fas fa-heart'></i>",
+    "current": false,
+    "links": {
+      "WhatsApp": "https://wa.me/5531999999999?text=Ola%20Helen,%20quero%20conhecer%20suas%20vivencias.",
+      "Instagram": "https://www.instagram.com/helen.santos.oficial/"
+    }
+  },
+  {
+    "id": 4,
+    "title": {
+      "pt-BR": "Imersao Sensorial Premium",
+      "en": "Premium sensory immersion",
+      "es": "Inmersion sensorial premium"
+    },
+    "description": {
+      "pt-BR": "Uma construcao mais longa e cenografica, com acolhimento ampliado e tempo dilatado para quem busca uma experiencia mais rara e contemplativa.",
+      "en": "A longer, more scenographic construction with expanded welcoming and extended time for those seeking a rarer, contemplative experience.",
+      "es": "Una construccion mas larga y escenografica, con acogida ampliada y tiempo extendido para quienes buscan una experiencia mas rara y contemplativa."
+    },
+    "technologies": {
+      "pt-BR": ["150 min", "premium", "ritmo sem pressa", "mock concierge"],
+      "en": ["150 min", "premium", "unhurried rhythm", "mock concierge"],
+      "es": ["150 min", "premium", "ritmo sin prisa", "mock concierge"]
+    },
+    "icon": "<i class='fas fa-moon'></i>",
+    "current": false,
+    "links": {
+      "WhatsApp": "https://wa.me/5531999999999?text=Ola%20Helen,%20quero%20conhecer%20suas%20vivencias.",
+      "Email": "mailto:contato@helensantosportfolio.com"
+    }
+  }
+]

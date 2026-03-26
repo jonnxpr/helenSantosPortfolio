@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "pt-BR": "Presenca e escuta",
+      "en": "Presence and listening",
+      "es": "Presencia y escucha"
+    },
+    "description": {
+      "pt-BR": "Cada encontro comeca por uma conversa serena, onde ritmo, limite e intencao sao compreendidos antes do toque.",
+      "en": "Each meeting begins with a calm conversation where rhythm, boundaries, and intention are understood before touch.",
+      "es": "Cada encuentro comienza con una conversacion serena donde ritmo, limite e intencion se comprenden antes del toque."
+    },
+    "icon": "<i class='fas fa-heart'></i>"
+  },
+  {
+    "id": 2,
+    "title": {
+      "pt-BR": "Ambiente e discricao",
+      "en": "Atmosphere and privacy",
+      "es": "Ambiente y discrecion"
+    },
+    "description": {
+      "pt-BR": "Luz, musica, aromas e temperatura trabalham juntos para criar um espaco acolhedor, elegante e protegido do excesso.",
+      "en": "Light, music, aroma, and temperature work together to create a welcoming, elegant, and protected space.",
+      "es": "Luz, musica, aroma y temperatura trabajan juntos para crear un espacio acogedor, elegante y protegido del exceso."
+    },
+    "icon": "<i class='fas fa-lock'></i>"
+  },
+  {
+    "id": 3,
+    "title": {
+      "pt-BR": "Corpo e energia",
+      "en": "Body and energy",
+      "es": "Cuerpo y energia"
+    },
+    "description": {
+      "pt-BR": "Respiracao, toque e presenca sustentam uma experiencia sensorial que busca desbloquear percepcao e ampliar vitalidade.",
+      "en": "Breath, touch, and presence sustain a sensory experience that seeks to unlock perception and expand vitality.",
+      "es": "Respiracion, toque y presencia sostienen una experiencia sensorial que busca desbloquear percepcion y ampliar vitalidad."
+    },
+    "icon": "<i class='fas fa-spa'></i>"
+  },
+  {
+    "id": 4,
+    "title": {
+      "pt-BR": "Integracao e continuidade",
+      "en": "Integration and continuity",
+      "es": "Integracion y continuidad"
+    },
+    "description": {
+      "pt-BR": "O pos-encontro e tratado como parte da vivencia, com orientacoes suaves para que o corpo continue elaborando a experiencia.",
+      "en": "The post-session moment is treated as part of the experience, with gentle guidance so the body can continue integrating it.",
+      "es": "El momento posterior al encuentro se trata como parte de la vivencia, con orientaciones suaves para que el cuerpo siga integrandola."
+    },
+    "icon": "<i class='fas fa-compass'></i>"
+  }
+]

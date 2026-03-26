@@ -1,0 +1,12 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="18" y1="12" x2="108" y2="114" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D6AF7A"/>
+      <stop offset="1" stop-color="#B56F5A"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="38" fill="#FFF9F2"/>
+  <rect x="10" y="10" width="108" height="108" rx="32" fill="url(#g)" fill-opacity="0.16" stroke="#B56F5A" stroke-opacity="0.22"/>
+  <circle cx="64" cy="64" r="34" fill="url(#g)"/>
+  <text x="64" y="75" text-anchor="middle" fill="#FFF9F2" font-family="Cormorant Garamond, Georgia, serif" font-size="34" font-weight="700" letter-spacing="2">HS</text>
+</svg>

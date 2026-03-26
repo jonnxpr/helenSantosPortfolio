@@ -1,0 +1,102 @@
+{
+  "profile": {
+    "fullName": "Helen Santos",
+    "brandName": "HS",
+    "siteUrl": "https://jonnxpr.github.io/helenSantosPortfolio/",
+    "emailKey": "email",
+    "jobTitle": {
+      "pt-BR": "Facilitadora de experiencias tantricas e sensoriais",
+      "en": "Facilitator of tantric and sensory experiences",
+      "es": "Facilitadora de experiencias tantricas y sensoriales"
+    },
+    "image": "https://jonnxpr.github.io/helenSantosPortfolio/assets/profile-helen.png",
+    "ogImage": "https://jonnxpr.github.io/helenSantosPortfolio/assets/og-helen.png",
+    "sameAsKeys": ["instagram", "telegram"],
+    "knowsAbout": [
+      "Tantra",
+      "Respiracao consciente",
+      "Presenca corporal",
+      "Toque sensorial",
+      "Atendimento reservado"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Helen Santos Experiencias Sensoriais"
+    }
+  },
+  "languageOptions": [
+    {
+      "code": "pt-BR",
+      "shortLabel": "PT",
+      "label": {
+        "pt-BR": "Portugues",
+        "en": "Portuguese",
+        "es": "Portugues"
+      }
+    },
+    {
+      "code": "en",
+      "shortLabel": "EN",
+      "label": {
+        "pt-BR": "Ingles",
+        "en": "English",
+        "es": "Ingles"
+      }
+    },
+    {
+      "code": "es",
+      "shortLabel": "ES",
+      "label": {
+        "pt-BR": "Espanhol",
+        "en": "Spanish",
+        "es": "Espanol"
+      }
+    }
+  ],
+  "contactLinks": [
+    {
+      "key": "email",
+      "href": "mailto:contato@helensantosportfolio.com",
+      "iconClass": "fas fa-envelope",
+      "label": {
+        "pt-BR": "Email",
+        "en": "Email",
+        "es": "Correo"
+      },
+      "openInNewTab": true
+    },
+    {
+      "key": "whatsapp",
+      "href": "https://wa.me/5531999999999?text=Ola%20Helen,%20quero%20conhecer%20suas%20vivencias.",
+      "iconClass": "fab fa-whatsapp",
+      "label": {
+        "pt-BR": "WhatsApp",
+        "en": "WhatsApp",
+        "es": "WhatsApp"
+      },
+      "openInNewTab": true
+    },
+    {
+      "key": "instagram",
+      "href": "https://www.instagram.com/helen.santos.oficial/",
+      "iconClass": "fab fa-instagram",
+      "label": {
+        "pt-BR": "Instagram",
+        "en": "Instagram",
+        "es": "Instagram"
+      },
+      "openInNewTab": true
+    },
+    {
+      "key": "telegram",
+      "href": "https://t.me/helensantosportal",
+      "iconClass": "fab fa-telegram-plane",
+      "label": {
+        "pt-BR": "Telegram",
+        "en": "Telegram",
+        "es": "Telegram"
+      },
+      "openInNewTab": true
+    }
+  ]
+}
