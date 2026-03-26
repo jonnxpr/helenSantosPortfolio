@@ -2,28 +2,28 @@
   {
     "id": 1,
     "title": {
-      "pt-BR": "Presenca e escuta",
+      "pt-BR": "Presença e escuta",
       "en": "Presence and listening",
       "es": "Presencia y escucha"
     },
     "description": {
-      "pt-BR": "Cada encontro comeca por uma conversa serena, onde ritmo, limite e intencao sao compreendidos antes do toque.",
+      "pt-BR": "Cada encontro começa com uma conversa serena, em que ritmo, limites e intenção são compreendidos antes do toque.",
       "en": "Each meeting begins with a calm conversation where rhythm, boundaries, and intention are understood before touch.",
-      "es": "Cada encuentro comienza con una conversacion serena donde ritmo, limite e intencion se comprenden antes del toque."
+      "es": "Cada encuentro comienza con una conversación serena en la que se comprenden el ritmo, los límites y la intención antes del toque."
     },
     "icon": "<i class='fas fa-heart'></i>"
   },
   {
     "id": 2,
     "title": {
-      "pt-BR": "Ambiente e discricao",
+      "pt-BR": "Ambiente e discrição",
       "en": "Atmosphere and privacy",
-      "es": "Ambiente y discrecion"
+      "es": "Ambiente y discreción"
     },
     "description": {
-      "pt-BR": "Luz, musica, aromas e temperatura trabalham juntos para criar um espaco acolhedor, elegante e protegido do excesso.",
+      "pt-BR": "Luz, música, aromas e temperatura trabalham juntos para criar um espaço acolhedor, elegante e protegido do excesso.",
       "en": "Light, music, aroma, and temperature work together to create a welcoming, elegant, and protected space.",
-      "es": "Luz, musica, aroma y temperatura trabajan juntos para crear un espacio acogedor, elegante y protegido del exceso."
+      "es": "Luz, música, aroma y temperatura trabajan juntas para crear un espacio acogedor, elegante y protegido del exceso."
     },
     "icon": "<i class='fas fa-lock'></i>"
   },
@@ -32,26 +32,26 @@
     "title": {
       "pt-BR": "Corpo e energia",
       "en": "Body and energy",
-      "es": "Cuerpo y energia"
+      "es": "Cuerpo y energía"
     },
     "description": {
-      "pt-BR": "Respiracao, toque e presenca sustentam uma experiencia sensorial que busca desbloquear percepcao e ampliar vitalidade.",
+      "pt-BR": "Respiração, toque e presença sustentam uma experiência sensorial que busca desbloquear percepção e ampliar vitalidade.",
       "en": "Breath, touch, and presence sustain a sensory experience that seeks to unlock perception and expand vitality.",
-      "es": "Respiracion, toque y presencia sostienen una experiencia sensorial que busca desbloquear percepcion y ampliar vitalidad."
+      "es": "Respiración, toque y presencia sostienen una experiencia sensorial que busca desbloquear percepción y ampliar vitalidad."
     },
     "icon": "<i class='fas fa-spa'></i>"
   },
   {
     "id": 4,
     "title": {
-      "pt-BR": "Integracao e continuidade",
+      "pt-BR": "Integração e continuidade",
       "en": "Integration and continuity",
-      "es": "Integracion y continuidad"
+      "es": "Integración y continuidad"
     },
     "description": {
-      "pt-BR": "O pos-encontro e tratado como parte da vivencia, com orientacoes suaves para que o corpo continue elaborando a experiencia.",
+      "pt-BR": "O pós-encontro é tratado como parte da vivência, com orientações suaves para que o corpo continue elaborando a experiência.",
       "en": "The post-session moment is treated as part of the experience, with gentle guidance so the body can continue integrating it.",
-      "es": "El momento posterior al encuentro se trata como parte de la vivencia, con orientaciones suaves para que el cuerpo siga integrandola."
+      "es": "El momento posterior al encuentro se trata como parte de la vivencia, con orientaciones suaves para que el cuerpo siga integrándola."
     },
     "icon": "<i class='fas fa-compass'></i>"
   }

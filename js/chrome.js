@@ -45,6 +45,11 @@ const ChromeUI = (() => {
     }
   };
 
+  const resolveLocalizedHref = (hrefValue) => {
+    const localizedHref = I18n.resolveLocalizedValue(hrefValue);
+    return typeof localizedHref === 'string' ? localizedHref : null;
+  };
+
   const init = async () => {
     await loadChromeData();
     renderChrome();
@@ -407,9 +412,11 @@ const ChromeUI = (() => {
         .map((key) => resolveContactHref(key))
         .filter((href) => typeof href === 'string' && href.startsWith('http'))
       : [];
+    const localizedKnowsAbout = I18n.resolveLocalizedValue(profile.knowsAbout);
+
     const contactPoint = chromeData.contactLinks
       .map((item) => {
-        const href = sanitizeActionHref(item?.href);
+        const href = sanitizeActionHref(resolveLocalizedHref(item?.href));
         if (typeof href !== 'string' || href.length === 0) {
           return null;
         }
@@ -435,7 +442,7 @@ const ChromeUI = (() => {
       image: typeof profile.image === 'string' ? profile.image : undefined,
       sameAs,
       contactPoint: contactPoint.length > 0 ? contactPoint : undefined,
-      knowsAbout: Array.isArray(profile.knowsAbout) ? profile.knowsAbout : undefined,
+      knowsAbout: Array.isArray(localizedKnowsAbout) ? localizedKnowsAbout : undefined,
       worksFor: profile.worksFor && typeof profile.worksFor === 'object' ? profile.worksFor : undefined,
     };
 
@@ -452,7 +459,7 @@ const ChromeUI = (() => {
 
   const resolveContactHref = (contactKey) => {
     const link = getContactLink(contactKey);
-    return link ? sanitizeActionHref(link.href) : null;
+    return link ? sanitizeActionHref(resolveLocalizedHref(link.href)) : null;
   };
 
   const updateLanguageSwitcherTitle = (select) => {
@@ -503,7 +510,7 @@ const ChromeUI = (() => {
       return null;
     }
 
-    const href = sanitizeActionHref(item.href);
+    const href = sanitizeActionHref(resolveLocalizedHref(item.href));
     const label = I18n.resolveLocalizedValue(item.label);
     if (!href || typeof label !== 'string' || label.length === 0) {
       return null;

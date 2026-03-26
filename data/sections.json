@@ -3,29 +3,29 @@
     {
       "text": {
         "pt-BR": "Escuta individual para entender o momento, os limites e o desejo de cada pessoa.",
-        "en": "Individual listening to understand the moment, boundaries, and desire of each person.",
-        "es": "Escucha individual para comprender el momento, los limites y el deseo de cada persona."
+        "en": "One-on-one listening to understand each person's moment, boundaries, and desires.",
+        "es": "Escucha individual para comprender el momento, los límites y el deseo de cada persona."
       }
     },
     {
       "text": {
-        "pt-BR": "Ambiente estetico e reservado, com luz suave, textura organica e clima de desaceleracao.",
-        "en": "Aesthetic and private environment with soft light, organic texture, and a slower rhythm.",
-        "es": "Ambiente estetico y reservado, con luz suave, textura organica y ritmo desacelerado."
+        "pt-BR": "Ambiente estético e reservado, com luz suave, texturas orgânicas e clima de desaceleração.",
+        "en": "Aesthetic and private surroundings with soft light, organic textures, and a slower rhythm.",
+        "es": "Ambiente estético y reservado, con luz suave, texturas orgánicas y un ritmo desacelerado."
       }
     },
     {
       "text": {
-        "pt-BR": "Conducao sensorial sem pressa, respeitando tempo, consentimento e presenca corporal.",
+        "pt-BR": "Condução sensorial sem pressa, respeitando o tempo, o consentimento e a presença corporal.",
         "en": "Unhurried sensory guidance that respects timing, consent, and embodied presence.",
-        "es": "Conduccion sensorial sin prisa, respetando tiempo, consentimiento y presencia corporal."
+        "es": "Conducción sensorial sin prisa, respetando el tiempo, el consentimiento y la presencia corporal."
       }
     },
     {
       "text": {
-        "pt-BR": "Encerramento com integracao e orientacoes para prolongar a experiencia apos o encontro.",
+        "pt-BR": "Encerramento com integração e orientações para prolongar a experiência após o encontro.",
         "en": "Closing integration with guidance to extend the experience after the session.",
-        "es": "Cierre con integracion y orientaciones para prolongar la experiencia despues del encuentro."
+        "es": "Cierre con integración y orientaciones para prolongar la experiencia después del encuentro."
       }
     }
   ],
@@ -34,7 +34,7 @@
       "iconClass": "fas fa-comments",
       "title": {
         "pt-BR": "Escuta inicial",
-        "en": "Initial listening",
+        "en": "Initial conversation",
         "es": "Escucha inicial"
       },
       "institution": "01",
@@ -44,17 +44,17 @@
         "es": "Primer contacto"
       },
       "description": {
-        "pt-BR": "Antes de qualquer vivencia, Helen abre um espaco de conversa para entender contexto, expectativas e limites com transparencia.",
-        "en": "Before any experience, Helen opens a conversation space to understand context, expectations, and boundaries with transparency.",
-        "es": "Antes de cualquier vivencia, Helen abre un espacio de conversacion para comprender contexto, expectativas y limites con transparencia."
+        "pt-BR": "Antes de qualquer vivência, Helen abre um espaço de conversa para entender contexto, expectativas e limites com transparência.",
+        "en": "Before any experience, Helen creates a space for conversation to understand context, expectations, and boundaries with transparency.",
+        "es": "Antes de cualquier vivencia, Helen abre un espacio de conversación para comprender contexto, expectativas y límites con transparencia."
       }
     },
     {
       "iconClass": "fas fa-feather-pointed",
       "title": {
-        "pt-BR": "Preparacao do ambiente",
+        "pt-BR": "Preparação do ambiente",
         "en": "Atmosphere preparation",
-        "es": "Preparacion del ambiente"
+        "es": "Preparación del ambiente"
       },
       "institution": "02",
       "period": {
@@ -63,15 +63,15 @@
         "es": "Llegada y acogida"
       },
       "description": {
-        "pt-BR": "Texturas, musica, aroma e temperatura constroem um cenario sereno para que o corpo desacelere e a atencao se refine.",
-        "en": "Textures, music, aroma, and temperature build a serene scene so the body can slow down and attention can sharpen.",
-        "es": "Texturas, musica, aroma y temperatura construyen una escena serena para que el cuerpo desacelere y la atencion se refine."
+        "pt-BR": "Texturas, música, aroma e temperatura criam um cenário sereno para que o corpo desacelere e a atenção se refine.",
+        "en": "Textures, music, aroma, and temperature create a serene setting so the body can slow down and attention can sharpen.",
+        "es": "Texturas, música, aroma y temperatura crean una escena serena para que el cuerpo desacelere y la atención se refine."
       }
     },
     {
       "iconClass": "fas fa-spa",
       "title": {
-        "pt-BR": "Vivencia guiada",
+        "pt-BR": "Vivência guiada",
         "en": "Guided experience",
         "es": "Vivencia guiada"
       },
@@ -82,27 +82,27 @@
         "es": "Durante el encuentro"
       },
       "description": {
-        "pt-BR": "O ritmo do toque, da respiracao e da presenca e conduzido com suavidade, respeitando sinais do corpo e aprofundando percepcoes.",
+        "pt-BR": "O ritmo do toque, da respiração e da presença é conduzido com suavidade, respeitando os sinais do corpo e aprofundando percepções.",
         "en": "The rhythm of touch, breath, and presence is guided with softness, respecting body cues and deepening perception.",
-        "es": "El ritmo del toque, la respiracion y la presencia se conduce con suavidad, respetando las senales del cuerpo y profundizando la percepcion."
+        "es": "El ritmo del toque, la respiración y la presencia se conduce con suavidad, respetando las señales del cuerpo y profundizando la percepción."
       }
     },
     {
       "iconClass": "fas fa-heart",
       "title": {
-        "pt-BR": "Integracao final",
+        "pt-BR": "Integração final",
         "en": "Closing integration",
-        "es": "Integracion final"
+        "es": "Integración final"
       },
       "institution": "04",
       "period": {
-        "pt-BR": "Depois da experiencia",
+        "pt-BR": "Depois da experiência",
         "en": "After the experience",
-        "es": "Despues de la experiencia"
+        "es": "Después de la experiencia"
       },
       "description": {
-        "pt-BR": "O encerramento prioriza aterramento e clareza, para que o que foi vivido possa reverberar com seguranca no cotidiano.",
-        "en": "The closing prioritizes grounding and clarity so what was lived can resonate safely in everyday life.",
+        "pt-BR": "O encerramento prioriza aterramento e clareza, para que o que foi vivido possa reverberar com segurança no cotidiano.",
+        "en": "The closing prioritizes grounding and clarity so the experience can resonate safely in everyday life.",
         "es": "El cierre prioriza arraigo y claridad para que lo vivido pueda resonar con seguridad en la vida cotidiana."
       }
     }
@@ -114,7 +114,7 @@
       "contactKey": "whatsapp",
       "label": {
         "pt-BR": "Agendar pelo WhatsApp",
-        "en": "Book on WhatsApp",
+        "en": "Book via WhatsApp",
         "es": "Reservar por WhatsApp"
       },
       "openInNewTab": true
@@ -135,7 +135,7 @@
       "variant": "secondary",
       "contactKey": "email",
       "label": {
-        "pt-BR": "Enviar email",
+        "pt-BR": "Enviar e-mail",
         "en": "Send email",
         "es": "Enviar correo"
       },

@@ -32,6 +32,15 @@ const Projects = (() => {
     }
   };
 
+  const resolveLocalizedLinkLabel = (linkName) => {
+    const normalizedName = String(linkName || '').trim().toLowerCase();
+    const supportedKey = ['email', 'whatsapp', 'instagram', 'telegram'].includes(normalizedName)
+      ? normalizedName
+      : null;
+
+    return supportedKey ? I18n.t(supportedKey) : linkName;
+  };
+
   const init = async () => {
     await loadProjectsData();
     renderProjects();
@@ -126,8 +135,11 @@ const Projects = (() => {
     // Renderizar links personalizados dinamicamente
     if (project.links) {
       Object.entries(project.links).forEach(([linkName, linkUrl]) => {
-        const safeUrl = sanitizeLinkUrl(linkUrl);
+        const resolvedUrl = I18n.resolveLocalizedValue(linkUrl);
+        const safeUrl = sanitizeLinkUrl(resolvedUrl);
         if (!safeUrl) return;
+
+        const localizedLinkLabel = resolveLocalizedLinkLabel(linkName);
 
         const link = document.createElement('a');
         link.href = safeUrl;
@@ -140,14 +152,14 @@ const Projects = (() => {
         
         const iconClass = resolveLinkIconClass(linkName, safeUrl);
         
-        link.setAttribute('aria-label', I18n.t('projectOpenLink', { name: linkName }));
+        link.setAttribute('aria-label', I18n.t('projectOpenLink', { name: localizedLinkLabel }));
 
         const icon = document.createElement('i');
         icon.className = iconClass;
         icon.setAttribute('aria-hidden', 'true');
 
         link.appendChild(icon);
-        link.appendChild(document.createTextNode(` ${linkName}`));
+        link.appendChild(document.createTextNode(` ${localizedLinkLabel}`));
         linksContainer.appendChild(link);
       });
     }

@@ -2,96 +2,112 @@
   {
     "id": 1,
     "title": {
-      "pt-BR": "Ritual de Desaceleracao",
-      "en": "Deceleration ritual",
-      "es": "Ritual de desaceleracion"
+      "pt-BR": "Ritual de Desaceleração",
+      "en": "Deceleration Ritual",
+      "es": "Ritual de desaceleración"
     },
     "description": {
-      "pt-BR": "Uma vivencia pensada para quem chega com a mente acelerada e precisa voltar ao proprio ritmo. O foco esta em respiracao, aterramento e relaxamento profundo.",
+      "pt-BR": "Uma vivência pensada para quem chega com a mente acelerada e precisa voltar ao próprio ritmo. O foco está em respiração, aterramento e relaxamento profundo.",
       "en": "An experience designed for those who arrive mentally overloaded and need to return to their own rhythm. The focus is on breathing, grounding, and deep relaxation.",
-      "es": "Una vivencia pensada para quienes llegan con la mente acelerada y necesitan volver a su propio ritmo. El foco esta en respiracion, arraigo y relajacion profunda."
+      "es": "Una vivencia pensada para quienes llegan con la mente acelerada y necesitan volver a su propio ritmo. El foco está en respiración, arraigo y relajación profunda."
     },
     "technologies": {
       "pt-BR": ["75 min", "individual", "acolhimento inicial", "atmosfera serena"],
-      "en": ["75 min", "individual", "welcome intake", "serene atmosphere"],
-      "es": ["75 min", "individual", "acogida inicial", "atmosfera serena"]
+      "en": ["75 min", "individual", "welcome conversation", "serene atmosphere"],
+      "es": ["75 min", "individual", "acogida inicial", "atmósfera serena"]
     },
     "icon": "<i class='fas fa-feather-pointed'></i>",
     "current": false,
     "links": {
-      "WhatsApp": "https://wa.me/5531999999999?text=Ola%20Helen,%20quero%20conhecer%20suas%20vivencias.",
+      "WhatsApp": {
+        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20conhecer%20suas%20viv%C3%AAncias.",
+        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20experiences.",
+        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20quiero%20conocer%20mejor%20tus%20vivencias."
+      },
       "Instagram": "https://www.instagram.com/helen.santos.oficial/"
     }
   },
   {
     "id": 2,
     "title": {
-      "pt-BR": "Sessao Tantrica Signature",
-      "en": "Signature tantric session",
-      "es": "Sesion tantrica de autor"
+      "pt-BR": "Sessão Tântrica Signature",
+      "en": "Signature Tantric Session",
+      "es": "Sesión tántrica de autor"
     },
     "description": {
-      "pt-BR": "A proposta central da casa: um ritual autoral que combina presenca, toque sensorial e profundidade emocional para criar uma experiencia marcante.",
+      "pt-BR": "A proposta central da casa: um ritual autoral que combina presença, toque sensorial e profundidade emocional para criar uma experiência marcante.",
       "en": "The core offering of the studio: a signature ritual that combines presence, sensory touch, and emotional depth to create a memorable experience.",
       "es": "La propuesta central del espacio: un ritual de autor que combina presencia, toque sensorial y profundidad emocional para crear una experiencia memorable."
     },
     "technologies": {
-      "pt-BR": ["90 min", "individual", "ritual autoral", "vivencia em destaque"],
+      "pt-BR": ["90 min", "individual", "ritual autoral", "vivência em destaque"],
       "en": ["90 min", "individual", "signature ritual", "featured experience"],
       "es": ["90 min", "individual", "ritual de autor", "vivencia destacada"]
     },
     "icon": "<i class='fas fa-spa'></i>",
     "current": true,
     "links": {
-      "WhatsApp": "https://wa.me/5531999999999?text=Ola%20Helen,%20quero%20conhecer%20suas%20vivencias.",
+      "WhatsApp": {
+        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20conhecer%20suas%20viv%C3%AAncias.",
+        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20experiences.",
+        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20quiero%20conocer%20mejor%20tus%20vivencias."
+      },
       "Telegram": "https://t.me/helensantosportal"
     }
   },
   {
     "id": 3,
     "title": {
-      "pt-BR": "Vivencia para Casais",
-      "en": "Experience for couples",
+      "pt-BR": "Vivência para Casais",
+      "en": "Experience for Couples",
       "es": "Vivencia para parejas"
     },
     "description": {
-      "pt-BR": "Uma experiencia guiada para casais que desejam reconectar intimidade, presenca e comunicacao corporal em um ambiente seguro e sofisticado.",
+      "pt-BR": "Uma experiência guiada para casais que desejam reconectar intimidade, presença e comunicação corporal em um ambiente seguro e sofisticado.",
       "en": "A guided experience for couples who wish to reconnect intimacy, presence, and embodied communication in a safe and refined environment.",
-      "es": "Una experiencia guiada para parejas que desean reconectar intimidad, presencia y comunicacion corporal en un ambiente seguro y refinado."
+      "es": "Una experiencia guiada para parejas que desean reconectar intimidad, presencia y comunicación corporal en un ambiente seguro y refinado."
     },
     "technologies": {
-      "pt-BR": ["120 min", "casais", "ritual compartilhado", "conversacao previa"],
+      "pt-BR": ["120 min", "casais", "ritual compartilhado", "conversa prévia"],
       "en": ["120 min", "couples", "shared ritual", "pre-session conversation"],
-      "es": ["120 min", "parejas", "ritual compartido", "conversacion previa"]
+      "es": ["120 min", "parejas", "ritual compartido", "conversación previa"]
     },
     "icon": "<i class='fas fa-heart'></i>",
     "current": false,
     "links": {
-      "WhatsApp": "https://wa.me/5531999999999?text=Ola%20Helen,%20quero%20conhecer%20suas%20vivencias.",
+      "WhatsApp": {
+        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20conhecer%20suas%20viv%C3%AAncias.",
+        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20experiences.",
+        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20quiero%20conocer%20mejor%20tus%20vivencias."
+      },
       "Instagram": "https://www.instagram.com/helen.santos.oficial/"
     }
   },
   {
     "id": 4,
     "title": {
-      "pt-BR": "Imersao Sensorial Premium",
-      "en": "Premium sensory immersion",
-      "es": "Inmersion sensorial premium"
+      "pt-BR": "Imersão Sensorial Premium",
+      "en": "Premium Sensory Immersion",
+      "es": "Inmersión sensorial premium"
     },
     "description": {
-      "pt-BR": "Uma construcao mais longa e cenografica, com acolhimento ampliado e tempo dilatado para quem busca uma experiencia mais rara e contemplativa.",
-      "en": "A longer, more scenographic construction with expanded welcoming and extended time for those seeking a rarer, contemplative experience.",
-      "es": "Una construccion mas larga y escenografica, con acogida ampliada y tiempo extendido para quienes buscan una experiencia mas rara y contemplativa."
+      "pt-BR": "Uma construção mais longa e cenográfica, com acolhimento ampliado e tempo dilatado para quem busca uma experiência mais rara e contemplativa.",
+      "en": "A longer, more immersive experience, with an expanded welcome and extended time for those seeking something rarer and more contemplative.",
+      "es": "Una construcción más larga y escenográfica, con acogida ampliada y tiempo extendido para quienes buscan una experiencia más rara y contemplativa."
     },
     "technologies": {
-      "pt-BR": ["150 min", "premium", "ritmo sem pressa", "mock concierge"],
-      "en": ["150 min", "premium", "unhurried rhythm", "mock concierge"],
-      "es": ["150 min", "premium", "ritmo sin prisa", "mock concierge"]
+      "pt-BR": ["150 min", "premium", "ritmo sem pressa", "serviço concierge"],
+      "en": ["150 min", "premium", "unhurried rhythm", "concierge-style service"],
+      "es": ["150 min", "premium", "ritmo sin prisa", "servicio tipo concierge"]
     },
     "icon": "<i class='fas fa-moon'></i>",
     "current": false,
     "links": {
-      "WhatsApp": "https://wa.me/5531999999999?text=Ola%20Helen,%20quero%20conhecer%20suas%20vivencias.",
+      "WhatsApp": {
+        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20conhecer%20suas%20viv%C3%AAncias.",
+        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20experiences.",
+        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20quiero%20conocer%20mejor%20tus%20vivencias."
+      },
       "Email": "mailto:contato@helensantosportfolio.com"
     }
   }

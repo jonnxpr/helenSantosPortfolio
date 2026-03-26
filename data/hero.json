@@ -2,9 +2,9 @@
   "techStack": [
     {
       "label": {
-        "pt-BR": "Respiracao",
+        "pt-BR": "Respiração",
         "en": "Breath",
-        "es": "Respiracion"
+        "es": "Respiración"
       },
       "type": "icon",
       "iconClass": "fas fa-wind"
@@ -20,7 +20,7 @@
     },
     {
       "label": {
-        "pt-BR": "Presenca",
+        "pt-BR": "Presença",
         "en": "Presence",
         "es": "Presencia"
       },
@@ -40,7 +40,7 @@
       "label": {
         "pt-BR": "Atmosfera noturna",
         "en": "Night atmosphere",
-        "es": "Atmosfera nocturna"
+        "es": "Atmósfera nocturna"
       },
       "type": "icon",
       "iconClass": "fas fa-moon"
@@ -52,7 +52,7 @@
       "variant": "primary",
       "href": "#projetos",
       "label": {
-        "pt-BR": "Conhecer vivencias",
+        "pt-BR": "Conhecer vivências",
         "en": "Explore experiences",
         "es": "Conocer vivencias"
       },
@@ -64,7 +64,7 @@
       "contactKey": "whatsapp",
       "label": {
         "pt-BR": "Conversar no WhatsApp",
-        "en": "Talk on WhatsApp",
+        "en": "Chat on WhatsApp",
         "es": "Hablar por WhatsApp"
       },
       "openInNewTab": true
