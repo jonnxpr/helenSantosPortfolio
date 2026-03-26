@@ -545,17 +545,21 @@ select:focus-visible {
 }
 
 .tech-icon {
-  min-width: 74px;
-  min-height: 74px;
-  padding: 1rem;
+  min-width: 92px;
+  min-height: 92px;
+  padding: 0.95rem 0.9rem 0.85rem;
   border-radius: 1.45rem;
   border: 1px solid rgba(181, 111, 90, 0.16);
   background: rgba(255, 255, 255, 0.76);
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.55rem;
   color: var(--accent-deep);
+  text-align: center;
   box-shadow: 0 14px 30px rgba(66, 42, 38, 0.05);
+  transition: transform var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
 }
 
 .tech-icon i {
@@ -568,10 +572,33 @@ select:focus-visible {
   object-fit: contain;
 }
 
+.tech-icon__label {
+  display: block;
+  max-width: 7.5rem;
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+
 .tech-icon:hover {
   transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.92);
   box-shadow: 0 22px 36px rgba(66, 42, 38, 0.1);
+}
+
+@media (min-width: 992px) {
+  .tech-icon {
+    min-width: 74px;
+    min-height: 74px;
+    padding: 1rem;
+  }
+
+  .tech-icon__label {
+    display: none;
+  }
 }
 
 .hero__cta-buttons {

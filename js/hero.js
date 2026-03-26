@@ -113,6 +113,10 @@ const Hero = (() => {
       image.loading = 'lazy';
       image.decoding = 'async';
       wrapper.appendChild(image);
+      const label = document.createElement('span');
+      label.className = 'tech-icon__label';
+      label.textContent = localizedLabel;
+      wrapper.appendChild(label);
       return wrapper;
     }
 
@@ -124,6 +128,11 @@ const Hero = (() => {
     icon.className = item.iconClass;
     icon.setAttribute('aria-hidden', 'true');
     wrapper.appendChild(icon);
+
+    const label = document.createElement('span');
+    label.className = 'tech-icon__label';
+    label.textContent = localizedLabel;
+    wrapper.appendChild(label);
 
     return wrapper;
   };
