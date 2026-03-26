@@ -32,13 +32,13 @@
     },
     "description": {
       "pt-BR": "A proposta central da casa: um ritual autoral que combina presenca, toque sensorial e profundidade emocional para criar uma experiencia marcante.",
-      "en": "The core proposal of the studio: an authorial ritual that combines presence, sensory touch, and emotional depth to create a memorable experience.",
-      "es": "La propuesta central del espacio: un ritual autoral que combina presencia, toque sensorial y profundidad emocional para crear una experiencia memorable."
+      "en": "The core offering of the studio: a signature ritual that combines presence, sensory touch, and emotional depth to create a memorable experience.",
+      "es": "La propuesta central del espacio: un ritual de autor que combina presencia, toque sensorial y profundidad emocional para crear una experiencia memorable."
     },
     "technologies": {
       "pt-BR": ["90 min", "individual", "ritual autoral", "vivencia em destaque"],
-      "en": ["90 min", "individual", "authorial ritual", "featured experience"],
-      "es": ["90 min", "individual", "ritual autoral", "vivencia destacada"]
+      "en": ["90 min", "individual", "signature ritual", "featured experience"],
+      "es": ["90 min", "individual", "ritual de autor", "vivencia destacada"]
     },
     "icon": "<i class='fas fa-spa'></i>",
     "current": true,

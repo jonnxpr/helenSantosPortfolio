@@ -1,27 +1,47 @@
 {
   "techStack": [
     {
-      "label": "Respiracao",
+      "label": {
+        "pt-BR": "Respiracao",
+        "en": "Breath",
+        "es": "Respiracion"
+      },
       "type": "icon",
       "iconClass": "fas fa-wind"
     },
     {
-      "label": "Toque sutil",
+      "label": {
+        "pt-BR": "Toque sutil",
+        "en": "Gentle touch",
+        "es": "Toque sutil"
+      },
       "type": "icon",
       "iconClass": "fas fa-feather-pointed"
     },
     {
-      "label": "Presenca",
+      "label": {
+        "pt-BR": "Presenca",
+        "en": "Presence",
+        "es": "Presencia"
+      },
       "type": "icon",
       "iconClass": "fas fa-spa"
     },
     {
-      "label": "Ritmo fluido",
+      "label": {
+        "pt-BR": "Ritmo fluido",
+        "en": "Fluid rhythm",
+        "es": "Ritmo fluido"
+      },
       "type": "icon",
       "iconClass": "fas fa-water"
     },
     {
-      "label": "Atmosfera noturna",
+      "label": {
+        "pt-BR": "Atmosfera noturna",
+        "en": "Night atmosphere",
+        "es": "Atmosfera nocturna"
+      },
       "type": "icon",
       "iconClass": "fas fa-moon"
     }
