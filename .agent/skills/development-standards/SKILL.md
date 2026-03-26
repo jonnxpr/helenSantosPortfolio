@@ -24,7 +24,7 @@ description: Canonical technical memory for implementation, refactor, and review
 
 - Static single-page site.
 - Source CSS: `css/styles.css`; minified output: `css/styles.min.css`.
-- Source JS: `js/navigation.js`, `js/i18n.js`, `js/animations.js`, `js/chrome.js`, `js/hero.js`, `js/sections.js`, `js/skills.js`, `js/projects.js`, `js/main.js`; minified output: `js/main.min.js`.
+- Source JS: `js/navigation.js`, `js/i18n.js`, `js/animations.js`, `js/site-shell.js`, `js/hero.js`, `js/experience-flow.js`, `js/pillars.js`, `js/rituals.js`, `js/main.js`; minified output: `js/main.min.js`.
 - Data sources: `data/*.json`.
 
 ## Mandatory rules

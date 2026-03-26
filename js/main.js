@@ -11,12 +11,12 @@ const App = (() => {
     }
 
     await I18n.init();
-  await ChromeUI.init();
+    await SiteShell.init();
     await Hero.init();
-    await ContentSections.init();
+    await ExperienceFlow.init();
     Navigation.init();
-    await Skills.init();
-    await Projects.init();
+    await Pillars.init();
+    await Rituals.init();
   };
 
   return {

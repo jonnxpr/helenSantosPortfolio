@@ -1,11 +1,11 @@
 /* ========================================
-   Hero Module - Dynamic Tech Stack and CTAs
+   Hero Module - Dynamic Atmospheres and Actions
    ======================================== */
 
 const Hero = (() => {
   let heroData = {
-    techStack: [],
-    ctaButtons: [],
+    atmospheres: [],
+    heroActions: [],
   };
   let languageListenerBound = false;
 
@@ -54,38 +54,38 @@ const Hero = (() => {
 
       const data = await response.json();
       heroData = {
-        techStack: Array.isArray(data.techStack) ? data.techStack : [],
-        ctaButtons: Array.isArray(data.ctaButtons) ? data.ctaButtons : [],
+        atmospheres: Array.isArray(data.atmospheres) ? data.atmospheres : [],
+        heroActions: Array.isArray(data.heroActions) ? data.heroActions : [],
       };
     } catch (error) {
       console.error('Error loading hero data:', error);
       heroData = {
-        techStack: [],
-        ctaButtons: [],
+        atmospheres: [],
+        heroActions: [],
       };
     }
   };
 
   const renderHeroSections = () => {
-    renderTechStack();
-    renderCtaButtons();
+    renderAtmospheres();
+    renderHeroActions();
   };
 
-  const renderTechStack = () => {
-    const container = document.getElementById('hero-tech-icons');
+  const renderAtmospheres = () => {
+    const container = document.getElementById('hero-atmospheres-grid');
     if (!container) return;
 
     container.innerHTML = '';
 
-    heroData.techStack.forEach((item) => {
-      const techIcon = createTechIcon(item);
-      if (techIcon) {
-        container.appendChild(techIcon);
+    heroData.atmospheres.forEach((item) => {
+      const atmosphereChip = createAtmosphereChip(item);
+      if (atmosphereChip) {
+        container.appendChild(atmosphereChip);
       }
     });
   };
 
-  const createTechIcon = (item) => {
+  const createAtmosphereChip = (item) => {
     if (!item || typeof item !== 'object') {
       return null;
     }
@@ -96,7 +96,7 @@ const Hero = (() => {
     }
 
     const wrapper = document.createElement('div');
-    wrapper.className = 'tech-icon';
+    wrapper.className = 'atmosphere-chip';
     wrapper.title = localizedLabel;
     wrapper.setAttribute('aria-label', localizedLabel);
     wrapper.setAttribute('role', 'img');
@@ -108,13 +108,13 @@ const Hero = (() => {
 
       const image = document.createElement('img');
       image.src = item.src;
-      image.className = 'tech-icon__image';
+      image.className = 'atmosphere-chip__image';
       image.alt = typeof item.alt === 'string' && item.alt.length > 0 ? item.alt : localizedLabel;
       image.loading = 'lazy';
       image.decoding = 'async';
       wrapper.appendChild(image);
       const label = document.createElement('span');
-      label.className = 'tech-icon__label';
+      label.className = 'atmosphere-chip__label';
       label.textContent = localizedLabel;
       wrapper.appendChild(label);
       return wrapper;
@@ -130,82 +130,82 @@ const Hero = (() => {
     wrapper.appendChild(icon);
 
     const label = document.createElement('span');
-    label.className = 'tech-icon__label';
+    label.className = 'atmosphere-chip__label';
     label.textContent = localizedLabel;
     wrapper.appendChild(label);
 
     return wrapper;
   };
 
-  const renderCtaButtons = () => {
-    const container = document.querySelector('.hero__cta-buttons');
+  const renderHeroActions = () => {
+    const container = document.querySelector('.hero__actions');
     if (!container) return;
 
     container.innerHTML = '';
 
-    heroData.ctaButtons.forEach((item) => {
-      const button = createCtaButton(item);
-      if (button) {
-        container.appendChild(button);
+    heroData.heroActions.forEach((item) => {
+      const action = createHeroAction(item);
+      if (action) {
+        container.appendChild(action);
       }
     });
   };
 
-  const createCtaButton = (item) => {
+  const createHeroAction = (item) => {
     if (!item || typeof item !== 'object') {
       return null;
     }
 
     const href = typeof item.contactKey === 'string'
-      ? ChromeUI.resolveContactHref(item.contactKey)
+      ? SiteShell.resolveContactHref(item.contactKey)
       : sanitizeActionHref(item.href);
     if (!href) {
       return null;
     }
 
-    const button = document.createElement('a');
+    const action = document.createElement('a');
     const variant = item.variant === 'secondary' ? 'secondary' : 'primary';
     const label = I18n.resolveLocalizedValue(item.label);
 
-    button.href = href;
-    button.className = `btn hero__btn hero__btn--${variant}`;
-    button.textContent = typeof label === 'string' && label.length > 0 ? label : href;
+    action.href = href;
+    action.className = `btn hero__action hero__action--${variant}`;
+    action.textContent = typeof label === 'string' && label.length > 0 ? label : href;
 
     if (typeof item.id === 'string' && item.id.length > 0) {
-      button.id = item.id;
+      action.id = item.id;
     }
 
-    button.setAttribute('lang', I18n.t('htmlLang'));
+    action.setAttribute('lang', I18n.t('htmlLang'));
 
     if (item.useSmoothScroll && href.startsWith('#')) {
-      button.setAttribute('data-scroll', '');
+      action.setAttribute('data-scroll', '');
     }
 
     if (item.openInNewTab && !href.startsWith('#')) {
-      button.target = '_blank';
-      button.rel = 'noopener noreferrer';
+      action.target = '_blank';
+      action.rel = 'noopener noreferrer';
     }
 
-    return button;
+    return action;
   };
 
-  const updateCtaLabels = () => {
-    heroData.ctaButtons.forEach((item) => {
+  const updateHeroActionLabels = () => {
+    heroData.heroActions.forEach((item) => {
       if (!item || typeof item.id !== 'string' || item.id.length === 0) {
         return;
       }
 
-      const button = document.getElementById(item.id);
-      if (!button) {
+      const action = document.getElementById(item.id);
+      if (!action) {
         return;
       }
 
       const label = I18n.resolveLocalizedValue(item.label);
       if (typeof label === 'string' && label.length > 0) {
-        button.textContent = label;
+        action.textContent = label;
       }
 
-      button.setAttribute('lang', I18n.t('htmlLang'));
+      action.setAttribute('lang', I18n.t('htmlLang'));
     });
   };
 
@@ -213,7 +213,7 @@ const Hero = (() => {
     if (languageListenerBound) return;
 
     globalThis.addEventListener('languageChanged', () => {
-      updateCtaLabels();
+      renderHeroSections();
     });
 
     languageListenerBound = true;

@@ -13,8 +13,8 @@ Technical memory for implementation and refactor in this workspace.
 
 - Static single-page site (`index.html`).
 - CSS source: `css/styles.css`; artifact: `css/styles.min.css`.
-- JS source modules: `js/navigation.js`, `js/i18n.js`, `js/animations.js`, `js/chrome.js`, `js/hero.js`, `js/sections.js`, `js/skills.js`, `js/projects.js`, `js/main.js`; artifact: `js/main.min.js`.
-- Data sources: `data/chrome.json`, `data/hero.json`, `data/i18n.json`, `data/sections.json`, `data/skills.json`, `data/projects.json`.
+- JS source modules: `js/navigation.js`, `js/i18n.js`, `js/animations.js`, `js/site-shell.js`, `js/hero.js`, `js/experience-flow.js`, `js/pillars.js`, `js/rituals.js`, `js/main.js`; artifact: `js/main.min.js`.
+- Data sources: `data/site-shell.json`, `data/hero.json`, `data/i18n.json`, `data/experience-flow.json`, `data/pillars.json`, `data/rituals.json`.
 
 ## Rules
 

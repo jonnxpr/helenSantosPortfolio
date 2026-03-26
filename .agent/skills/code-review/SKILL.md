@@ -13,7 +13,7 @@ Review checklist for PR and code-review tasks.
 
 - Verify loading order and preflight evidence are respected.
 - Check for regressions in responsiveness and accessibility.
-- Confirm JSON schema and links integrity in `data/projects.json` changes.
+- Confirm JSON schema and links integrity in `data/rituals.json` changes.
 - Confirm minified artifacts are updated when source CSS/JS changed.
 - Confirm no unnecessary dependency or framework was introduced.
 - Confirm deploy workflow compatibility with repository changes.

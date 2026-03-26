@@ -1,7 +1,7 @@
 {
-  "name": "helen-santos-portfolio",
+  "name": "helen-santos-ritual-site",
   "version": "1.0.0",
-  "description": "Single page experience portfolio for Helen Santos with i18n, responsive design, and GitHub Pages CI/CD",
+  "description": "Single page sensory ritual site for Helen Santos with i18n, responsive design, and GitHub Pages CI/CD",
   "author": "Helen Santos",
   "license": "MIT",
   "repository": {
@@ -12,7 +12,7 @@
     "helen-santos",
     "massagem-tantrica",
     "experiencias-sensoriais",
-    "portfolio",
+    "rituais-autorais",
     "responsive",
     "i18n",
     "github-pages",
@@ -30,7 +30,7 @@
     "verify:metadata:artifact": "node scripts/verify-metadata-sync.mjs --root .pages-artifact --label Pages-artifact-metadata",
     "build:css": "cleancss css/styles.css -o css/styles.min.css",
     "watch:css": "chokidar \"css/styles.css\" --initial -c \"npm run build:css\"",
-    "build:js": "terser js/navigation.js js/i18n.js js/animations.js js/chrome.js js/hero.js js/sections.js js/projects.js js/skills.js js/main.js -o js/main.min.js -c -m",
+    "build:js": "terser js/navigation.js js/i18n.js js/animations.js js/site-shell.js js/hero.js js/experience-flow.js js/rituals.js js/pillars.js js/main.js -o js/main.min.js -c -m",
     "build": "npm run verify:metadata && npm run build:css && npm run build:js"
   },
   "devDependencies": {

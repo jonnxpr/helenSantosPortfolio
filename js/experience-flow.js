@@ -1,12 +1,12 @@
 /* ========================================
-   Content Sections Module - Dynamic Lists
+   Experience Flow Module - Dynamic Lists
    ======================================== */
 
-const ContentSections = (() => {
-  let sectionsData = {
-    heroHighlights: [],
-    educationItems: [],
-    opportunityActions: [],
+const ExperienceFlow = (() => {
+  let experienceFlowData = {
+    experienceSummaryPoints: [],
+    journeySteps: [],
+    bookingActions: [],
   };
   let languageListenerBound = false;
 
@@ -41,54 +41,54 @@ const ContentSections = (() => {
   };
 
   const init = async () => {
-    await loadSectionsData();
-    renderSections();
+    await loadExperienceFlowData();
+    renderExperienceFlow();
     setupLanguageListener();
   };
 
-  const loadSectionsData = async () => {
+  const loadExperienceFlowData = async () => {
     try {
-      const response = await fetch(withAssetVersion('data/sections.json'), { cache: 'no-store' });
+      const response = await fetch(withAssetVersion('data/experience-flow.json'), { cache: 'no-store' });
       if (!response.ok) {
-        throw new Error('Failed to load sections data');
+        throw new Error('Failed to load experience flow data');
       }
 
       const data = await response.json();
-      sectionsData = {
-        heroHighlights: Array.isArray(data.heroHighlights) ? data.heroHighlights : [],
-        educationItems: Array.isArray(data.educationItems) ? data.educationItems : [],
-        opportunityActions: Array.isArray(data.opportunityActions) ? data.opportunityActions : [],
+      experienceFlowData = {
+        experienceSummaryPoints: Array.isArray(data.experienceSummaryPoints) ? data.experienceSummaryPoints : [],
+        journeySteps: Array.isArray(data.journeySteps) ? data.journeySteps : [],
+        bookingActions: Array.isArray(data.bookingActions) ? data.bookingActions : [],
       };
     } catch (error) {
-      console.error('Error loading sections data:', error);
-      sectionsData = {
-        heroHighlights: [],
-        educationItems: [],
-        opportunityActions: [],
+      console.error('Error loading experience flow data:', error);
+      experienceFlowData = {
+        experienceSummaryPoints: [],
+        journeySteps: [],
+        bookingActions: [],
       };
     }
   };
 
-  const renderSections = () => {
-    renderHeroHighlights();
-    renderEducationItems();
-    renderOpportunityActions();
+  const renderExperienceFlow = () => {
+    renderExperienceSummaryPoints();
+    renderJourneySteps();
+    renderBookingActions();
   };
 
-  const renderHeroHighlights = () => {
-    const container = document.getElementById('hero-highlights-list');
+  const renderExperienceSummaryPoints = () => {
+    const container = document.getElementById('experience-summary-list');
     if (!container) return;
 
     const fragment = document.createDocumentFragment();
 
-    sectionsData.heroHighlights.forEach((item) => {
+    experienceFlowData.experienceSummaryPoints.forEach((item) => {
       const text = I18n.resolveLocalizedValue(item?.text);
       if (typeof text !== 'string' || text.length === 0) {
         return;
       }
 
       const listItem = document.createElement('li');
-      listItem.className = 'hero__highlights-item';
+      listItem.className = 'experience-summary__item';
       listItem.textContent = text;
       listItem.setAttribute('lang', I18n.t('htmlLang'));
       fragment.appendChild(listItem);
@@ -97,30 +97,30 @@ const ContentSections = (() => {
     container.replaceChildren(fragment);
   };
 
-  const renderEducationItems = () => {
-    const container = document.getElementById('education-timeline');
+  const renderJourneySteps = () => {
+    const container = document.getElementById('journey-steps');
     if (!container) return;
 
     const fragment = document.createDocumentFragment();
 
-    sectionsData.educationItems.forEach((item, index) => {
-      const educationItem = createEducationItem(item, index);
-      if (educationItem) {
-        fragment.appendChild(educationItem);
+    experienceFlowData.journeySteps.forEach((item, index) => {
+      const journeyStep = createJourneyStep(item, index);
+      if (journeyStep) {
+        fragment.appendChild(journeyStep);
       }
     });
 
     container.replaceChildren(fragment);
-    AnimationUtils.observeFadeInSelector('#education-timeline .fade-in-scroll');
+    AnimationUtils.observeFadeInSelector('#journey-steps .fade-in-scroll');
   };
 
-  const createEducationItem = (item, index) => {
+  const createJourneyStep = (item, index) => {
     if (!item || typeof item !== 'object') {
       return null;
     }
 
     const titleText = I18n.resolveLocalizedValue(item.title);
-    const periodText = I18n.resolveLocalizedValue(item.period);
+    const momentText = I18n.resolveLocalizedValue(item.moment);
     const descriptionText = I18n.resolveLocalizedValue(item.description);
 
     if (typeof titleText !== 'string' || titleText.length === 0) {
@@ -128,37 +128,37 @@ const ContentSections = (() => {
     }
 
     const wrapper = document.createElement('div');
-    wrapper.className = 'section-panel education__item fade-in-scroll';
+    wrapper.className = 'section-panel journey-step fade-in-scroll';
     wrapper.style.animationDelay = `${index * 0.1}s`;
 
     const header = document.createElement('div');
-    header.className = 'education__item-header';
+    header.className = 'journey-step__header';
 
     const iconWrapper = document.createElement('div');
-    iconWrapper.className = 'education__icon';
+    iconWrapper.className = 'journey-step__icon';
     iconWrapper.setAttribute('aria-hidden', 'true');
-    iconWrapper.appendChild(createIconElement(item.iconClass, 'fas fa-graduation-cap'));
+    iconWrapper.appendChild(createIconElement(item.iconClass, 'fas fa-compass'));
 
     const info = document.createElement('div');
-    info.className = 'education__info';
+    info.className = 'journey-step__info';
 
     const title = document.createElement('h3');
-    title.className = 'education__title text-balance';
+    title.className = 'journey-step__title text-balance';
     title.textContent = titleText;
     title.setAttribute('lang', I18n.t('htmlLang'));
 
-    const institution = document.createElement('p');
-    institution.className = 'education__institution';
-    institution.textContent = typeof item.institution === 'string' && item.institution.length > 0 ? item.institution : '';
+    const stepIndex = document.createElement('p');
+    stepIndex.className = 'journey-step__index';
+    stepIndex.textContent = typeof item.stepIndex === 'string' && item.stepIndex.length > 0 ? item.stepIndex : '';
 
-    const period = document.createElement('p');
-    period.className = 'education__period';
-    period.textContent = typeof periodText === 'string' ? periodText : '';
-    period.setAttribute('lang', I18n.t('htmlLang'));
+    const moment = document.createElement('p');
+    moment.className = 'journey-step__moment';
+    moment.textContent = typeof momentText === 'string' ? momentText : '';
+    moment.setAttribute('lang', I18n.t('htmlLang'));
 
     info.appendChild(title);
-    info.appendChild(institution);
-    info.appendChild(period);
+    info.appendChild(stepIndex);
+    info.appendChild(moment);
 
     header.appendChild(iconWrapper);
     header.appendChild(info);
@@ -167,7 +167,7 @@ const ContentSections = (() => {
 
     if (typeof descriptionText === 'string' && descriptionText.length > 0) {
       const description = document.createElement('p');
-      description.className = 'education__description';
+      description.className = 'journey-step__description';
       description.textContent = descriptionText;
       description.setAttribute('lang', I18n.t('htmlLang'));
       wrapper.appendChild(description);
@@ -176,14 +176,14 @@ const ContentSections = (() => {
     return wrapper;
   };
 
-  const renderOpportunityActions = () => {
-    const container = document.getElementById('opportunities-actions');
+  const renderBookingActions = () => {
+    const container = document.getElementById('booking-actions');
     if (!container) return;
 
     const fragment = document.createDocumentFragment();
 
-    sectionsData.opportunityActions.forEach((item) => {
-      const action = createOpportunityAction(item);
+    experienceFlowData.bookingActions.forEach((item) => {
+      const action = createBookingAction(item);
       if (action) {
         fragment.appendChild(action);
       }
@@ -192,13 +192,13 @@ const ContentSections = (() => {
     container.replaceChildren(fragment);
   };
 
-  const createOpportunityAction = (item) => {
+  const createBookingAction = (item) => {
     if (!item || typeof item !== 'object') {
       return null;
     }
 
     const href = typeof item.contactKey === 'string'
-      ? ChromeUI.resolveContactHref(item.contactKey)
+      ? SiteShell.resolveContactHref(item.contactKey)
       : sanitizeActionHref(item.href);
     const label = I18n.resolveLocalizedValue(item.label);
     if (!href || typeof label !== 'string' || label.length === 0) {
@@ -209,7 +209,7 @@ const ContentSections = (() => {
     const variant = item.variant === 'secondary' ? 'secondary' : 'primary';
 
     action.href = href;
-    action.className = `opportunities__action opportunities__action--${variant}`;
+    action.className = `booking__action booking__action--${variant}`;
     action.textContent = label;
     action.setAttribute('lang', I18n.t('htmlLang'));
 
@@ -236,7 +236,7 @@ const ContentSections = (() => {
     if (languageListenerBound) return;
 
     globalThis.addEventListener('languageChanged', () => {
-      renderSections();
+      renderExperienceFlow();
     });
 
     languageListenerBound = true;

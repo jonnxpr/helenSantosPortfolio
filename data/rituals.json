@@ -2,22 +2,22 @@
   {
     "id": 1,
     "title": {
-      "pt-BR": "Ritual de Desaceleração",
-      "en": "Deceleration Ritual",
-      "es": "Ritual de desaceleración"
+      "pt-BR": "Ritual de Aterramento",
+      "en": "Grounding Ritual",
+      "es": "Ritual de arraigo"
     },
     "description": {
       "pt-BR": "Uma vivência pensada para quem chega com a mente acelerada e precisa voltar ao próprio ritmo. O foco está em respiração, aterramento e relaxamento profundo.",
-      "en": "An experience designed for those who arrive mentally overloaded and need to return to their own rhythm. The focus is on breathing, grounding, and deep relaxation.",
+      "en": "A ritual designed for those who arrive overstimulated and need to return to their own rhythm. The focus rests on breath, grounding, and deep relaxation.",
       "es": "Una vivencia pensada para quienes llegan con la mente acelerada y necesitan volver a su propio ritmo. El foco está en respiración, arraigo y relajación profunda."
     },
-    "technologies": {
-      "pt-BR": ["75 min", "individual", "acolhimento inicial", "atmosfera serena"],
-      "en": ["75 min", "individual", "welcome conversation", "serene atmosphere"],
-      "es": ["75 min", "individual", "acogida inicial", "atmósfera serena"]
+    "details": {
+      "pt-BR": ["75 min", "individual", "conversa inicial", "atmosfera serena"],
+      "en": ["75 min", "individual", "opening conversation", "serene atmosphere"],
+      "es": ["75 min", "individual", "conversación inicial", "atmósfera serena"]
     },
     "icon": "<i class='fas fa-feather-pointed'></i>",
-    "current": false,
+    "featured": false,
     "links": {
       "WhatsApp": {
         "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20conhecer%20suas%20viv%C3%AAncias.",
@@ -30,22 +30,22 @@
   {
     "id": 2,
     "title": {
-      "pt-BR": "Sessão Tântrica Signature",
-      "en": "Signature Tantric Session",
-      "es": "Sesión tántrica de autor"
+      "pt-BR": "Ritual Assinatura",
+      "en": "Signature Ritual",
+      "es": "Ritual insignia"
     },
     "description": {
       "pt-BR": "A proposta central da casa: um ritual autoral que combina presença, toque sensorial e profundidade emocional para criar uma experiência marcante.",
-      "en": "The core offering of the studio: a signature ritual that combines presence, sensory touch, and emotional depth to create a memorable experience.",
-      "es": "La propuesta central del espacio: un ritual de autor que combina presencia, toque sensorial y profundidad emocional para crear una experiencia memorable."
+      "en": "The house's central offering: a signature ritual that blends presence, sensory touch, and emotional depth into a memorable encounter.",
+      "es": "La propuesta central del espacio: un ritual insignia que combina presencia, toque sensorial y profundidad emocional para crear una experiencia memorable."
     },
-    "technologies": {
-      "pt-BR": ["90 min", "individual", "ritual autoral", "vivência em destaque"],
-      "en": ["90 min", "individual", "signature ritual", "featured experience"],
-      "es": ["90 min", "individual", "ritual de autor", "vivencia destacada"]
+    "details": {
+      "pt-BR": ["90 min", "individual", "ritual autoral", "ritual em destaque"],
+      "en": ["90 min", "individual", "signature ritual", "featured ritual"],
+      "es": ["90 min", "individual", "ritual de autor", "ritual destacado"]
     },
     "icon": "<i class='fas fa-spa'></i>",
-    "current": true,
+    "featured": true,
     "links": {
       "WhatsApp": {
         "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20conhecer%20suas%20viv%C3%AAncias.",
@@ -58,22 +58,22 @@
   {
     "id": 3,
     "title": {
-      "pt-BR": "Vivência para Casais",
-      "en": "Experience for Couples",
-      "es": "Vivencia para parejas"
+      "pt-BR": "Vivência a Dois",
+      "en": "Experience for Two",
+      "es": "Vivencia para dos"
     },
     "description": {
       "pt-BR": "Uma experiência guiada para casais que desejam reconectar intimidade, presença e comunicação corporal em um ambiente seguro e sofisticado.",
-      "en": "A guided experience for couples who wish to reconnect intimacy, presence, and embodied communication in a safe and refined environment.",
+      "en": "A guided encounter for couples who wish to reconnect intimacy, presence, and embodied communication in a safe, refined setting.",
       "es": "Una experiencia guiada para parejas que desean reconectar intimidad, presencia y comunicación corporal en un ambiente seguro y refinado."
     },
-    "technologies": {
+    "details": {
       "pt-BR": ["120 min", "casais", "ritual compartilhado", "conversa prévia"],
-      "en": ["120 min", "couples", "shared ritual", "pre-session conversation"],
+      "en": ["120 min", "couples", "shared ritual", "pre-encounter conversation"],
       "es": ["120 min", "parejas", "ritual compartido", "conversación previa"]
     },
     "icon": "<i class='fas fa-heart'></i>",
-    "current": false,
+    "featured": false,
     "links": {
       "WhatsApp": {
         "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20conhecer%20suas%20viv%C3%AAncias.",
@@ -86,22 +86,22 @@
   {
     "id": 4,
     "title": {
-      "pt-BR": "Imersão Sensorial Premium",
-      "en": "Premium Sensory Immersion",
-      "es": "Inmersión sensorial premium"
+      "pt-BR": "Imersão Sensorial Privativa",
+      "en": "Private Sensory Immersion",
+      "es": "Inmersión sensorial privada"
     },
     "description": {
       "pt-BR": "Uma construção mais longa e cenográfica, com acolhimento ampliado e tempo dilatado para quem busca uma experiência mais rara e contemplativa.",
-      "en": "A longer, more immersive experience, with an expanded welcome and extended time for those seeking something rarer and more contemplative.",
-      "es": "Una construcción más larga y escenográfica, con acogida ampliada y tiempo extendido para quienes buscan una experiencia más rara y contemplativa."
+      "en": "A longer, more immersive ritual arc, with an expanded welcome and extended time for those seeking something rarer and more contemplative.",
+      "es": "Una vivencia más extensa y escénica, con acogida ampliada y tiempo dilatado para quienes buscan algo más singular y contemplativo."
     },
-    "technologies": {
+    "details": {
       "pt-BR": ["150 min", "premium", "ritmo sem pressa", "serviço concierge"],
       "en": ["150 min", "premium", "unhurried rhythm", "concierge-style service"],
       "es": ["150 min", "premium", "ritmo sin prisa", "servicio tipo concierge"]
     },
     "icon": "<i class='fas fa-moon'></i>",
-    "current": false,
+    "featured": false,
     "links": {
       "WhatsApp": {
         "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20conhecer%20suas%20viv%C3%AAncias.",

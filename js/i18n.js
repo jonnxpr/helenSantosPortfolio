@@ -110,9 +110,9 @@ const I18n = (() => {
     setAttribute('#nav-toggle', 'aria-label', 'navToggleAria');
 
     setText('#nav-about', 'navAbout');
-    setText('#nav-skills', 'navSkills');
-    setText('#nav-education', 'navEducation');
-    setText('#nav-projects', 'navProjects');
+    setText('#nav-pillars', 'navPillars');
+    setText('#nav-journey', 'navJourney');
+    setText('#nav-rituals', 'navRituals');
 
     setText('#language-switcher-label', 'languageSelectorLabel');
 
@@ -123,31 +123,31 @@ const I18n = (() => {
     setText('#hero-eyebrow', 'heroEyebrow');
     setHTML('#hero-description-1', 'heroDescription1');
     setText('#hero-description-2', 'heroDescription2');
-    setText('#hero-stack-title', 'heroStackTitle');
-    setAttribute('#hero-tech-icons', 'aria-label', 'heroTechAria');
-    setAttribute('#hero-highlights', 'aria-label', 'heroHighlightsAria');
-    setText('#hero-highlights-title', 'heroHighlightsTitle');
+    setText('#hero-atmospheres-title', 'heroAtmospheresTitle');
+    setAttribute('#hero-atmospheres-grid', 'aria-label', 'heroAtmospheresAria');
+    setAttribute('#experience-summary', 'aria-label', 'experienceSummaryAria');
+    setText('#experience-summary-title', 'experienceSummaryTitle');
     setText('#hero-visual-note', 'heroVisualNote');
 
-    setText('#skills-title', 'skillsTitle');
-    setText('#skills-description', 'skillsDescription');
-    setAttribute('#skills-container', 'aria-label', 'skillsListAria');
+    setText('#pillars-title', 'pillarsTitle');
+    setText('#pillars-description', 'pillarsDescription');
+    setAttribute('#pillars-container', 'aria-label', 'pillarsListAria');
 
-    setText('#education-title', 'educationTitle');
-    setText('#education-description', 'educationDescription');
+    setText('#journey-title', 'journeyTitle');
+    setText('#journey-description', 'journeyDescription');
 
-    setText('#projects-title', 'projectsTitle');
-    setText('#projects-description', 'projectsDescription');
-    setAttribute('#projects-container', 'aria-label', 'projectsListAria');
+    setText('#rituals-title', 'ritualsTitle');
+    setText('#rituals-description', 'ritualsDescription');
+    setAttribute('#rituals-container', 'aria-label', 'ritualsListAria');
 
-    setText('#opportunities-title', 'opportunitiesTitle');
-    setText('#opportunities-text', 'opportunitiesText');
-    setAttribute('#opportunities-actions', 'aria-label', 'opportunitiesActionsAria');
+    setText('#booking-title', 'bookingTitle');
+    setText('#booking-text', 'bookingText');
+    setAttribute('#booking-actions', 'aria-label', 'bookingActionsAria');
 
     setText('#footer-rights-text', 'footerRights');
 
     const contentLanguage = t('htmlLang');
-    ['#hero-eyebrow', '#hero-role', '#hero-description-1', '#hero-description-2', '#hero-highlights-title', '#hero-visual-note', '#skills-title', '#skills-description', '#education-title', '#education-description', '#projects-title', '#projects-description', '#opportunities-title', '#opportunities-text'].forEach((selector) => {
+    ['#hero-eyebrow', '#hero-role', '#hero-description-1', '#hero-description-2', '#experience-summary-title', '#hero-atmospheres-title', '#hero-visual-note', '#pillars-title', '#pillars-description', '#journey-title', '#journey-description', '#rituals-title', '#rituals-description', '#booking-title', '#booking-text'].forEach((selector) => {
       const element = document.querySelector(selector);
       if (element) {
         element.setAttribute('lang', contentLanguage);

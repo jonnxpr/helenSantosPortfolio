@@ -1,9 +1,9 @@
 /* ========================================
-   Chrome Module - Language Picker and Contacts
+   Site Shell Module - Language Picker and Contacts
    ======================================== */
 
-const ChromeUI = (() => {
-  let chromeData = {
+const SiteShell = (() => {
+  let shellData = {
     profile: null,
     languageOptions: [],
     contactLinks: [],
@@ -51,29 +51,29 @@ const ChromeUI = (() => {
   };
 
   const init = async () => {
-    await loadChromeData();
-    renderChrome();
+    await loadShellData();
+    renderShell();
     setupLanguageListener();
     setupViewportListener();
     setupLanguageDropdownListener();
   };
 
-  const loadChromeData = async () => {
+  const loadShellData = async () => {
     try {
-      const response = await fetch(withAssetVersion('data/chrome.json'), { cache: 'no-store' });
+      const response = await fetch(withAssetVersion('data/site-shell.json'), { cache: 'no-store' });
       if (!response.ok) {
-        throw new Error('Failed to load chrome data');
+        throw new Error('Failed to load site shell data');
       }
 
       const data = await response.json();
-      chromeData = {
+      shellData = {
         profile: data.profile && typeof data.profile === 'object' ? data.profile : null,
         languageOptions: Array.isArray(data.languageOptions) ? data.languageOptions : [],
         contactLinks: Array.isArray(data.contactLinks) ? data.contactLinks : [],
       };
     } catch (error) {
-      console.error('Error loading chrome data:', error);
-      chromeData = {
+      console.error('Error loading site shell data:', error);
+      shellData = {
         profile: null,
         languageOptions: [],
         contactLinks: [],
@@ -81,7 +81,7 @@ const ChromeUI = (() => {
     }
   };
 
-  const renderChrome = () => {
+  const renderShell = () => {
     syncDocumentMetadata();
     renderLanguageSwitcher();
     renderContactGroup('navbar-contacts', 'navbar__contact-link');
@@ -103,7 +103,7 @@ const ChromeUI = (() => {
 
     const fragment = document.createDocumentFragment();
 
-    chromeData.languageOptions.forEach((optionData) => {
+    shellData.languageOptions.forEach((optionData) => {
       if (!optionData || typeof optionData.code !== 'string') {
         return;
       }
@@ -159,7 +159,7 @@ const ChromeUI = (() => {
     trigger.setAttribute('aria-controls', menu.id);
     trigger.setAttribute('aria-expanded', wrapper.dataset.languageOpen === 'true' ? 'true' : 'false');
 
-    const selectedOption = chromeData.languageOptions.find((option) => option?.code === select.value) ?? chromeData.languageOptions[0] ?? null;
+    const selectedOption = shellData.languageOptions.find((option) => option?.code === select.value) ?? shellData.languageOptions[0] ?? null;
     const selectedLabel = getTriggerLanguageLabel(selectedOption);
 
     let triggerLabel = trigger.querySelector('.navbar__language-trigger-label');
@@ -176,7 +176,7 @@ const ChromeUI = (() => {
     triggerLabel.textContent = selectedLabel;
 
     const fragment = document.createDocumentFragment();
-    chromeData.languageOptions.forEach((optionData, index) => {
+    shellData.languageOptions.forEach((optionData, index) => {
       if (!optionData || typeof optionData.code !== 'string') {
         return;
       }
@@ -344,7 +344,7 @@ const ChromeUI = (() => {
   };
 
   const syncDocumentMetadata = () => {
-    const profile = chromeData.profile;
+    const profile = shellData.profile;
     if (!profile) return;
     const seoParams = {
       fullName: typeof profile.fullName === 'string' ? profile.fullName : '',
@@ -414,7 +414,7 @@ const ChromeUI = (() => {
       : [];
     const localizedKnowsAbout = I18n.resolveLocalizedValue(profile.knowsAbout);
 
-    const contactPoint = chromeData.contactLinks
+    const contactPoint = shellData.contactLinks
       .map((item) => {
         const href = sanitizeActionHref(resolveLocalizedHref(item?.href));
         if (typeof href !== 'string' || href.length === 0) {
@@ -454,7 +454,7 @@ const ChromeUI = (() => {
       return null;
     }
 
-    return chromeData.contactLinks.find((item) => item?.key === contactKey) ?? null;
+    return shellData.contactLinks.find((item) => item?.key === contactKey) ?? null;
   };
 
   const resolveContactHref = (contactKey) => {
@@ -465,7 +465,7 @@ const ChromeUI = (() => {
   const updateLanguageSwitcherTitle = (select) => {
     if (!(select instanceof HTMLSelectElement)) return;
 
-    const selectedData = chromeData.languageOptions.find((option) => option?.code === select.value);
+    const selectedData = shellData.languageOptions.find((option) => option?.code === select.value);
     const label = I18n.resolveLocalizedValue(selectedData?.label);
     if (typeof label === 'string' && label.length > 0) {
       select.title = label;
@@ -495,7 +495,7 @@ const ChromeUI = (() => {
 
     const fragment = document.createDocumentFragment();
 
-    chromeData.contactLinks.forEach((item) => {
+    shellData.contactLinks.forEach((item) => {
       const link = createContactLink(item, linkClassName, containerId);
       if (link) {
         fragment.appendChild(link);
@@ -544,7 +544,7 @@ const ChromeUI = (() => {
     if (languageListenerBound) return;
 
     globalThis.addEventListener('languageChanged', () => {
-      renderChrome();
+      renderShell();
     });
 
     languageListenerBound = true;

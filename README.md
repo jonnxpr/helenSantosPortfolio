@@ -1,6 +1,6 @@
-# Helen Santos Portfolio
+# Helen Santos Ritual Site
 
-Single page experience website inspired by the structure and delivery workflow of `Portfolio`, rebuilt for Helen Santos with a premium sensory direction, multilingual content, responsive behavior, and GitHub Pages CI/CD.
+Single page sensory ritual site for Helen Santos, with a premium editorial direction, multilingual content, responsive behavior, and GitHub Pages CI/CD.
 
 ## Caracteristicas
 
@@ -9,7 +9,7 @@ Single page experience website inspired by the structure and delivery workflow o
 - i18n em `pt-BR`, `en` e `es`
 - Responsividade completa para mobile, tablet e desktop
 - Fade in, scroll reveal e suporte a `prefers-reduced-motion`
-- Metadados SEO sincronizados a partir de `data/chrome.json`
+- Metadados SEO sincronizados a partir de `data/site-shell.json`
 - Deploy automatico no GitHub Pages com GitHub Actions
 - Assets temporarios e contatos mockados para fase inicial
 
@@ -41,23 +41,23 @@ HelenSantosPortfolio/
 │   ├── styles.css
 │   └── styles.min.css
 ├── data/
-│   ├── chrome.json
+│   ├── site-shell.json
 │   ├── hero.json
 │   ├── i18n.json
-│   ├── projects.json
-│   ├── sections.json
-│   └── skills.json
+│   ├── experience-flow.json
+│   ├── pillars.json
+│   └── rituals.json
 ├── js/
 │   ├── animations.js
-│   ├── chrome.js
+│   ├── site-shell.js
 │   ├── hero.js
 │   ├── i18n.js
 │   ├── main.js
 │   ├── main.min.js
 │   ├── navigation.js
-│   ├── projects.js
-│   ├── sections.js
-│   └── skills.js
+│   ├── experience-flow.js
+│   ├── pillars.js
+│   └── rituals.js
 ├── scripts/
 │   ├── discover-git-repo.ps1
 │   ├── prepare-pages-artifact.mjs
@@ -119,7 +119,7 @@ npm run verify:metadata:artifact
 
 ### Workflow de deploy
 
-O pipeline replica o padrao do Portfolio:
+O pipeline executa a cadeia de validacao e publicacao do site:
 
 1. `npm install --no-audit --no-fund`
 2. `npm run verify:metadata`
@@ -132,12 +132,12 @@ Arquivo principal do workflow: `.github/workflows/deploy.yml`.
 
 ## Fonte dos dados
 
-- `data/chrome.json`: branding, SEO, contatos e idiomas
-- `data/hero.json`: atmosferas iconicas e CTAs da hero
+- `data/site-shell.json`: branding, SEO, contatos e idiomas
+- `data/hero.json`: atmosferas e acoes da hero
 - `data/i18n.json`: textos localizados
-- `data/sections.json`: highlights, jornada e CTAs finais
-- `data/skills.json`: pilares da experiencia
-- `data/projects.json`: vivencias autorais em destaque
+- `data/experience-flow.json`: resumo da experiencia, jornada e acoes de agendamento
+- `data/pillars.json`: pilares do encontro
+- `data/rituals.json`: vivencias e rituais em destaque
 
 ## Mocks atuais
 

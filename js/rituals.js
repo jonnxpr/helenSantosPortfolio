@@ -1,9 +1,9 @@
 /* ========================================
-   Projects Module - Dynamic Rendering
+   Rituals Module - Dynamic Rendering
    ======================================== */
 
-const Projects = (() => {
-  let projectsData = [];
+const Rituals = (() => {
+  let ritualsData = [];
   let languageListenerBound = false;
 
   const withAssetVersion = (path) => {
@@ -42,99 +42,96 @@ const Projects = (() => {
   };
 
   const init = async () => {
-    await loadProjectsData();
-    renderProjects();
+    await loadRitualsData();
+    renderRituals();
     setupLazyLoading();
     setupLanguageListener();
   };
 
-  const loadProjectsData = async () => {
+  const loadRitualsData = async () => {
     try {
-      const response = await fetch(withAssetVersion('data/projects.json'), { cache: 'no-store' });
+      const response = await fetch(withAssetVersion('data/rituals.json'), { cache: 'no-store' });
       if (!response.ok) {
-        throw new Error('Failed to load projects');
+        throw new Error('Failed to load rituals');
       }
-      projectsData = await response.json();
+      ritualsData = await response.json();
     } catch (error) {
-      console.error('Error loading projects:', error);
-      projectsData = [];
+      console.error('Error loading rituals:', error);
+      ritualsData = [];
     }
   };
 
-  const renderProjects = () => {
-    const container = document.getElementById('projects-container');
+  const renderRituals = () => {
+    const container = document.getElementById('rituals-container');
     if (!container) return;
 
     container.innerHTML = '';
 
-    if (projectsData.length === 0) {
+    if (ritualsData.length === 0) {
       const emptyState = document.createElement('p');
       emptyState.className = 'section-empty-state';
-      emptyState.textContent = I18n.t('projectsEmpty');
+      emptyState.textContent = I18n.t('ritualsEmpty');
       container.appendChild(emptyState);
       return;
     }
 
-    projectsData.forEach((project, index) => {
-      const projectCard = createProjectCard(project, index);
-      container.appendChild(projectCard);
+    ritualsData.forEach((ritual, index) => {
+      const ritualCard = createRitualCard(ritual, index);
+      container.appendChild(ritualCard);
     });
   };
 
-  const createProjectCard = (project, index) => {
+  const createRitualCard = (ritual, index) => {
     const card = document.createElement('li');
-    card.className = 'section-panel project-card fade-in-scroll';
+    card.className = 'section-panel ritual-card fade-in-scroll';
     card.style.animationDelay = `${index * 0.1}s`;
 
-    // Badge de projeto atual
-    if (project.current) {
-      const currentBadge = document.createElement('div');
-      currentBadge.className = 'project-card__current-badge';
-      currentBadge.setAttribute('aria-label', I18n.t('projectCurrentAria'));
-      currentBadge.innerHTML = `<i class="fas fa-star" aria-hidden="true"></i> ${I18n.t('projectCurrentText')}`;
-      card.appendChild(currentBadge);
+    if (ritual.featured) {
+      const featuredBadge = document.createElement('div');
+      featuredBadge.className = 'ritual-card__featured-badge';
+      featuredBadge.setAttribute('aria-label', I18n.t('featuredRitualAria'));
+      featuredBadge.innerHTML = `<i class="fas fa-star" aria-hidden="true"></i> ${I18n.t('featuredRitualText')}`;
+      card.appendChild(featuredBadge);
     }
 
-    const image = document.createElement('div');
-    image.className = 'project-card__image';
-    image.setAttribute('aria-hidden', 'true');
-    image.appendChild(createProjectIcon(project.icon));
+    const symbol = document.createElement('div');
+    symbol.className = 'ritual-card__symbol';
+    symbol.setAttribute('aria-hidden', 'true');
+    symbol.appendChild(createRitualSymbol(ritual.icon));
 
     const content = document.createElement('div');
-    content.className = 'project-card__content';
+    content.className = 'ritual-card__content';
 
     const title = document.createElement('h3');
-    title.className = 'project-card__title text-balance';
-    title.textContent = I18n.resolveLocalizedValue(project.title);
+    title.className = 'ritual-card__title text-balance';
+    title.textContent = I18n.resolveLocalizedValue(ritual.title);
     title.setAttribute('lang', I18n.t('htmlLang'));
 
     const description = document.createElement('p');
-    description.className = 'project-card__description';
-    description.textContent = I18n.resolveLocalizedValue(project.description);
+    description.className = 'ritual-card__description';
+    description.textContent = I18n.resolveLocalizedValue(ritual.description);
     description.setAttribute('lang', I18n.t('htmlLang'));
 
-    const techContainer = document.createElement('div');
-    techContainer.className = 'project-card__technologies';
-    techContainer.setAttribute('aria-label', I18n.t('projectTechAria'));
+    const detailsContainer = document.createElement('div');
+    detailsContainer.className = 'ritual-card__details';
+    detailsContainer.setAttribute('aria-label', I18n.t('ritualDetailsAria'));
 
-    const localizedTechnologies = I18n.resolveLocalizedValue(project.technologies) || [];
-
-    localizedTechnologies.forEach((tech) => {
+    const localizedDetails = I18n.resolveLocalizedValue(ritual.details) || [];
+    localizedDetails.forEach((detail) => {
       const badge = document.createElement('span');
-      badge.className = 'tech-badge';
-      badge.textContent = tech;
+      badge.className = 'ritual-badge';
+      badge.textContent = detail;
       badge.setAttribute('role', 'doc-biblioentry');
-      techContainer.appendChild(badge);
+      detailsContainer.appendChild(badge);
     });
 
     const linksContainer = document.createElement('div');
-    linksContainer.className = 'project-card__links';
+    linksContainer.className = 'ritual-card__links';
     linksContainer.setAttribute('role', 'navigation');
-    linksContainer.setAttribute('aria-label', I18n.t('projectLinksAria'));
+    linksContainer.setAttribute('aria-label', I18n.t('ritualLinksAria'));
 
-    // Renderizar links personalizados dinamicamente
-    if (project.links) {
-      Object.entries(project.links).forEach(([linkName, linkUrl]) => {
+    if (ritual.links) {
+      Object.entries(ritual.links).forEach(([linkName, linkUrl]) => {
         const resolvedUrl = I18n.resolveLocalizedValue(linkUrl);
         const safeUrl = sanitizeLinkUrl(resolvedUrl);
         if (!safeUrl) return;
@@ -143,16 +140,15 @@ const Projects = (() => {
 
         const link = document.createElement('a');
         link.href = safeUrl;
-        link.className = 'project-link';
+        link.className = 'ritual-link';
 
         if (safeUrl.startsWith('http://') || safeUrl.startsWith('https://')) {
           link.target = '_blank';
           link.rel = 'noopener noreferrer';
         }
-        
+
         const iconClass = resolveLinkIconClass(linkName, safeUrl);
-        
-        link.setAttribute('aria-label', I18n.t('projectOpenLink', { name: localizedLinkLabel }));
+        link.setAttribute('aria-label', I18n.t('openRitualLink', { name: localizedLinkLabel }));
 
         const icon = document.createElement('i');
         icon.className = iconClass;
@@ -166,20 +162,20 @@ const Projects = (() => {
 
     content.appendChild(title);
     content.appendChild(description);
-    content.appendChild(techContainer);
+    content.appendChild(detailsContainer);
     content.appendChild(linksContainer);
 
-    card.appendChild(image);
+    card.appendChild(symbol);
     card.appendChild(content);
 
     return card;
   };
 
-  const createProjectIcon = (iconMarkup) => {
+  const createRitualSymbol = (iconMarkup) => {
     const icon = document.createElement('i');
     icon.setAttribute('aria-hidden', 'true');
 
-    const fallbackClass = 'fas fa-code';
+    const fallbackClass = 'fas fa-star-and-crescent';
     const classRegex = /class=['"]([^'"]+)['"]/i;
     const classMatch = typeof iconMarkup === 'string'
       ? classRegex.exec(iconMarkup)
@@ -202,14 +198,14 @@ const Projects = (() => {
   };
 
   const setupLazyLoading = () => {
-    AnimationUtils.observeFadeInSelector('#projects-container .fade-in-scroll');
+    AnimationUtils.observeFadeInSelector('#rituals-container .fade-in-scroll');
   };
 
   const setupLanguageListener = () => {
     if (languageListenerBound) return;
 
     globalThis.addEventListener('languageChanged', () => {
-      renderProjects();
+      renderRituals();
       setupLazyLoading();
     });
 

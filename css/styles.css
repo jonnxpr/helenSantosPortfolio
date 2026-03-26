@@ -482,28 +482,28 @@ select:focus-visible {
   margin-top: 1rem;
 }
 
-.hero__highlights {
+.experience-summary {
   margin-top: 2rem;
   padding: clamp(1.25rem, 3vw, 1.6rem);
 }
 
-.hero__highlights-title,
-.hero__tech-title,
-.skill-category__title,
-.education__title,
-.project-card__title,
-.opportunities__title,
+.experience-summary__title,
+.hero__atmospheres-title,
+.pillar-card__title,
+.journey-step__title,
+.ritual-card__title,
+.booking__title,
 .section__title {
   margin: 0;
   font-family: var(--font-display);
 }
 
-.hero__highlights-title {
+.experience-summary__title {
   font-size: 1.55rem;
   color: var(--ink-strong);
 }
 
-.hero__highlights-list {
+.experience-summary__list {
   list-style: none;
   margin: 1rem 0 0;
   padding: 0;
@@ -511,7 +511,7 @@ select:focus-visible {
   gap: 0.85rem;
 }
 
-.hero__highlights-item {
+.experience-summary__item {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 0.8rem;
@@ -519,7 +519,7 @@ select:focus-visible {
   color: var(--ink-soft);
 }
 
-.hero__highlights-item::before {
+.experience-summary__item::before {
   content: '';
   width: 0.65rem;
   height: 0.65rem;
@@ -529,23 +529,23 @@ select:focus-visible {
   box-shadow: 0 0 0 0.35rem rgba(181, 111, 90, 0.08);
 }
 
-.hero__tech-stack {
+.hero__atmospheres {
   margin-top: 2rem;
 }
 
-.hero__tech-title {
+.hero__atmospheres-title {
   font-size: 1.4rem;
   color: var(--ink-strong);
 }
 
-.hero__tech-icons {
+.hero__atmospheres-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
   gap: 0.85rem;
   margin-top: 1rem;
 }
 
-.tech-icon {
+.atmosphere-chip {
   width: 100%;
   min-height: 92px;
   padding: 0.95rem 0.9rem 0.85rem;
@@ -563,17 +563,17 @@ select:focus-visible {
   transition: transform var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
 }
 
-.tech-icon i {
+.atmosphere-chip i {
   font-size: 1.5rem;
 }
 
-.tech-icon__image {
+.atmosphere-chip__image {
   width: 2rem;
   height: 2rem;
   object-fit: contain;
 }
 
-.tech-icon__label {
+.atmosphere-chip__label {
   display: block;
   max-width: 100%;
   color: var(--ink-soft);
@@ -584,38 +584,38 @@ select:focus-visible {
   text-wrap: balance;
 }
 
-.tech-icon:hover {
+.atmosphere-chip:hover {
   transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.92);
   box-shadow: 0 22px 36px rgba(66, 42, 38, 0.1);
 }
 
 @media (min-width: 992px) {
-  .hero__tech-icons {
+  .hero__atmospheres-grid {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .tech-icon {
+  .atmosphere-chip {
     min-width: 74px;
     width: auto;
     min-height: 74px;
     padding: 1rem;
   }
 
-  .tech-icon__label {
+  .atmosphere-chip__label {
     display: none;
   }
 }
 
-.hero__cta-buttons {
+.hero__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2.2rem;
 }
 
-.hero__btn {
+.hero__action {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -628,18 +628,18 @@ select:focus-visible {
   box-shadow: 0 16px 32px rgba(61, 41, 37, 0.08);
 }
 
-.hero__btn--primary {
+.hero__action--primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-deep));
   color: #fff9f4;
 }
 
-.hero__btn--secondary {
+.hero__action--secondary {
   background: rgba(255, 255, 255, 0.76);
   border-color: rgba(181, 111, 90, 0.2);
   color: var(--ink-strong);
 }
 
-.hero__btn:hover {
+.hero__action:hover {
   transform: translateY(-3px);
   box-shadow: 0 22px 44px rgba(61, 41, 37, 0.14);
 }
@@ -695,13 +695,13 @@ select:focus-visible {
   font-size: 0.95rem;
 }
 
-.skills,
-.education,
-.projects {
+.pillars,
+.journey,
+.rituals {
   padding: clamp(2.8rem, 6vw, 5rem) 0 0;
 }
 
-.opportunities {
+.booking {
   padding: clamp(3rem, 7vw, 5.4rem) 0 0;
 }
 
@@ -719,8 +719,8 @@ select:focus-visible {
   font-size: 1.02rem;
 }
 
-.skills__grid,
-.projects__grid {
+.pillars__grid,
+.rituals__grid {
   list-style: none;
   margin: 2.2rem 0 0;
   padding: 0;
@@ -728,11 +728,11 @@ select:focus-visible {
   gap: 1.25rem;
 }
 
-.skills__grid {
+.pillars__grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.skill-category {
+.pillar-card {
   min-height: 17.4rem;
   padding: 1.5rem;
   display: flex;
@@ -742,14 +742,14 @@ select:focus-visible {
   transform: translateY(24px);
 }
 
-.skill-category:hover {
+.pillar-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-card);
   background: var(--bg-elevated);
 }
 
-.skill-category__icon,
-.education__icon {
+.pillar-card__icon,
+.journey-step__icon {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 1.2rem;
@@ -762,59 +762,59 @@ select:focus-visible {
   flex: none;
 }
 
-.skill-category__icon i,
-.education__icon i {
+.pillar-card__icon i,
+.journey-step__icon i {
   font-size: 1.28rem;
 }
 
-.skill-category__title {
+.pillar-card__title {
   font-size: 1.75rem;
   line-height: 1;
   color: var(--ink-strong);
 }
 
-.skill-category__description {
+.pillar-card__description {
   margin: 0;
   color: var(--ink-soft);
 }
 
-.education__timeline {
+.journey__steps {
   margin-top: 2.2rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.25rem;
 }
 
-.education__item {
+.journey-step {
   padding: 1.5rem;
   opacity: 0;
   transform: translateY(24px);
 }
 
-.education__item:hover {
+.journey-step:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-card);
   background: var(--bg-elevated);
 }
 
-.education__item-header {
+.journey-step__header {
   display: flex;
   gap: 1rem;
   align-items: flex-start;
 }
 
-.education__info {
+.journey-step__info {
   display: grid;
   gap: 0.18rem;
 }
 
-.education__title {
+.journey-step__title {
   font-size: 1.7rem;
   line-height: 1;
   color: var(--ink-strong);
 }
 
-.education__institution {
+.journey-step__index {
   margin: 0;
   font-size: 0.82rem;
   font-weight: 800;
@@ -823,23 +823,23 @@ select:focus-visible {
   color: var(--accent-deep);
 }
 
-.education__period {
+.journey-step__moment {
   margin: 0.25rem 0 0;
   color: var(--ink-muted);
   font-size: 0.92rem;
   font-weight: 700;
 }
 
-.education__description {
+.journey-step__description {
   margin: 1rem 0 0;
   color: var(--ink-soft);
 }
 
-.projects__grid {
+.rituals__grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.project-card {
+.ritual-card {
   position: relative;
   padding: 1.6rem;
   display: grid;
@@ -850,13 +850,13 @@ select:focus-visible {
   transform: translateY(24px);
 }
 
-.project-card:hover {
+.ritual-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-deep);
   background: var(--bg-elevated);
 }
 
-.project-card__current-badge {
+.ritual-card__featured-badge {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -873,7 +873,7 @@ select:focus-visible {
   text-transform: uppercase;
 }
 
-.project-card__image {
+.ritual-card__symbol {
   width: 5rem;
   aspect-ratio: 1;
   border-radius: 1.4rem;
@@ -884,35 +884,35 @@ select:focus-visible {
   box-shadow: 0 18px 34px rgba(97, 60, 52, 0.18);
 }
 
-.project-card__image i {
+.ritual-card__symbol i {
   font-size: 1.55rem;
 }
 
-.project-card__content {
+.ritual-card__content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.project-card__title {
+.ritual-card__title {
   padding-right: 6rem;
   font-size: 1.85rem;
   line-height: 1;
   color: var(--ink-strong);
 }
 
-.project-card__description {
+.ritual-card__description {
   margin: 0;
   color: var(--ink-soft);
 }
 
-.project-card__technologies {
+.ritual-card__details {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
 }
 
-.tech-badge {
+.ritual-badge {
   display: inline-flex;
   align-items: center;
   min-height: 2.1rem;
@@ -925,13 +925,13 @@ select:focus-visible {
   font-weight: 700;
 }
 
-.project-card__links {
+.ritual-card__links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
 }
 
-.project-link {
+.ritual-link {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
@@ -945,40 +945,40 @@ select:focus-visible {
   font-weight: 800;
 }
 
-.project-link:hover {
+.ritual-link:hover {
   color: #fff8f4;
   background: linear-gradient(135deg, var(--accent), var(--accent-deep));
   border-color: transparent;
   transform: translateY(-2px);
 }
 
-.opportunities__container {
+.booking__container {
   padding: clamp(1.5rem, 4vw, 3rem);
   background: linear-gradient(135deg, rgba(76, 50, 46, 0.97), rgba(41, 28, 26, 0.98));
   color: #fff6ef;
   box-shadow: var(--shadow-deep);
 }
 
-.opportunities__title {
+.booking__title {
   font-size: clamp(2.4rem, 5vw, 3.9rem);
   line-height: 0.96;
   text-wrap: balance;
 }
 
-.opportunities__text {
+.booking__text {
   margin-top: 1rem;
   max-width: 38rem;
   color: rgba(255, 246, 239, 0.78);
 }
 
-.opportunities__actions {
+.booking__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1.8rem;
 }
 
-.opportunities__action {
+.booking__action {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -990,22 +990,22 @@ select:focus-visible {
   letter-spacing: 0.03em;
 }
 
-.opportunities__action--primary {
+.booking__action--primary {
   background: #fff4ea;
   color: #37211d;
 }
 
-.opportunities__action--secondary {
+.booking__action--secondary {
   border-color: rgba(255, 244, 234, 0.22);
   background: rgba(255, 255, 255, 0.08);
   color: #fff7f2;
 }
 
-.opportunities__action:hover {
+.booking__action:hover {
   transform: translateY(-3px);
 }
 
-.opportunities__action--secondary:hover {
+.booking__action--secondary:hover {
   background: rgba(255, 255, 255, 0.16);
 }
 
@@ -1061,7 +1061,7 @@ select:focus-visible {
 }
 
 @media (max-width: 1199.98px) {
-  .skills__grid {
+  .pillars__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1106,8 +1106,8 @@ select:focus-visible {
     margin-top: 1rem;
   }
 
-  .education__timeline,
-  .projects__grid {
+  .journey__steps,
+  .rituals__grid {
     grid-template-columns: 1fr;
   }
 }
@@ -1140,38 +1140,38 @@ select:focus-visible {
   }
 
   .section__title,
-  .opportunities__title {
+  .booking__title {
     line-height: 1.04;
   }
 
-  .opportunities__title {
+  .booking__title {
     font-size: clamp(2.15rem, 9vw, 3rem);
   }
 
-  .hero__cta-buttons,
-  .opportunities__actions {
+  .hero__actions,
+  .booking__actions {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .hero__btn,
-  .opportunities__action {
+  .hero__action,
+  .booking__action {
     width: 100%;
   }
 
-  .skills__grid {
+  .pillars__grid {
     grid-template-columns: 1fr;
   }
 
-  .project-card {
+  .ritual-card {
     grid-template-columns: 1fr;
   }
 
-  .project-card__image {
+  .ritual-card__symbol {
     width: 4.4rem;
   }
 
-  .project-card__title {
+  .ritual-card__title {
     padding-right: 0;
   }
 
@@ -1191,11 +1191,11 @@ select:focus-visible {
     border-radius: 1.5rem;
   }
 
-  .hero__highlights,
-  .skill-category,
-  .education__item,
-  .project-card,
-  .opportunities__container {
+  .experience-summary,
+  .pillar-card,
+  .journey-step,
+  .ritual-card,
+  .booking__container {
     padding: 1.25rem;
   }
 
@@ -1205,7 +1205,7 @@ select:focus-visible {
     font-size: 1.2rem;
   }
 
-  .project-card__current-badge {
+  .ritual-card__featured-badge {
     position: static;
     width: fit-content;
     margin-bottom: 1rem;
@@ -1225,9 +1225,9 @@ select:focus-visible {
   .hero__content,
   .hero__visual,
   .fade-in-scroll,
-  .skill-category,
-  .education__item,
-  .project-card {
+  .pillar-card,
+  .journey-step,
+  .ritual-card {
     animation: none !important;
     transform: none !important;
     opacity: 1 !important;

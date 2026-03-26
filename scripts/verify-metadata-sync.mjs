@@ -23,10 +23,10 @@ const getArgValue = (flagName, fallbackValue) => {
 const rootDir = path.resolve(__dirname, '..', getArgValue('--root', '.'));
 const validationLabel = getArgValue('--label', 'Metadata sync');
 
-const chromePath = path.join(rootDir, 'data', 'chrome.json');
+const siteShellPath = path.join(rootDir, 'data', 'site-shell.json');
 const indexPath = path.join(rootDir, 'index.html');
 
-const chromeData = JSON.parse(readFileSync(chromePath, 'utf8'));
+const siteShellData = JSON.parse(readFileSync(siteShellPath, 'utf8'));
 const indexHtml = readFileSync(indexPath, 'utf8');
 
 const getTagAttributeById = (tagName, id, attributeName) => {
@@ -43,7 +43,7 @@ const getScriptContentById = (id) => {
 
 const normalizeUrl = (value) => (typeof value === 'string' ? value.trim() : '');
 
-const profile = chromeData?.profile ?? {};
+const profile = siteShellData?.profile ?? {};
 const schemaContent = getScriptContentById('person-schema');
 
 if (!schemaContent) {

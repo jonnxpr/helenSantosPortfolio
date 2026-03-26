@@ -1,5 +1,5 @@
 {
-  "techStack": [
+  "atmospheres": [
     {
       "label": {
         "pt-BR": "Respiração",
@@ -46,11 +46,11 @@
       "iconClass": "fas fa-moon"
     }
   ],
-  "ctaButtons": [
+  "heroActions": [
     {
-      "id": "cta-sessions",
+      "id": "hero-action-rituals",
       "variant": "primary",
-      "href": "#projetos",
+      "href": "#vivencias",
       "label": {
         "pt-BR": "Conhecer vivências",
         "en": "Explore experiences",
@@ -59,7 +59,7 @@
       "useSmoothScroll": true
     },
     {
-      "id": "cta-whatsapp",
+      "id": "hero-action-whatsapp",
       "variant": "secondary",
       "contactKey": "whatsapp",
       "label": {

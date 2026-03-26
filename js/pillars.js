@@ -1,9 +1,9 @@
 /* ========================================
-   Skills Module - Dynamic Rendering
+   Pillars Module - Dynamic Rendering
    ======================================== */
 
-const Skills = (() => {
-  let skillsData = [];
+const Pillars = (() => {
+  let pillarsData = [];
   let languageListenerBound = false;
 
   const withAssetVersion = (path) => {
@@ -15,64 +15,64 @@ const Skills = (() => {
   };
 
   const init = async () => {
-    await loadSkillsData();
-    renderSkills();
+    await loadPillarsData();
+    renderPillars();
     setupLazyLoading();
     setupLanguageListener();
   };
 
-  const loadSkillsData = async () => {
+  const loadPillarsData = async () => {
     try {
-      const response = await fetch(withAssetVersion('data/skills.json'), { cache: 'no-store' });
+      const response = await fetch(withAssetVersion('data/pillars.json'), { cache: 'no-store' });
       if (!response.ok) {
-        throw new Error('Failed to load skills');
+        throw new Error('Failed to load pillars');
       }
-      skillsData = await response.json();
+      pillarsData = await response.json();
     } catch (error) {
-      console.error('Error loading skills:', error);
-      skillsData = [];
+      console.error('Error loading pillars:', error);
+      pillarsData = [];
     }
   };
 
-  const renderSkills = () => {
-    const container = document.getElementById('skills-container');
+  const renderPillars = () => {
+    const container = document.getElementById('pillars-container');
     if (!container) return;
 
     container.innerHTML = '';
 
-    if (skillsData.length === 0) {
+    if (pillarsData.length === 0) {
       const emptyState = document.createElement('p');
       emptyState.className = 'section-empty-state';
-      emptyState.textContent = I18n.t('skillsEmpty');
+      emptyState.textContent = I18n.t('pillarsEmpty');
       container.appendChild(emptyState);
       return;
     }
 
-    skillsData.forEach((skill, index) => {
-      const skillCard = createSkillCard(skill, index);
-      container.appendChild(skillCard);
+    pillarsData.forEach((pillar, index) => {
+      const pillarCard = createPillarCard(pillar, index);
+      container.appendChild(pillarCard);
     });
   };
 
-  const createSkillCard = (skill, index) => {
+  const createPillarCard = (pillar, index) => {
     const card = document.createElement('li');
-    card.className = 'section-panel skill-category fade-in-scroll';
+    card.className = 'section-panel pillar-card fade-in-scroll';
     card.style.animationDelay = `${index * 0.1}s`;
 
     const icon = document.createElement('div');
-    icon.className = 'skill-category__icon';
+    icon.className = 'pillar-card__icon';
     icon.setAttribute('aria-hidden', 'true');
-    icon.appendChild(createSkillIcon(skill.icon));
+    icon.appendChild(createPillarIcon(pillar.icon));
 
     const title = document.createElement('h3');
-    title.className = 'skill-category__title text-balance';
+    title.className = 'pillar-card__title text-balance';
     title.setAttribute('lang', I18n.t('htmlLang'));
-    title.textContent = I18n.resolveLocalizedValue(skill.title);
+    title.textContent = I18n.resolveLocalizedValue(pillar.title);
 
     const description = document.createElement('p');
-    description.className = 'skill-category__description';
+    description.className = 'pillar-card__description';
     description.setAttribute('lang', I18n.t('htmlLang'));
-    description.textContent = I18n.resolveLocalizedValue(skill.description);
+    description.textContent = I18n.resolveLocalizedValue(pillar.description);
 
     card.appendChild(icon);
     card.appendChild(title);
@@ -81,11 +81,11 @@ const Skills = (() => {
     return card;
   };
 
-  const createSkillIcon = (iconMarkup) => {
+  const createPillarIcon = (iconMarkup) => {
     const icon = document.createElement('i');
     icon.setAttribute('aria-hidden', 'true');
 
-    const fallbackClass = 'fas fa-code';
+    const fallbackClass = 'fas fa-compass';
     const classRegex = /class=['"]([^'"]+)['"]/i;
     const classMatch = typeof iconMarkup === 'string'
       ? classRegex.exec(iconMarkup)
@@ -96,14 +96,14 @@ const Skills = (() => {
   };
 
   const setupLazyLoading = () => {
-    AnimationUtils.observeFadeInSelector('#skills-container .fade-in-scroll');
+    AnimationUtils.observeFadeInSelector('#pillars-container .fade-in-scroll');
   };
 
   const setupLanguageListener = () => {
     if (languageListenerBound) return;
 
     globalThis.addEventListener('languageChanged', () => {
-      renderSkills();
+      renderPillars();
       setupLazyLoading();
     });
 

@@ -1,7 +1,7 @@
-HELEN SANTOS PORTFOLIO - ESTRUTURA DE REFERENCIA
+HELEN SANTOS RITUAL SITE - ESTRUTURA DE REFERENCIA
 =================================================
 
-Projeto single page estatico inspirado no Portfolio original, com a mesma base de build,
+Projeto single page estatico para a Helen Santos, com base de build,
 i18n, minificacao e deploy para GitHub Pages.
 
 ARQUIVOS CENTRAIS
@@ -27,7 +27,7 @@ SECOES DA PAGINA
 
 CHECKLIST DE EXECUCAO
 ---------------------
-- Atualizar mocks em data/chrome.json quando os contatos reais existirem
+- Atualizar mocks em data/site-shell.json quando os contatos reais existirem
 - Substituir placeholders de imagem por materiais definitivos
 - Rodar npm install
 - Rodar npm run build

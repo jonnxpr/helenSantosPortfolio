@@ -6,7 +6,7 @@ applyTo: "data/**"
 
 # Data rules
 
-- Keep `data/projects.json` valid JSON with stable schema.
+- Keep `data/rituals.json` valid JSON with stable schema.
 - Keep numeric `id` values unique.
 - Keep required fields present and URLs valid.
 - After data changes, confirm the homepage renders cards correctly.
