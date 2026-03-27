@@ -53,6 +53,10 @@ and include one single objective action to unblock.
 
 - For design-centric work, also apply `.github/skills/frontend-design/SKILL.md` or `.opencode/skills/frontend-design/SKILL.md`.
 
+## Testing skill (mandatory by context)
+
+- For build validation, smoke testing, regression, or automated test work, also apply `.github/skills/testing-standards/SKILL.md`, `.opencode/skills/testing-standards/SKILL.md`, or `.agent/skills/testing-standards/SKILL.md`.
+
 ## MCP credential discovery and connection consent (mandatory)
 
 - Before connecting to any MCP server, request user confirmation and list the credential source(s) to be used (redacted; never print secret values).

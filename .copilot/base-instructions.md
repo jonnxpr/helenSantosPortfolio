@@ -34,6 +34,10 @@ Universal behavior and quality standards for the `HelenSantosPortfolio` workspac
 - If `tasks/` exists, read `tasks/todo.md` and `tasks/lessons.md`; if `tasks/` is missing, create both first.
 - This is a non-Java workspace.
 
+## Task-type skill routing
+
+- Build validation, smoke testing, regression, or automated test work uses `.github/skills/testing-standards/SKILL.md`, `.opencode/skills/testing-standards/SKILL.md`, or `.agent/skills/testing-standards/SKILL.md`.
+
 ## Context7 documentation policy (mandatory)
 
 - Use Context7 before implementation, refactor, and review work.

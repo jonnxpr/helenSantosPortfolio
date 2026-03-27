@@ -329,6 +329,7 @@ def check_skill_routing(findings):
     routed_skills = {
         "frontend-design": "Reference frontend-design in at least one core routing file.",
         "gh-operations": "Reference gh-operations in at least one core routing file.",
+        "testing-standards": "Reference testing-standards in at least one core routing file.",
     }
     for skill_name, fix in routed_skills.items():
         skill_sources = [

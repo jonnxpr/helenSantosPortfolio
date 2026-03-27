@@ -1,7 +1,7 @@
 # Compliance Report
 
 - Score: **100/100**
-- Files checked: **25**
+- Files checked: **28**
 - Critical findings: **0**
 - Major findings: **0**
 - Minor findings: **0**

@@ -40,6 +40,7 @@ and provide one objective next step.
 8. `.agent/rules/development-standards.md`
 9. `.github/skills/code-review/SKILL.md` or `.agent/skills/code-review/SKILL.md` when reviewing
 10. `.github/skills/gh-operations/SKILL.md` or `.opencode/skills/gh-operations/SKILL.md` when handling GitHub/`gh` tasks
+11. `.github/skills/testing-standards/SKILL.md` or `.opencode/skills/testing-standards/SKILL.md` when handling testing tasks
 
 ## Skill routing
 
@@ -47,6 +48,7 @@ and provide one objective next step.
 - Review/PR: `development-standards` + `code-review`.
 - Frontend design-centric work: also load `.github/skills/frontend-design/SKILL.md` or `.opencode/skills/frontend-design/SKILL.md`.
 - GitHub repository, workflow run, pull request, issue, release, or project-status work via `gh`: also load `.github/skills/gh-operations/SKILL.md` or `.opencode/skills/gh-operations/SKILL.md`.
+- Build validation, smoke testing, regression, or automated test work: also load `.github/skills/testing-standards/SKILL.md` or `.opencode/skills/testing-standards/SKILL.md`.
 
 ## Task knowledge policy
 
