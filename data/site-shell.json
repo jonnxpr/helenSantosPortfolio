@@ -5,39 +5,39 @@
     "siteUrl": "https://jonnxpr.github.io/helenSantosPortfolio/",
     "emailKey": "email",
     "jobTitle": {
-      "pt-BR": "Facilitadora de experiências tântricas e sensoriais",
-      "en": "Facilitator of tantric and sensory experiences",
-      "es": "Facilitadora de experiencias tántricas y sensoriales"
+      "pt-BR": "Terapeuta corporal com foco em massagem relaxante terapêutica",
+      "en": "Body therapist focused on therapeutic relaxation massage",
+      "es": "Terapeuta corporal con enfoque en masaje relajante terapéutico"
     },
     "image": "https://jonnxpr.github.io/helenSantosPortfolio/assets/profile-helen.png",
     "ogImage": "https://jonnxpr.github.io/helenSantosPortfolio/assets/og-helen.png",
     "sameAsKeys": ["instagram", "telegram"],
     "knowsAbout": {
       "pt-BR": [
-        "Tantra",
-        "Respiração consciente",
-        "Presença corporal",
-        "Toque sensorial",
-        "Atendimento reservado"
+        "Massagem relaxante terapêutica",
+        "Thai massagem",
+        "Bambu terapia",
+        "Alívio de tensões musculares",
+        "Atendimento personalizado"
       ],
       "en": [
-        "Tantra",
-        "Conscious breathing",
-        "Embodied presence",
-        "Sensory touch",
-        "Private sessions"
+        "Therapeutic relaxation massage",
+        "Thai massage",
+        "Bamboo therapy",
+        "Muscle tension relief",
+        "Personalized care"
       ],
       "es": [
-        "Tantra",
-        "Respiración consciente",
-        "Presencia corporal",
-        "Toque sensorial",
-        "Atención privada"
+        "Masaje relajante terapéutico",
+        "Thai masaje",
+        "Bambú terapia",
+        "Alivio de tensiones musculares",
+        "Atención personalizada"
       ]
     },
     "worksFor": {
       "@type": "Organization",
-      "name": "Helen Santos Experiências Sensoriais"
+      "name": "Helen Santos Terapias Corporais"
     }
   },
   "languageOptions": [
@@ -84,9 +84,9 @@
     {
       "key": "whatsapp",
       "href": {
-        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20conhecer%20suas%20viv%C3%AAncias.",
-        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20experiences.",
-        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20quiero%20conocer%20mejor%20tus%20vivencias."
+        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20agendar%20uma%20sess%C3%A3o%20de%20massagem%20relaxante%20terap%C3%AAutica.",
+        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27d%20like%20to%20book%20a%20therapeutic%20relaxation%20massage%20session.",
+        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20quiero%20reservar%20una%20sesi%C3%B3n%20de%20masaje%20relajante%20terap%C3%A9utico."
       },
       "iconClass": "fab fa-whatsapp",
       "label": {

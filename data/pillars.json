@@ -2,56 +2,56 @@
   {
     "id": 1,
     "title": {
-      "pt-BR": "Presença e escuta",
-      "en": "Presence and listening",
-      "es": "Presencia y escucha"
+      "pt-BR": "Escuta personalizada",
+      "en": "Personalized listening",
+      "es": "Escucha personalizada"
     },
     "description": {
-      "pt-BR": "Cada encontro começa com uma conversa serena, em que ritmo, limites e intenção são compreendidos antes do toque.",
-      "en": "Each encounter begins with a calm conversation where rhythm, boundaries, and intention are understood before touch.",
-      "es": "Cada encuentro comienza con una conversación serena en la que se comprenden el ritmo, los límites y la intención antes del toque."
+      "pt-BR": "Cada sessão começa com uma breve análise para entender o momento da cliente, identificar tensões principais e definir a melhor condução terapêutica.",
+      "en": "Each session starts with a brief assessment to understand the client's moment, identify the main tension points, and define the best therapeutic approach.",
+      "es": "Cada sesión comienza con una breve evaluación para comprender el momento de la cliente, identificar las tensiones principales y definir la mejor conducción terapéutica."
     },
     "icon": "<i class='fas fa-heart'></i>"
   },
   {
     "id": 2,
     "title": {
-      "pt-BR": "Ambiente e discrição",
-      "en": "Atmosphere and privacy",
-      "es": "Ambiente y discreción"
+      "pt-BR": "Conexão acolhedora",
+      "en": "Welcoming connection",
+      "es": "Conexión acogedora"
     },
     "description": {
-      "pt-BR": "Luz, música, aromas e temperatura trabalham juntos para criar um espaço acolhedor, elegante e protegido do excesso.",
-      "en": "Light, music, aroma, and temperature work together to create a welcoming, elegant, and protected space.",
-      "es": "Luz, música, aroma y temperatura trabajan juntas para crear un espacio acogedor, elegante y protegido del exceso."
+      "pt-BR": "A escuta inicial cria confiança e permite compreender o que a pessoa deseja naquele momento, tornando a experiência mais segura, precisa e acolhedora.",
+      "en": "The initial listening builds trust and clarifies what the person needs in that moment, making the experience safer, more precise, and more welcoming.",
+      "es": "La escucha inicial crea confianza y permite comprender lo que la persona necesita en ese momento, haciendo la experiencia más segura, precisa y acogedora."
     },
-    "icon": "<i class='fas fa-lock'></i>"
+    "icon": "<i class='fas fa-hands-holding-circle'></i>"
   },
   {
     "id": 3,
     "title": {
-      "pt-BR": "Corpo e energia",
-      "en": "Body and energy",
-      "es": "Cuerpo y energía"
+      "pt-BR": "Técnicas terapêuticas",
+      "en": "Therapeutic techniques",
+      "es": "Técnicas terapéuticas"
     },
     "description": {
-      "pt-BR": "Respiração, toque e presença sustentam uma experiência sensorial que busca desbloquear percepção e ampliar vitalidade.",
-      "en": "Breath, touch, and presence sustain a sensory experience that seeks to unlock perception and expand vitality.",
-      "es": "Respiración, toque y presencia sostienen una experiencia sensorial que busca desbloquear percepción y ampliar vitalidad."
+      "pt-BR": "Massagem relaxante, thai massagem e bambu terapia são combinadas de forma personalizada para aliviar tensões, mobilizar o corpo e estimular a circulação.",
+      "en": "Relaxation massage, Thai massage, and bamboo therapy are combined in a personalized way to ease tension, mobilize the body, and stimulate circulation.",
+      "es": "Masaje relajante, thai masaje y bambú terapia se combinan de forma personalizada para aliviar tensiones, movilizar el cuerpo y estimular la circulación."
     },
     "icon": "<i class='fas fa-spa'></i>"
   },
   {
     "id": 4,
     "title": {
-      "pt-BR": "Integração e continuidade",
-      "en": "Integration and continuity",
-      "es": "Integración y continuidad"
+      "pt-BR": "Equilíbrio restaurado",
+      "en": "Restored balance",
+      "es": "Equilibrio restaurado"
     },
     "description": {
-      "pt-BR": "O pós-encontro é tratado como parte da vivência, com orientações suaves para que o corpo continue elaborando a experiência.",
-      "en": "The post-encounter moment is treated as part of the experience, with gentle guidance so the body can continue integrating it.",
-      "es": "El momento posterior al encuentro se trata como parte de la vivencia, con orientaciones suaves para que el cuerpo siga integrándola."
+      "pt-BR": "O objetivo final é entregar um corpo mais leve, mente desacelerada e sensação de equilíbrio físico e emocional após a sessão.",
+      "en": "The final goal is to leave the client with a lighter body, a slower mind, and a sense of physical and emotional balance after the session.",
+      "es": "El objetivo final es dejar a la cliente con un cuerpo más liviano, la mente más tranquila y una sensación de equilibrio físico y emocional después de la sesión."
     },
     "icon": "<i class='fas fa-compass'></i>"
   }

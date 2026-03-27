@@ -2,27 +2,27 @@
   {
     "id": 1,
     "title": {
-      "pt-BR": "Ritual de Aterramento",
-      "en": "Grounding Ritual",
-      "es": "Ritual de arraigo"
+      "pt-BR": "Massagem Relaxante",
+      "en": "Relaxation Massage",
+      "es": "Masaje relajante"
     },
     "description": {
-      "pt-BR": "Uma vivência pensada para quem chega com a mente acelerada e precisa voltar ao próprio ritmo. O foco está em respiração, aterramento e relaxamento profundo.",
-      "en": "A ritual designed for those who arrive overstimulated and need to return to their own rhythm. The focus rests on breath, grounding, and deep relaxation.",
-      "es": "Una vivencia pensada para quienes llegan con la mente acelerada y necesitan volver a su propio ritmo. El foco está en respiración, arraigo y relajación profunda."
+      "pt-BR": "Sessão com movimentos suaves e contínuos para aliviar o estresse, reduzir a ansiedade e conduzir o corpo a um estado de relaxamento profundo.",
+      "en": "A session with smooth, continuous movements to ease stress, reduce anxiety, and guide the body into deep relaxation.",
+      "es": "Sesión con movimientos suaves y continuos para aliviar el estrés, reducir la ansiedad y llevar el cuerpo a una relajación profunda."
     },
     "details": {
-      "pt-BR": ["75 min", "individual", "conversa inicial", "atmosfera serena"],
-      "en": ["75 min", "individual", "opening conversation", "serene atmosphere"],
-      "es": ["75 min", "individual", "conversación inicial", "atmósfera serena"]
+      "pt-BR": ["sessão personalizada", "movimentos suaves", "redução do estresse", "relaxamento profundo"],
+      "en": ["personalized session", "smooth movements", "stress relief", "deep relaxation"],
+      "es": ["sesión personalizada", "movimientos suaves", "alivio del estrés", "relajación profunda"]
     },
     "icon": "<i class='fas fa-feather-pointed'></i>",
     "featured": false,
     "links": {
       "WhatsApp": {
-        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20conhecer%20suas%20viv%C3%AAncias.",
-        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20experiences.",
-        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20quiero%20conocer%20mejor%20tus%20vivencias."
+        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20tenho%20interesse%20na%20Massagem%20Relaxante.",
+        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27m%20interested%20in%20the%20Relaxation%20Massage.",
+        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20tengo%20inter%C3%A9s%20en%20el%20Masaje%20relajante."
       },
       "Instagram": "https://www.instagram.com/helen.santos.oficial/"
     }
@@ -30,27 +30,27 @@
   {
     "id": 2,
     "title": {
-      "pt-BR": "Ritual Assinatura",
-      "en": "Signature Ritual",
-      "es": "Ritual insignia"
+      "pt-BR": "Thai Massagem",
+      "en": "Thai Massage",
+      "es": "Thai masaje"
     },
     "description": {
-      "pt-BR": "A proposta central da casa: um ritual autoral que combina presença, toque sensorial e profundidade emocional para criar uma experiência marcante.",
-      "en": "The house's central offering: a signature ritual that blends presence, sensory touch, and emotional depth into a memorable encounter.",
-      "es": "La propuesta central del espacio: un ritual insignia que combina presencia, toque sensorial y profundidad emocional para crear una experiencia memorable."
+      "pt-BR": "Conhecida como uma yoga passiva, combina alongamentos, pressões e mobilizações corporais para liberar bloqueios, melhorar a flexibilidade e estimular a energia do corpo.",
+      "en": "Known as a form of passive yoga, it combines stretches, pressure work, and body mobilization to release blockages, improve flexibility, and stimulate the body's energy.",
+      "es": "Conocida como una forma de yoga pasivo, combina estiramientos, presiones y movilizaciones corporales para liberar bloqueos, mejorar la flexibilidad y estimular la energía del cuerpo."
     },
     "details": {
-      "pt-BR": ["90 min", "individual", "ritual autoral", "ritual em destaque"],
-      "en": ["90 min", "individual", "signature ritual", "featured ritual"],
-      "es": ["90 min", "individual", "ritual de autor", "ritual destacado"]
+      "pt-BR": ["alongamentos guiados", "pressões terapêuticas", "mais flexibilidade", "energia corporal"],
+      "en": ["guided stretches", "therapeutic pressure", "greater flexibility", "body energy"],
+      "es": ["estiramientos guiados", "presiones terapéuticas", "más flexibilidad", "energía corporal"]
     },
     "icon": "<i class='fas fa-spa'></i>",
     "featured": true,
     "links": {
       "WhatsApp": {
-        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20conhecer%20suas%20viv%C3%AAncias.",
-        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20experiences.",
-        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20quiero%20conocer%20mejor%20tus%20vivencias."
+        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20tenho%20interesse%20na%20Thai%20Massagem.",
+        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27m%20interested%20in%20the%20Thai%20Massage.",
+        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20tengo%20inter%C3%A9s%20en%20el%20Thai%20masaje."
       },
       "Telegram": "https://t.me/helensantosportal"
     }
@@ -58,27 +58,27 @@
   {
     "id": 3,
     "title": {
-      "pt-BR": "Vivência a Dois",
-      "en": "Experience for Two",
-      "es": "Vivencia para dos"
+      "pt-BR": "Bambu Terapia",
+      "en": "Bamboo Therapy",
+      "es": "Bambú terapia"
     },
     "description": {
-      "pt-BR": "Uma experiência guiada para casais que desejam reconectar intimidade, presença e comunicação corporal em um ambiente seguro e sofisticado.",
-      "en": "A guided encounter for couples who wish to reconnect intimacy, presence, and embodied communication in a safe, refined setting.",
-      "es": "Una experiencia guiada para parejas que desean reconectar intimidad, presencia y comunicación corporal en un ambiente seguro y refinado."
+      "pt-BR": "Técnica realizada com bambus específicos para liberar tensões musculares, ativar a circulação, auxiliar na modelagem corporal e promover relaxamento profundo.",
+      "en": "A technique performed with specific bamboo tools to release muscle tension, activate circulation, support body contouring, and promote deep relaxation.",
+      "es": "Técnica realizada con bambús específicos para liberar tensiones musculares, activar la circulación, apoyar la modelación corporal y promover una relajación profunda."
     },
     "details": {
-      "pt-BR": ["120 min", "casais", "ritual compartilhado", "conversa prévia"],
-      "en": ["120 min", "couples", "shared ritual", "pre-encounter conversation"],
-      "es": ["120 min", "parejas", "ritual compartido", "conversación previa"]
+      "pt-BR": ["bambus específicos", "tensões musculares", "circulação ativada", "relaxamento profundo"],
+      "en": ["specific bamboo tools", "muscle tension relief", "circulation support", "deep relaxation"],
+      "es": ["bambús específicos", "alivio muscular", "circulación activada", "relajación profunda"]
     },
-    "icon": "<i class='fas fa-heart'></i>",
+    "icon": "<i class='fas fa-leaf'></i>",
     "featured": false,
     "links": {
       "WhatsApp": {
-        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20conhecer%20suas%20viv%C3%AAncias.",
-        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20experiences.",
-        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20quiero%20conocer%20mejor%20tus%20vivencias."
+        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20tenho%20interesse%20na%20Bambu%20Terapia.",
+        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27m%20interested%20in%20Bamboo%20Therapy.",
+        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20tengo%20inter%C3%A9s%20en%20la%20Bamb%C3%BA%20terapia."
       },
       "Instagram": "https://www.instagram.com/helen.santos.oficial/"
     }
@@ -86,27 +86,27 @@
   {
     "id": 4,
     "title": {
-      "pt-BR": "Imersão Sensorial Privativa",
-      "en": "Private Sensory Immersion",
-      "es": "Inmersión sensorial privada"
+      "pt-BR": "Sessão Terapêutica Personalizada",
+      "en": "Personalized Therapeutic Session",
+      "es": "Sesión terapéutica personalizada"
     },
     "description": {
-      "pt-BR": "Uma construção mais longa e cenográfica, com acolhimento ampliado e tempo dilatado para quem busca uma experiência mais rara e contemplativa.",
-      "en": "A longer, more immersive ritual arc, with an expanded welcome and extended time for those seeking something rarer and more contemplative.",
-      "es": "Una vivencia más extensa y escénica, con acogida ampliada y tiempo dilatado para quienes buscan algo más singular y contemplativo."
+      "pt-BR": "Uma sessão desenhada a partir da análise inicial, combinando técnicas conforme o que o corpo pede no momento para gerar alívio, mobilidade e equilíbrio emocional.",
+      "en": "A session designed from the initial assessment, combining techniques according to what the body needs in the moment to create relief, mobility, and emotional balance.",
+      "es": "Una sesión diseñada a partir de la evaluación inicial, combinando técnicas según lo que el cuerpo necesita en ese momento para generar alivio, movilidad y equilibrio emocional."
     },
     "details": {
-      "pt-BR": ["150 min", "premium", "ritmo sem pressa", "serviço concierge"],
-      "en": ["150 min", "premium", "unhurried rhythm", "concierge-style service"],
-      "es": ["150 min", "premium", "ritmo sin prisa", "servicio tipo concierge"]
+      "pt-BR": ["análise inicial", "técnicas combinadas", "alívio personalizado", "equilíbrio integral"],
+      "en": ["initial assessment", "combined techniques", "personalized relief", "whole-body balance"],
+      "es": ["evaluación inicial", "técnicas combinadas", "alivio personalizado", "equilibrio integral"]
     },
-    "icon": "<i class='fas fa-moon'></i>",
+    "icon": "<i class='fas fa-hands'></i>",
     "featured": false,
     "links": {
       "WhatsApp": {
-        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20conhecer%20suas%20viv%C3%AAncias.",
-        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20experiences.",
-        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20quiero%20conocer%20mejor%20tus%20vivencias."
+        "pt-BR": "https://wa.me/5531999999999?text=Ol%C3%A1%20Helen%2C%20quero%20saber%20mais%20sobre%20a%20Sess%C3%A3o%20Terap%C3%AAutica%20Personalizada.",
+        "en": "https://wa.me/5531999999999?text=Hi%20Helen%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20Personalized%20Therapeutic%20Session.",
+        "es": "https://wa.me/5531999999999?text=Hola%20Helen%2C%20quiero%20saber%20m%C3%A1s%20sobre%20la%20Sesi%C3%B3n%20terap%C3%A9utica%20personalizada."
       },
       "Email": "mailto:contato@helensantosportfolio.com"
     }

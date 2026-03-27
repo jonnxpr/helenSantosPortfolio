@@ -2,30 +2,30 @@
   "experienceSummaryPoints": [
     {
       "text": {
-        "pt-BR": "Escuta individual para compreender o momento, os limites e o desejo de cada pessoa.",
-        "en": "One-on-one listening to understand each person's moment, boundaries, and longing.",
-        "es": "Escucha individual para comprender el momento, los límites y el deseo íntimo de cada persona."
+        "pt-BR": "Breve análise inicial para entender como a cliente está se sentindo e quais tensões precisam de mais atenção.",
+        "en": "A brief initial assessment to understand how the client is feeling and which tensions need the most attention.",
+        "es": "Una breve evaluación inicial para comprender cómo se siente la cliente y qué tensiones necesitan más atención."
       }
     },
     {
       "text": {
-        "pt-BR": "Ambiente estético e reservado, com luz suave, texturas orgânicas e clima de desaceleração.",
-        "en": "An aesthetic, private setting with soft light, organic textures, and a slower rhythm.",
-        "es": "Ambiente estético y reservado, con luz suave, texturas orgánicas y un ritmo desacelerado."
+        "pt-BR": "Escuta acolhedora para compreender o que a pessoa deseja naquele momento e criar uma experiência mais assertiva.",
+        "en": "Warm listening to understand what the person needs in that moment and shape a more precise experience.",
+        "es": "Escucha acogedora para comprender lo que la persona necesita en ese momento y crear una experiencia más precisa."
       }
     },
     {
       "text": {
-        "pt-BR": "Condução sensorial sem pressa, respeitando o tempo, o consentimento e a presença corporal.",
-        "en": "Unhurried sensory guidance that respects timing, consent, and embodied presence.",
-        "es": "Conducción sensorial sin prisa, respetando el tiempo, el consentimiento y la presencia corporal."
+        "pt-BR": "Aplicação personalizada de massagem relaxante, thai massagem e bambu terapia conforme o objetivo terapêutico da sessão.",
+        "en": "Personalized use of relaxation massage, Thai massage, and bamboo therapy according to the therapeutic goal of the session.",
+        "es": "Aplicación personalizada de masaje relajante, thai masaje y bambú terapia según el objetivo terapéutico de la sesión."
       }
     },
     {
       "text": {
-        "pt-BR": "Encerramento com integração e orientações para prolongar a experiência após o encontro.",
-        "en": "A closing integration with guidance that lets the experience continue unfolding after the encounter.",
-        "es": "Cierre con integración y orientaciones para que la experiencia siga desplegándose después del encuentro."
+        "pt-BR": "Conexão construída com presença e cuidado para favorecer relaxamento profundo, equilíbrio físico e bem-estar emocional.",
+        "en": "A connection built with presence and care to support deep relaxation, physical balance, and emotional well-being.",
+        "es": "Una conexión construida con presencia y cuidado para favorecer la relajación profunda, el equilibrio físico y el bienestar emocional."
       }
     }
   ],
@@ -33,77 +33,77 @@
     {
       "iconClass": "fas fa-comments",
       "title": {
-        "pt-BR": "Escuta inicial",
-        "en": "Opening conversation",
-        "es": "Escucha inicial"
+        "pt-BR": "Análise inicial",
+        "en": "Initial assessment",
+        "es": "Evaluación inicial"
       },
       "stepIndex": "01",
       "moment": {
-        "pt-BR": "Primeira conversa",
-        "en": "First conversation",
-        "es": "Primera conversación"
+        "pt-BR": "Antes da sessão",
+        "en": "Before the session",
+        "es": "Antes de la sesión"
       },
       "description": {
-        "pt-BR": "Antes de qualquer vivência, Helen abre um espaço de conversa para entender contexto, expectativas e limites com transparência.",
-        "en": "Before any ritual begins, Helen opens a conversational space to understand context, expectations, and boundaries with transparency.",
-        "es": "Antes de iniciar cualquier vivencia, Helen abre un espacio de conversación para comprender contexto, expectativas y límites con transparencia."
+        "pt-BR": "Helen inicia com uma breve análise para entender como você está se sentindo, mapear tensões principais e alinhar o objetivo terapêutico do encontro.",
+        "en": "Helen starts with a brief assessment to understand how you are feeling, map the main tension points, and align the therapeutic goal of the session.",
+        "es": "Helen comienza con una breve evaluación para comprender cómo te sientes, identificar las tensiones principales y alinear el objetivo terapéutico del encuentro."
       }
     },
     {
       "iconClass": "fas fa-feather-pointed",
       "title": {
-        "pt-BR": "Preparação do ambiente",
-        "en": "Atmosphere preparation",
-        "es": "Preparación del ambiente"
+        "pt-BR": "Escuta e conexão",
+        "en": "Listening and connection",
+        "es": "Escucha y conexión"
       },
       "stepIndex": "02",
       "moment": {
-        "pt-BR": "Chegada e acolhimento",
-        "en": "Arrival and welcome",
-        "es": "Llegada y acogida"
+        "pt-BR": "Acolhimento do momento",
+        "en": "Welcoming the moment",
+        "es": "Acogida del momento"
       },
       "description": {
-        "pt-BR": "Texturas, música, aroma e temperatura criam um cenário sereno para que o corpo desacelere e a atenção se refine.",
-        "en": "Textures, music, aroma, and temperature shape a serene setting so the body can slow down and attention can deepen.",
-        "es": "Texturas, música, aroma y temperatura componen una escena serena para que el cuerpo desacelere y la atención se profundice."
+        "pt-BR": "A conversa cria vínculo, confiança e clareza sobre o que você deseja naquele momento, deixando a condução mais acolhedora e assertiva.",
+        "en": "The conversation builds trust and clarity about what you need in that moment, making the guidance warmer and more precise.",
+        "es": "La conversación crea vínculo, confianza y claridad sobre lo que necesitas en ese momento, haciendo la guía más acogedora y precisa."
       }
     },
     {
       "iconClass": "fas fa-spa",
       "title": {
-        "pt-BR": "Vivência guiada",
-        "en": "Guided experience",
-        "es": "Vivencia guiada"
+        "pt-BR": "Aplicação das técnicas",
+        "en": "Technique application",
+        "es": "Aplicación de técnicas"
       },
       "stepIndex": "03",
       "moment": {
-        "pt-BR": "Durante o encontro",
-        "en": "During the encounter",
-        "es": "Durante el encuentro"
+        "pt-BR": "Durante a sessão",
+        "en": "During the session",
+        "es": "Durante la sesión"
       },
       "description": {
-        "pt-BR": "O ritmo do toque, da respiração e da presença é conduzido com suavidade, respeitando os sinais do corpo e aprofundando percepções.",
-        "en": "The rhythm of touch, breath, and presence is guided with softness, honoring bodily cues and deepening perception.",
-        "es": "El ritmo del tacto, la respiración y la presencia se guía con suavidad, respetando las señales del cuerpo y profundizando la percepción."
+        "pt-BR": "Com base no que foi identificado, Helen aplica massagem relaxante, alongamentos e pressões da thai massagem, ou bambu terapia para aliviar tensões, ativar a circulação e aprofundar o relaxamento.",
+        "en": "Based on what was identified, Helen applies relaxation massage, Thai-inspired stretches and pressure work, or bamboo therapy to release tension, stimulate circulation, and deepen relaxation.",
+        "es": "Con base en lo identificado, Helen aplica masaje relajante, estiramientos y presiones del thai masaje, o bambú terapia para liberar tensiones, activar la circulación y profundizar la relajación."
       }
     },
     {
       "iconClass": "fas fa-heart",
       "title": {
-        "pt-BR": "Integração final",
-        "en": "Closing integration",
-        "es": "Integración final"
+        "pt-BR": "Equilíbrio e finalização",
+        "en": "Balance and closing",
+        "es": "Equilibrio y cierre"
       },
       "stepIndex": "04",
       "moment": {
-        "pt-BR": "Depois da vivência",
-        "en": "After the encounter",
-        "es": "Después de la vivencia"
+        "pt-BR": "Ao final do atendimento",
+        "en": "At the end of the session",
+        "es": "Al final de la sesión"
       },
       "description": {
-        "pt-BR": "O encerramento prioriza aterramento e clareza, para que o que foi vivido possa reverberar com segurança no cotidiano.",
-        "en": "The closing centers grounding and clarity so the encounter can resonate safely in everyday life.",
-        "es": "El cierre prioriza arraigo y claridad para que lo vivido pueda resonar con seguridad en la vida cotidiana."
+        "pt-BR": "A sessão termina com o corpo mais solto, a respiração mais calma e uma sensação de equilíbrio físico e emocional construída ao longo do encontro.",
+        "en": "The session ends with a lighter body, calmer breathing, and a sense of physical and emotional balance built throughout the experience.",
+        "es": "La sesión termina con el cuerpo más suelto, la respiración más tranquila y una sensación de equilibrio físico y emocional construida a lo largo del encuentro."
       }
     }
   ],

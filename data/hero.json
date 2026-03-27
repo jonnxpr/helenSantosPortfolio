@@ -2,45 +2,45 @@
   "atmospheres": [
     {
       "label": {
-        "pt-BR": "Respiração",
-        "en": "Breath",
-        "es": "Respiración"
+        "pt-BR": "Análise inicial",
+        "en": "Initial assessment",
+        "es": "Evaluación inicial"
       },
       "type": "icon",
       "iconClass": "fas fa-wind"
     },
     {
       "label": {
-        "pt-BR": "Toque sutil",
-        "en": "Gentle touch",
-        "es": "Toque sutil"
+        "pt-BR": "Toque relaxante",
+        "en": "Relaxing touch",
+        "es": "Toque relajante"
       },
       "type": "icon",
       "iconClass": "fas fa-feather-pointed"
     },
     {
       "label": {
-        "pt-BR": "Presença",
-        "en": "Presence",
-        "es": "Presencia"
+        "pt-BR": "Alongamentos thai",
+        "en": "Thai stretches",
+        "es": "Estiramientos thai"
       },
       "type": "icon",
       "iconClass": "fas fa-spa"
     },
     {
       "label": {
-        "pt-BR": "Ritmo fluido",
-        "en": "Fluid rhythm",
-        "es": "Ritmo fluido"
+        "pt-BR": "Bambu terapia",
+        "en": "Bamboo therapy",
+        "es": "Bambú terapia"
       },
       "type": "icon",
       "iconClass": "fas fa-water"
     },
     {
       "label": {
-        "pt-BR": "Atmosfera noturna",
-        "en": "Night atmosphere",
-        "es": "Atmósfera nocturna"
+        "pt-BR": "Relaxamento profundo",
+        "en": "Deep relaxation",
+        "es": "Relajación profunda"
       },
       "type": "icon",
       "iconClass": "fas fa-moon"
@@ -52,9 +52,9 @@
       "variant": "primary",
       "href": "#vivencias",
       "label": {
-        "pt-BR": "Conhecer vivências",
-        "en": "Explore experiences",
-        "es": "Conocer vivencias"
+        "pt-BR": "Conhecer sessões",
+        "en": "Explore sessions",
+        "es": "Conocer sesiones"
       },
       "useSmoothScroll": true
     },

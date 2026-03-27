@@ -1,7 +1,7 @@
 {
   "name": "helen-santos-ritual-site",
   "version": "1.0.0",
-  "description": "Single page sensory ritual site for Helen Santos with i18n, responsive design, and GitHub Pages CI/CD",
+  "description": "Single page therapeutic massage site for Helen Santos with i18n, responsive design, and GitHub Pages CI/CD",
   "author": "Helen Santos",
   "license": "MIT",
   "repository": {
@@ -10,9 +10,9 @@
   },
   "keywords": [
     "helen-santos",
-    "massagem-tantrica",
-    "experiencias-sensoriais",
-    "rituais-autorais",
+    "massagem-relaxante-terapeutica",
+    "thai-massagem",
+    "bambu-terapia",
     "responsive",
     "i18n",
     "github-pages",
