@@ -31,6 +31,13 @@ build/
 !opencode.json
 !tasks/
 !tasks/**
+tasks/compliance-report.md
+tasks/precedence-report.md
+tasks/secret-scan.sarif
+tasks/secret-triage-report.md
+tasks/workspace-baseline-report.md
+__pycache__/
+*.pyc
 tasks/*.sarif
 !scripts/jdk-env.ps1
 !scripts/gradlew-jdk.ps1
