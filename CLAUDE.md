@@ -28,6 +28,11 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 - This workspace root is a git repository.
 - If a task ever targets a nested repo instead, resolve it before git operations.
 
+## Shared governance repository (mandatory context)
+
+- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `C:\Users\jonathan.tavares\Documents\helen-santos-portfolio-governance`.
+- This primary repository remains authoritative for product code, content, and repo-local AI assets.
+
 ## Context7 documentation policy (mandatory)
 
 - Use Context7 before implementation, refactor, and review decisions.

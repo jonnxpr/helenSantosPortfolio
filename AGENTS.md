@@ -10,6 +10,7 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 - Use active files as the source of truth.
 - Ignore generated artifacts unless the task targets them.
 - This workspace is non-Java.
+- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `C:\Users\jonathan.tavares\Documents\helen-santos-portfolio-governance`.
 
 ## Instruction loading strategy
 

@@ -46,6 +46,11 @@ Then include one single objective next action to unblock.
 
 - Use Context7 for implementation, refactor, and review decisions.
 
+## Shared governance repository (mandatory context)
+
+- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `C:\Users\jonathan.tavares\Documents\helen-santos-portfolio-governance`.
+- This primary repository remains authoritative for product code, content, repo-local instructions, and product automation.
+
 ## MCP credential discovery and connection consent (mandatory)
 
 - Before connecting to any MCP server, request user confirmation and list the credential source(s) to be used (redacted; never print secret values).

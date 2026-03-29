@@ -2,6 +2,11 @@
 
 Single page sensory ritual site for Helen Santos, with a premium editorial direction, multilingual content, responsive behavior, and GitHub Pages CI/CD.
 
+## Governanca compartilhada
+
+- A memoria compartilhada de governanca, templates reutilizaveis e notas de rollout que precisam evoluir fora do historico do site agora possuem repositorio irmao dedicado: `C:\Users\jonathan.tavares\Documents\helen-santos-portfolio-governance` (`https://github.com/jonnxpr/helen-santos-portfolio-governance`).
+- Este repositorio `HelenSantosPortfolio/` continua sendo a fonte de verdade para codigo, conteudo, assets, instrucoes repo-locais e automacoes do produto.
+
 ## Caracteristicas
 
 - Single page application estatica com HTML, CSS e JavaScript vanilla

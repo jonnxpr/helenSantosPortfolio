@@ -45,6 +45,11 @@ and include one single objective action to unblock.
 - Keep payload small, semantic HTML strong, and responsiveness intact.
 - This is a non-Java workspace.
 
+## Shared governance repository (mandatory context)
+
+- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `C:\Users\jonathan.tavares\Documents\helen-santos-portfolio-governance`.
+- This primary repository remains authoritative for product code, content, repo-local instructions, and product automation.
+
 ## Context7 documentation policy (mandatory)
 
 - Use Context7 before implementation, refactor, and review work.
