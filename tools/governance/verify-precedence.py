@@ -18,11 +18,19 @@ CORE_FILES = [
     ROOT / 'PRE-FLIGHT.md',
     ROOT / 'AGENTS.md',
     ROOT / 'GEMINI.md',
+    ROOT / 'CLAUDE.md',
     ROOT / '.copilot' / 'base-instructions.md',
     ROOT / '.github' / 'copilot-instructions.md',
 ]
 
 MATRIX_TITLE = '# Precedence Matrix (OpenCode, Copilot VS Code, Copilot CLI, Antigravity)'
+MATRIX_MARKERS = [
+    MATRIX_TITLE,
+    '## Cases',
+    '## Procedure',
+    '## Automated verification',
+    'Copilot CLI',
+]
 
 
 def read_text(path: Path) -> str:
@@ -36,15 +44,15 @@ def compile_token_pattern(token: str):
     return re.compile(escaped)
 
 
-def check_token_order(text: str) -> bool:
+def check_token_order(text: str):
     cursor = 0
     for token in ORDER_TOKENS:
         pattern = compile_token_pattern(token)
         match = pattern.search(text, cursor)
         if not match:
-            return False
+            return False, f'Missing precedence token: {token}'
         cursor = match.end()
-    return True
+    return True, None
 
 
 def main():
@@ -58,7 +66,7 @@ def main():
         findings.append((str(matrix), 'Missing precedence matrix file'))
     else:
         text = read_text(matrix)
-        for marker in [MATRIX_TITLE, '## Cases', '## Procedure', 'Copilot CLI']:
+        for marker in MATRIX_MARKERS:
             if marker not in text:
                 findings.append((str(matrix), f'Missing section or marker: {marker}'))
 
@@ -66,8 +74,9 @@ def main():
         if not path.exists():
             continue
         text = read_text(path)
-        if not check_token_order(text):
-            findings.append((str(path), 'Missing or out-of-order precedence tokens for base/claude/copilot'))
+        ok, reason = check_token_order(text)
+        if not ok:
+            findings.append((str(path), reason))
 
     lines = [
         '# Precedence Verification Report',
