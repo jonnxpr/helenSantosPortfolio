@@ -22,6 +22,15 @@ trigger: always_on
 - `npm run build` when source CSS/JS changes.
 - Manual smoke test of the affected sections.
 
+## Tasks governance (mandatory)
+
+- Read `tasks/todo.md` and `tasks/lessons.md` fully before technical work when `tasks/` exists.
+- If `tasks/` is missing, create `tasks/todo.md` and `tasks/lessons.md` before technical work and preserve the canonical top blocks.
+- `tasks/lessons.md` must preserve the exact canonical top block.
+- New lessons must be appended as dated entries below the template.
+- Historical lessons must never be replaced by placeholders.
+- `tasks/todo.md` must track the current non-trivial work with objective, execution plan, expected evidence, and status/result.
+
 ## Context7 documentation policy (mandatory)
 
 - Use Context7 before implementation, refactor, and review decisions.

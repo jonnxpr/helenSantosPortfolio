@@ -1,4 +1,12 @@
-# Lessons
+# Lessons Learned
+
+Registre aqui licoes apos correcoes explicitas do usuario para evitar repeticao de erros.
+
+- Data:
+- Contexto:
+- Correcao recebida:
+- Regra preventiva:
+- Como validar na proxima vez:
 
 - Add preventive lessons only after explicit user correction.
 - For GitHub Pages workflows, keep `actions/upload-pages-artifact` and `actions/deploy-pages` on current major versions to avoid indirect deprecations from `upload-artifact@v3`.

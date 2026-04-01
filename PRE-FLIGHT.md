@@ -12,7 +12,7 @@ Hard gate before any technical answer across OpenCode, GitHub Copilot VS Code, G
 6. Read `.agent/rules/development-standards.md`.
 7. For review/PR, also read `.agent/skills/code-review/SKILL.md`.
 8. For commit creation or commit message generation, read `.github/copilot-commit-message-instructions.md`.
-9. If `tasks/` exists, read `tasks/todo.md` and `tasks/lessons.md` fully; if `tasks/` is missing, create both before technical work.
+9. If `tasks/` exists, read `tasks/todo.md` and `tasks/lessons.md` fully; if `tasks/` is missing, create both with the canonical templates before technical work.
 10. This workspace is non-Java; do not run Java/Maven/Gradle builds here.
 11. Before implementation/refactor/review, consult Context7.
 12. For frontend design-centric tasks, also load `.github/skills/frontend-design/SKILL.md` or `.opencode/skills/frontend-design/SKILL.md`.
@@ -41,6 +41,15 @@ If checklist is incomplete, reply only:
 - `BLOCKED: preflight incompleto`
 
 Then include one single objective next action to unblock.
+
+## Tasks governance (mandatory)
+
+- If `tasks/` exists, read `tasks/todo.md` and `tasks/lessons.md` fully before technical work.
+- If `tasks/` is missing, create `tasks/todo.md` and `tasks/lessons.md` before technical work and preserve the canonical top blocks.
+- `tasks/lessons.md` must preserve the exact canonical top block.
+- New lessons must be appended as dated entries below the template.
+- Historical lessons must never be replaced by placeholders.
+- `tasks/todo.md` must track the current non-trivial work with objective, execution plan, expected evidence, and status/result.
 
 ## Context7 documentation policy (mandatory)
 

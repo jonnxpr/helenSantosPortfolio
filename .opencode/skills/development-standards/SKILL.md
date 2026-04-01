@@ -32,8 +32,11 @@ Technical memory for implementation and refactor in this workspace.
 ## Task knowledge
 
 - If `tasks/` exists, read `tasks/todo.md` and `tasks/lessons.md` before technical tasks.
-- If `tasks/` is missing, create `tasks/todo.md` and `tasks/lessons.md` with usage guidance before technical tasks.
-- Continuously update `tasks/lessons.md` whenever new lessons are learned.
+- If `tasks/` is missing, create `tasks/todo.md` and `tasks/lessons.md` before technical tasks and preserve the canonical top blocks.
+- `tasks/lessons.md` must preserve the exact canonical top block.
+- New lessons must be appended as dated entries below the template.
+- Historical lessons must never be replaced by placeholders.
+- `tasks/todo.md` must track the current non-trivial work with objective, execution plan, expected evidence, and status/result.
 
 ## Context7 policy (mandatory)
 

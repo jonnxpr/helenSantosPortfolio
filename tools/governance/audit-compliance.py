@@ -24,6 +24,17 @@ MCP_GEMINI_CONFIG = ".gemini/antigravity/mcp_config.json"
 MCP_PROFILE_CONFIG = "profiles/*/mcp.json"
 TASKS_READ_1 = "tasks/todo.md"
 TASKS_READ_2 = "tasks/lessons.md"
+LESSONS_TEMPLATE = "# Lessons Learned\n\nRegistre aqui licoes apos correcoes explicitas do usuario para evitar repeticao de erros.\n\n- Data:\n- Contexto:\n- Correcao recebida:\n- Regra preventiva:\n- Como validar na proxima vez:\n"
+TODO_TEMPLATE = "# Task Plan\n\nRegistre aqui as tarefas nao triviais em execucao neste repositorio ou workspace.\n\n- Objetivo:\n- Plano de execucao:\n+- Evidencias esperadas:\n+- Status/Resultado:\n".replace(
+    "+-", "-"
+)
+TASKS_PLACEHOLDERS = {
+    "# Lessons\n",
+    "# Todo\n",
+    "# TODO\n",
+    "Use este arquivo para tarefas nao triviais",
+    "## Template",
+}
 COMMIT_POLICY = ".github/copilot-commit-message-instructions.md"
 JDK_ENV = "jdk-env.ps1"
 JAVA_VERSION = "java -version"
@@ -319,6 +330,42 @@ def check_core_contracts(files, findings):
                 )
 
 
+def check_tasks_files(findings):
+    checks = [
+        (TASKS / "lessons.md", LESSONS_TEMPLATE, "tasks_lessons_template_drift"),
+        (TASKS / "todo.md", TODO_TEMPLATE, "tasks_todo_template_drift"),
+    ]
+    for path, template, category in checks:
+        if not path.exists():
+            add_finding(
+                findings,
+                category,
+                path,
+                "Tasks governance file is missing.",
+                "Create the file with the exact canonical top block before adding repository-specific entries.",
+            )
+            continue
+        text = read_text(path)
+        if not text.startswith(template):
+            add_finding(
+                findings,
+                category,
+                path,
+                "Tasks governance file does not preserve the exact canonical top block.",
+                "Restore the exact canonical top block and keep historical content only below it.",
+            )
+        for placeholder in TASKS_PLACEHOLDERS:
+            if placeholder in text:
+                add_finding(
+                    findings,
+                    "tasks_placeholder_content",
+                    path,
+                    f"Tasks governance file still contains placeholder content: {placeholder.strip()}",
+                    "Remove placeholder text and keep only the canonical template plus real history or active work.",
+                )
+                break
+
+
 def check_skill_routing(findings):
     routing_files = [
         ROOT / "PRE-FLIGHT.md",
@@ -494,6 +541,9 @@ def score_from_findings(findings):
         "missing_copilot_cli_skill_layer",
         "missing_copilot_cli_skill_mirror",
         "missing_global_copilot_cli_skill",
+        "tasks_lessons_template_drift",
+        "tasks_todo_template_drift",
+        "tasks_placeholder_content",
     }
     critical = count_findings(findings, critical_keys)
     major = count_findings(findings, major_keys)
@@ -539,6 +589,9 @@ def emit_report(files_checked, findings, score_tuple):
             "missing_copilot_cli_skill_layer",
             "missing_copilot_cli_skill_mirror",
             "missing_global_copilot_cli_skill",
+            "tasks_lessons_template_drift",
+            "tasks_todo_template_drift",
+            "tasks_placeholder_content",
             "missing_java_multi_agent_runtime",
             "missing_context7_runtime_config",
             "missing_context7_env",
@@ -576,6 +629,7 @@ def main():
     check_copilot_cli_skill_mirrors(findings)
     check_global_copilot_cli_skills(findings)
     check_user_mcp_runtime(findings)
+    check_tasks_files(findings)
 
     score_tuple = score_from_findings(findings)
     score = emit_report(len(files), findings, score_tuple)

@@ -31,7 +31,12 @@ Universal behavior and quality standards for the `HelenSantosPortfolio` workspac
 ## Operational compatibility
 
 - Mandatory instruction files must be read completely.
-- If `tasks/` exists, read `tasks/todo.md` and `tasks/lessons.md`; if `tasks/` is missing, create both first.
+- If `tasks/` exists, read `tasks/todo.md` and `tasks/lessons.md` fully before technical work.
+- If `tasks/` is missing, create `tasks/todo.md` and `tasks/lessons.md` before technical work and preserve the canonical top blocks.
+- `tasks/lessons.md` must preserve the exact canonical top block.
+- New lessons must be appended as dated entries below the template.
+- Historical lessons must never be replaced by placeholders.
+- `tasks/todo.md` must track the current non-trivial work with objective, execution plan, expected evidence, and status/result.
 - This is a non-Java workspace.
 
 ## Task-type skill routing

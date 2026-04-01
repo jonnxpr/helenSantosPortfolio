@@ -38,6 +38,15 @@ and include one single objective action to unblock.
 - Read all mandatory files from first line through last line.
 - If the runtime returns partial content, continue chunked reads until EOF.
 
+## Tasks governance (mandatory)
+
+- If `tasks/` exists, read `tasks/todo.md` and `tasks/lessons.md` fully before technical work.
+- If `tasks/` is missing, create `tasks/todo.md` and `tasks/lessons.md` before technical work and preserve the canonical top blocks.
+- `tasks/lessons.md` must preserve the exact canonical top block.
+- New lessons must be appended as dated entries below the template.
+- Historical lessons must never be replaced by placeholders.
+- `tasks/todo.md` must track the current non-trivial work with objective, execution plan, expected evidence, and status/result.
+
 ## Project context
 
 - Static site with `index.html` entrypoint.

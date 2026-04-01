@@ -1,4 +1,11 @@
-# TODO
+# Task Plan
+
+Registre aqui as tarefas nao triviais em execucao neste repositorio ou workspace.
+
+- Objetivo:
+- Plano de execucao:
+- Evidencias esperadas:
+- Status/Resultado:
 
 - [x] Load mandatory instructions and context for the Helen Santos workspace.
 - [x] Audit the planned semantic refactor and map risky runtime/build references.
