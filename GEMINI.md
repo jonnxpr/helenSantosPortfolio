@@ -61,6 +61,13 @@ and provide one objective next step.
 
 - No technical task is done without final review plus evidence-based cross-validation.
 
+## Plan persistence (mandatory)
+
+- When a non-trivial plan is finalized (S1+ orchestration mode or 3+ steps), save it to `plans/plan-${camelCaseName}.prompt.md` in the owning repo.
+- `plans/` captures rationale, context, constraints, and alternatives (the "why"). `tasks/todo.md` captures status tracking and checkboxes (the "what/when").
+- Agents must read active plans from `plans/` before starting related work.
+- After execution starts, plans are append-only. Mark status as `completed` when the corresponding `tasks/todo.md` objective is completed with evidence.
+
 ## Governance automation (mandatory)
 
 - Secret scan: `./tools/governance/scan-secrets.ps1`

@@ -47,6 +47,13 @@ and include one single objective action to unblock.
 - Historical lessons must never be replaced by placeholders.
 - `tasks/todo.md` must track the current non-trivial work with objective, execution plan, expected evidence, and status/result.
 
+## Plan persistence (mandatory)
+
+- When a non-trivial plan is finalized (S1+ orchestration mode or 3+ steps), save it to `plans/plan-${camelCaseName}.prompt.md` in the owning repo.
+- `plans/` captures rationale, context, constraints, and alternatives (the "why"). `tasks/todo.md` captures status tracking and checkboxes (the "what/when").
+- Agents must read active plans from `plans/` before starting related work.
+- After execution starts, plans are append-only. Mark status as `completed` when the corresponding `tasks/todo.md` objective is completed with evidence.
+
 ## Project context
 
 - Static site with `index.html` entrypoint.
