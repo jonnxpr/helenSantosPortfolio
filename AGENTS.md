@@ -47,9 +47,16 @@ and provide one objective next step.
 
 - Implementation/refactor: `development-standards`.
 - Review/PR: `development-standards` + `code-review`.
+- Specification-driven workflow (`/speckit.*`, specification authoring, clarification, constitution, planning, tasks, analysis, or implementation from `specs/` artifacts): also load `.github/skills/speckit-workflow/SKILL.md` or `.opencode/skills/speckit-workflow/SKILL.md`.
 - Frontend design-centric work: also load `.github/skills/frontend-design/SKILL.md` or `.opencode/skills/frontend-design/SKILL.md`.
 - GitHub repository, workflow run, pull request, issue, release, or project-status work via `gh`: also load `.github/skills/gh-operations/SKILL.md` or `.opencode/skills/gh-operations/SKILL.md`.
 - Build validation, smoke testing, regression, or automated test work: also load `.github/skills/testing-standards/SKILL.md` or `.opencode/skills/testing-standards/SKILL.md`.
+
+## Speckit safe parity
+
+- Repo-local Speckit assets live under `.specify/` and `specs/` inside this repository.
+- OpenCode custom Speckit commands live under `.opencode/commands/`.
+- Never let Speckit automation rewrite home-dir configs or unrelated governance files outside this repository.
 
 ## Task knowledge policy
 
