@@ -60,3 +60,14 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 - Secret scan: `./tools/governance/scan-secrets.ps1`
 - Instruction sync: `python ./tools/governance/sync-instructions.py`
 - Compliance audit: `python ./tools/governance/audit-compliance.py`
+
+## Orchestration Reference
+
+- Operational matrix, modes, and parallelization rules:
+  see preflight-prompt/docs/orchestration-matrix.md
+- Orchestration templates (S0-S4):
+  see preflight-prompt/docs/orchestration-templates.md
+- validate-fast/full commands for this ecosystem:
+  see preflight-prompt/docs/validate-catalog.md
+- Ownership registry for this ecosystem:
+  see helen-santos-portfolio-governance/docs/ownership-registry.md
