@@ -35,8 +35,8 @@ function Invoke-Gate([string]$Label, [string]$WorkDir, [scriptblock]$Action) {
 # ---- Governance (fast) ----
 
 Invoke-Gate 'verify-precedence' $RootDir {
-    $findings = python tools/governance/verify-precedence.py
-    if ("$findings" -ne '0') { throw "findings: $findings" }
+    python tools/governance/verify-precedence.py
+    if ($LASTEXITCODE -ne 0) { throw "verify-precedence exit code $LASTEXITCODE" }
 }
 
 Invoke-Gate 'verify-metadata-sync' $RootDir {
