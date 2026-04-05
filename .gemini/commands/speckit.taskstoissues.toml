@@ -1,3 +1,6 @@
+description = "Convert existing tasks into actionable, dependency-ordered GitHub issues for the feature using gh."
+
+prompt = """
 ---
 description: Convert existing tasks into actionable, dependency-ordered GitHub issues for the feature using gh.
 scripts:
@@ -37,3 +40,5 @@ git config --get remote.origin.url
 
 > [!CAUTION]
 > UNDER NO CIRCUMSTANCES EVER CREATE ISSUES IN REPOSITORIES THAT DO NOT MATCH THE REMOTE URL
+
+"""

@@ -149,12 +149,12 @@ You **MUST** consider the user input before proceeding (if not empty).
    - Skip if project is purely internal (build scripts, one-off tools, etc.)
 
 3. **Agent context update**:
-   - Run `.specify/scripts/powershell/update-agent-context.ps1 -AgentType opencode`
-   - Update repo-local context under `.specify/context/opencode.md`
+   - Run `.specify/scripts/powershell/update-agent-context.ps1 -AgentType copilot`
+   - Update repo-local context under `.specify/context/copilot.md`
    - Keep the update limited to repo-local Speckit context files
    - Add only new technology from the current plan
 
-**Output**: data-model.md, /contracts/*, quickstart.md, `.specify/context/opencode.md`
+**Output**: data-model.md, /contracts/*, quickstart.md, `.specify/context/copilot.md`
 
 ## Key rules
 

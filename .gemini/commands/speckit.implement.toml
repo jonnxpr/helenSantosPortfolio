@@ -1,3 +1,6 @@
+description = "Execute the implementation plan by processing and executing all tasks defined in tasks.md"
+
+prompt = """
 ---
 description: Execute the implementation plan by processing and executing all tasks defined in tasks.md
 scripts:
@@ -204,3 +207,5 @@ Note: This command assumes a complete task breakdown exists in tasks.md. If task
         EXECUTE_COMMAND: {command}
         ```
     - If no hooks are registered or `.specify/extensions.yml` does not exist, skip silently
+
+"""
