@@ -51,6 +51,7 @@ Universal behavior and quality standards for the `HelenSantosPortfolio` workspac
 
 ## Task-type skill routing
 
+- Frontend design-centric work uses `.github/skills/frontend-design/SKILL.md` or `.opencode/skills/frontend-design/SKILL.md` when present.
 - Build validation, smoke testing, regression, or automated test work uses `.github/skills/testing-standards/SKILL.md`, `.opencode/skills/testing-standards/SKILL.md`, or `.agent/skills/testing-standards/SKILL.md`.
 - GitLab repository, pipeline, merge request, issue, release, or project-status work via `glab` uses `.github/skills/glab-operations/SKILL.md`, `.opencode/skills/glab-operations/SKILL.md`, or `.agent/skills/glab-operations/SKILL.md`.
 - Specification-driven workflow tasks (`/speckit.*`, specification authoring, clarification, constitution, planning, tasks, analysis, or implementation from `specs/` artifacts) use `.github/skills/speckit-workflow/SKILL.md`, `.opencode/skills/speckit-workflow/SKILL.md`, or `.agent/skills/speckit-workflow/SKILL.md`.
@@ -63,6 +64,14 @@ Universal behavior and quality standards for the `HelenSantosPortfolio` workspac
 
 - Before connecting to any MCP server, request user confirmation and list the credential source(s) to be used (redacted; never print secret values).
 - Discovery must include `.copilot/mcp-config.json`, VS Code `profiles/*/mcp.json`, `~/.gemini/antigravity/mcp_config.json`, and referenced environment variables such as `CONTEXT7_API_KEY`.
+- If credentials are not found, report exactly: `credentials not found for requested MCP`.
+
+## Plan persistence (mandatory)
+
+- When a non-trivial plan is finalized (S1+ orchestration mode or 3+ steps), save it to `plans/plan-${camelCaseName}.prompt.md` in the owning repo.
+- `plans/` captures rationale, context, constraints, and alternatives (the "why"). `tasks/todo.md` captures status tracking and checkboxes (the "what/when").
+- Agents must read active plans from `plans/` before starting related work.
+- After execution starts, plans are append-only. Mark status as `completed` when the corresponding `tasks/todo.md` objective is completed with evidence.
 
 ## Mandatory multi-agent orchestration skill
 

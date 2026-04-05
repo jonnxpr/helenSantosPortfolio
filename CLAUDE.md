@@ -59,7 +59,8 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 ## MCP credential discovery and connection consent (mandatory)
 
 - Before connecting to any MCP server, request user confirmation and list the credential source(s) to be used (redacted; never print secret values).
-- Discovery must include workspace/project files, OpenCode config, `.copilot/mcp-config.json`, VS Code `profiles/*/mcp.json`, `~/.gemini/antigravity/mcp_config.json`, and referenced environment variables.
+- Discovery must include workspace/project files, OpenCode config, `.copilot/mcp-config.json`, VS Code `profiles/*/mcp.json`, `~/.gemini/antigravity/mcp_config.json`, and referenced environment variables such as `CONTEXT7_API_KEY`.
+- If credentials are not found, report exactly: `credentials not found for requested MCP`.
 
 ## Mandatory multi-agent orchestration skill
 

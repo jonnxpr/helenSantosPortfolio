@@ -23,11 +23,18 @@ Hard gate before any technical answer across OpenCode, GitHub Copilot VS Code, G
     - If workspace root is not a git repo, run `scripts/discover-git-repo.ps1`.
     - Use the discovered repo for git operations.
 
-## Integral read requirement (mandatory)
+## Integral instruction read (mandatory)
 
-- Read all mandatory instruction files fully.
-- If output is partial, continue chunked reads until EOF.
-- Preflight is incomplete while any mandatory file is partially read.
+- Read all mandatory files from first line through last line.
+- If the runtime returns only partial content, continue chunked reads until EOF.
+- Preflight is incomplete while any required file is partially read.
+
+## Plan persistence (mandatory)
+
+- When a non-trivial plan is finalized (S1+ orchestration mode or 3+ steps), save it to `plans/plan-${camelCaseName}.prompt.md` in the owning repo.
+- `plans/` captures rationale, context, constraints, and alternatives (the "why"). `tasks/todo.md` captures status tracking and checkboxes (the "what/when").
+- Agents must read active plans from `plans/` before starting related work.
+- After execution starts, plans are append-only. Mark status as `completed` when the corresponding `tasks/todo.md` objective is completed with evidence.
 
 ## Proof line format (mandatory)
 
