@@ -78,6 +78,14 @@ and include one single objective action to unblock.
 
 - For build validation, smoke testing, regression, or automated test work, also apply `.github/skills/testing-standards/SKILL.md`, `.opencode/skills/testing-standards/SKILL.md`, or `.agent/skills/testing-standards/SKILL.md`.
 
+## GitLab/glab skill (mandatory by context)
+
+- For GitLab repository, pipeline, merge request, issue, release, or project-status tasks via `glab`, also apply `.github/skills/glab-operations/SKILL.md`, `.opencode/skills/glab-operations/SKILL.md`, or `.agent/skills/glab-operations/SKILL.md`.
+
+## Speckit skill (mandatory by context)
+
+- For specification-driven workflow tasks (`/speckit.*`, specification authoring, clarification, constitution, planning, tasks, analysis, checklist, or implementation from `specs/` artifacts), also apply `.github/skills/speckit-workflow/SKILL.md`, `.opencode/skills/speckit-workflow/SKILL.md`, or `.agent/skills/speckit-workflow/SKILL.md`.
+
 ## MCP credential discovery and connection consent (mandatory)
 
 - Before connecting to any MCP server, request user confirmation and list the credential source(s) to be used (redacted; never print secret values).

@@ -15,6 +15,16 @@ Universal behavior and quality standards for the `HelenSantosPortfolio` workspac
 7. `.agent/skills/development-standards/SKILL.md`
 8. `.agent/rules/development-standards.md`
 
+## Integral instruction read (mandatory)
+
+- Read all mandatory files from first line through last line.
+- If the runtime returns only partial content, continue chunked reads until EOF.
+
+## Preflight result (mandatory)
+
+- Start every technical response with `Preflight OK: <file1>, <file2>, ...` listing every mandatory file read.
+- If any mandatory file is missing or unreadable, reply only with `BLOCKED: preflight incompleto` and one objective next action.
+
 ## Cross-tool contract
 
 - Keep the same semantics across GitHub Copilot VS Code, GitHub Copilot CLI, OpenCode, and Antigravity.
@@ -42,6 +52,8 @@ Universal behavior and quality standards for the `HelenSantosPortfolio` workspac
 ## Task-type skill routing
 
 - Build validation, smoke testing, regression, or automated test work uses `.github/skills/testing-standards/SKILL.md`, `.opencode/skills/testing-standards/SKILL.md`, or `.agent/skills/testing-standards/SKILL.md`.
+- GitLab repository, pipeline, merge request, issue, release, or project-status work via `glab` uses `.github/skills/glab-operations/SKILL.md`, `.opencode/skills/glab-operations/SKILL.md`, or `.agent/skills/glab-operations/SKILL.md`.
+- Specification-driven workflow tasks (`/speckit.*`, specification authoring, clarification, constitution, planning, tasks, analysis, or implementation from `specs/` artifacts) use `.github/skills/speckit-workflow/SKILL.md`, `.opencode/skills/speckit-workflow/SKILL.md`, or `.agent/skills/speckit-workflow/SKILL.md`.
 
 ## Context7 documentation policy (mandatory)
 

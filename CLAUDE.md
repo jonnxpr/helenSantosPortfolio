@@ -4,6 +4,8 @@ Shared workflow for GitHub Copilot VS Code, GitHub Copilot CLI, OpenCode, and An
 
 Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github/copilot-instructions.md`.
 
+> Gate: see PRE-FLIGHT.md — begin each response with `Preflight OK: ...` or `BLOCKED: preflight incompleto`
+
 ## Workflow orchestration
 
 - Plan first for non-trivial work.

@@ -18,6 +18,11 @@ If preflight is incomplete, reply only:
 
 and provide one objective next step.
 
+## Integral instruction read (mandatory)
+
+- Read all mandatory files from first line through last line.
+- If the runtime returns only partial content, continue chunked reads until EOF.
+
 ## Mandatory loading order
 
 1. `.copilot/base-instructions.md`
@@ -27,7 +32,9 @@ and provide one objective next step.
 5. `.github/skills/development-standards/SKILL.md`
 6. `.agent/skills/development-standards/SKILL.md`
 7. `.github/skills/frontend-design/SKILL.md` or `.opencode/skills/frontend-design/SKILL.md` for design-centric work
-8. `.agent/rules/development-standards.md`
+8. `.github/skills/glab-operations/SKILL.md` or `.agent/skills/glab-operations/SKILL.md` for GitLab/`glab` tasks
+9. `.github/skills/speckit-workflow/SKILL.md` or `.agent/skills/speckit-workflow/SKILL.md` for Speckit workflow tasks
+10. `.agent/rules/development-standards.md`
 
 ## Mandatory rules
 
