@@ -17,6 +17,11 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 - Keep `opencode.json` minimal: `PRE-FLIGHT.md`, `CLAUDE.md`, `AGENTS.md`.
 - Load skills by task type instead of duplicating long instruction text.
 
+## Integral instruction read (mandatory)
+
+- Read all mandatory files from first line through last line.
+- If the runtime returns only partial content, continue chunked reads until EOF.
+
 ## Hard preflight gate (mandatory)
 
 1. Read all mandatory files for the active context.
@@ -74,9 +79,10 @@ and provide one objective next step.
 - Agents must read active plans from `plans/` before starting related work.
 - After execution starts, plans are append-only. Mark status as `completed` when the corresponding `tasks/todo.md` objective is completed with evidence.
 
-## Commit-message rule in OpenCode (mandatory)
+## Commit-message rule (mandatory)
 
-- `.github/copilot-commit-message-instructions.md`
+- Apply `.github/copilot-commit-message-instructions.md` for all commits.
+- Use Conventional Commits format with PT-BR content.
 
 ## Context7 documentation policy (mandatory)
 

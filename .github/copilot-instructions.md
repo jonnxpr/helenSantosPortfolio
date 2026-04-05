@@ -36,7 +36,12 @@ and include one single objective action to unblock.
 ## Integral instruction read (mandatory)
 
 - Read all mandatory files from first line through last line.
-- If the runtime returns partial content, continue chunked reads until EOF.
+- If the runtime returns only partial content, continue chunked reads until EOF.
+
+## Commit-message rule (mandatory)
+
+- Apply `.github/copilot-commit-message-instructions.md` for all commits.
+- Use Conventional Commits format with PT-BR content.
 
 ## Tasks governance (mandatory)
 

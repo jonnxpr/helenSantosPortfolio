@@ -46,6 +46,16 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 - Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `C:\Users\jonathan.tavares\Documents\helen-santos-portfolio-governance`.
 - This primary repository remains authoritative for product code, content, and repo-local AI assets.
 
+## Integral instruction read (mandatory)
+
+- Read all mandatory files from first line through last line.
+- If the runtime returns only partial content, continue chunked reads until EOF.
+
+## Commit-message rule (mandatory)
+
+- Apply `.github/copilot-commit-message-instructions.md` for all commits.
+- Use Conventional Commits format with PT-BR content.
+
 ## Context7 documentation policy (mandatory)
 
 - Use Context7 before implementation, refactor, and review decisions.
