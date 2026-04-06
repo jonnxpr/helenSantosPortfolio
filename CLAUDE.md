@@ -87,6 +87,16 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 - Compliance audit: `python ./tools/governance/audit-compliance.py`
 - Precedence audit: `python ./tools/governance/verify-precedence.py`
 
+## Skill routing
+
+- Implementation/refactor: `development-standards`.
+- Review/PR: `development-standards` + `code-review`.
+- Specification-driven workflow (`/speckit.*`, specification authoring, clarification, constitution, planning, tasks, analysis, or implementation from `specs/` artifacts): also load `.github/skills/speckit-workflow/SKILL.md` or `.opencode/skills/speckit-workflow/SKILL.md`.
+- Frontend design-centric work: also load `.github/skills/frontend-design/SKILL.md` or `.opencode/skills/frontend-design/SKILL.md`.
+- GitHub repository, workflow run, pull request, issue, release, or project-status work via `gh`: also load `.github/skills/gh-operations/SKILL.md` or `.opencode/skills/gh-operations/SKILL.md`.
+- GitLab repository, pipeline, merge request, issue, release, or project-status work via `glab`: also load `.github/skills/glab-operations/SKILL.md` or `.opencode/skills/glab-operations/SKILL.md`.
+- Build validation, smoke testing, regression, or automated test work: also load `.github/skills/testing-standards/SKILL.md` or `.opencode/skills/testing-standards/SKILL.md`.
+
 ## Orchestration Reference
 
 - Operational matrix, modes, and parallelization rules:
