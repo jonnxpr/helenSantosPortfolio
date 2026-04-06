@@ -33,8 +33,9 @@ and provide one objective next step.
 6. `.agent/skills/development-standards/SKILL.md`
 7. `.github/skills/frontend-design/SKILL.md` or `.opencode/skills/frontend-design/SKILL.md` for design-centric work
 8. `.github/skills/glab-operations/SKILL.md` or `.agent/skills/glab-operations/SKILL.md` for GitLab/`glab` tasks
-9. `.github/skills/speckit-workflow/SKILL.md` or `.agent/skills/speckit-workflow/SKILL.md` for Speckit workflow tasks
-10. `.agent/rules/development-standards.md`
+9. `.github/skills/gh-operations/SKILL.md` or `.agent/skills/gh-operations/SKILL.md` for GitHub/`gh` tasks
+10. `.github/skills/speckit-workflow/SKILL.md` or `.agent/skills/speckit-workflow/SKILL.md` for Speckit workflow tasks
+11. `.agent/rules/development-standards.md`
 
 ## Mandatory rules
 
@@ -80,3 +81,4 @@ and provide one objective next step.
 - Secret scan: `./tools/governance/scan-secrets.ps1`
 - Instruction sync: `python ./tools/governance/sync-instructions.py`
 - Compliance audit: `python ./tools/governance/audit-compliance.py`
+- Precedence audit: `python ./tools/governance/verify-precedence.py`

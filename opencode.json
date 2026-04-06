@@ -11,7 +11,7 @@
       "command": [
         "cmd",
         "/c",
-        "C:/Users/jonathan.tavares/.config/mcp/wrappers/newrelic-mcp.bat"
+        "%USERPROFILE%/.config/mcp/wrappers/newrelic-mcp.bat"
       ],
       "environment": {
         "NEW_RELIC_API_KEY": "{env:NEW_RELIC_API_KEY}"
