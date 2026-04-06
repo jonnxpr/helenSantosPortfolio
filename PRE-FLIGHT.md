@@ -8,18 +8,20 @@ Hard gate before any technical answer across OpenCode, GitHub Copilot VS Code, G
 2. Read `CLAUDE.md`.
 3. Read `.github/copilot-instructions.md`.
 4. Read applicable `.github/instructions/*.instructions.md`.
-5. Read `.agent/skills/development-standards/SKILL.md`.
-6. Read `.agent/rules/development-standards.md`.
-7. For review/PR, also read `.agent/skills/code-review/SKILL.md`.
-8. For commit creation or commit message generation, read `.github/copilot-commit-message-instructions.md`.
-9. If `tasks/` exists, read `tasks/todo.md` and `tasks/lessons.md` fully; if `tasks/` is missing, create both with the canonical templates before technical work.
-10. This workspace is non-Java; do not run Java/Maven/Gradle builds here.
-11. Before implementation/refactor/review, consult Context7.
-12. For frontend design-centric tasks, also load `.github/skills/frontend-design/SKILL.md` or `.opencode/skills/frontend-design/SKILL.md`.
-13. For GitHub repository, workflow run, pull request, issue, release, or project-status tasks via `gh`, also load `.github/skills/gh-operations/SKILL.md` or `.opencode/skills/gh-operations/SKILL.md`.
-14. For GitLab repository, pipeline, merge request, issue, release, or project-status tasks via `glab`, also load `.github/skills/glab-operations/SKILL.md` or `.opencode/skills/glab-operations/SKILL.md`.
-15. For specification-driven workflow tasks (`/speckit.*`, specification authoring, clarification, constitution, planning, tasks, analysis, checklist, or implementation from `specs/` artifacts), also load `.github/skills/speckit-workflow/SKILL.md` or `.opencode/skills/speckit-workflow/SKILL.md`.
-16. Git Repository Discovery (MANDATORY):
+5. Read `.github/skills/development-standards/SKILL.md`.
+6. Read `.opencode/skills/development-standards/SKILL.md`.
+7. Read `.agent/skills/development-standards/SKILL.md`.
+8. Read `.agent/rules/development-standards.md`.
+9. For review/PR, also read `.agent/skills/code-review/SKILL.md`.
+10. For commit creation or commit message generation, read `.github/copilot-commit-message-instructions.md`.
+11. If `tasks/` exists, read `tasks/todo.md` and `tasks/lessons.md` fully; if `tasks/` is missing, create both with the canonical templates before technical work.
+12. This workspace is non-Java; do not run Java/Maven/Gradle builds here.
+13. Before implementation/refactor/review, consult Context7.
+14. For frontend design-centric tasks, also load `.github/skills/frontend-design/SKILL.md` or `.opencode/skills/frontend-design/SKILL.md`.
+15. For GitHub repository, workflow run, pull request, issue, release, or project-status tasks via `gh`, also load `.github/skills/gh-operations/SKILL.md` or `.opencode/skills/gh-operations/SKILL.md`.
+16. For GitLab repository, pipeline, merge request, issue, release, or project-status tasks via `glab`, also load `.github/skills/glab-operations/SKILL.md` or `.opencode/skills/glab-operations/SKILL.md`.
+17. For specification-driven workflow tasks (`/speckit.*`, specification authoring, clarification, constitution, planning, tasks, analysis, checklist, or implementation from `specs/` artifacts), also load `.github/skills/speckit-workflow/SKILL.md` or `.opencode/skills/speckit-workflow/SKILL.md`.
+18. Git Repository Discovery (MANDATORY):
     - If workspace root is not a git repo, run `scripts/discover-git-repo.ps1`.
     - Use the discovered repo for git operations.
 

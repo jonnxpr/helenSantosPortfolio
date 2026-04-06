@@ -1,36 +1,46 @@
 ---
 name: gh-operations
-description: Local GitHub Copilot CLI skill for GitHub and gh workflows in Helen Santos Portfolio.
+description: Local GitHub and gh workflow memory for the Helen Santos Portfolio workspace.
 ---
 
-# Skill - gh-operations (Helen Santos Portfolio - Copilot CLI)
+# Skill - gh-operations (Helen Santos Portfolio)
 
 ## When to use
 
 - GitHub or `gh` requests.
-- Workflow run, job, pull request, issue, release work.
+- Workflow run, job, pull request, issue, release, milestone, environment, or project-status work.
+- Tasks that start from a workspace path and need the owning repository resolved first.
 
-## Repository resolution
+## Repository resolution rules
 
-- Single repository workspace.
-- Always resolve ownership before `gh` commands.
+- This workspace has a single repository.
+- Resolve the owning repository before any `gh` command.
+- Prefer explicit `-R <owner/repo>` after resolving the GitHub remote.
 
-## Workflow
+## Mandatory workflow
 
-1. Resolve owner/repo from git remotes.
-2. Check `gh auth status` when live data needed.
-3. Prefer `gh` high-level commands; use `gh api` for missing fields.
-4. Summarize; require intent for destructive actions.
+1. Resolve the target repository and GitHub owner/repo path from git remotes or explicit user input.
+2. Check `gh` authentication for GitHub when live GitHub data is required.
+3. Prefer high-level `gh` commands first; use `gh api` only for missing fields or pagination.
+4. Summarize results in plain language instead of dumping raw JSON unless the user asks for it.
+5. Require clear user intent before destructive or hard-to-undo actions.
 
-## Core commands
+## Preferred commands
 
 - `gh auth status`
-- `gh repo view -R <owner/repo>`
-- `gh run list -R <owner/repo>`
-- `gh run view <run-id>`
-- `gh pr list -R <owner/repo>`
-- `gh issue list -R <owner/repo>`
-- `gh release list -R <owner/repo>`
+- `gh repo view -R <owner/repo> --json nameWithOwner,url,defaultBranchRef`
+- `gh run list -R <owner/repo> --limit 30 --json status,conclusion,name,headBranch,createdAt,updatedAt,databaseId,url`
+- `gh run view <run-id> -R <owner/repo>`
+- `gh pr list -R <owner/repo> --state open --json number,title,author,headRefName,baseRefName,url,createdAt`
+- `gh issue list -R <owner/repo> --state open --json number,title,author,labels,createdAt,url`
+- `gh release list -R <owner/repo> --limit 20 --json tagName,name,createdAt,url`
+
+## Output contract
+
+- State which repository or repositories were inspected.
+- State the branch, filter, or time window used.
+- Highlight failed, running, and pending items first.
+- Mention auth, host, or mapping gaps explicitly.
 
 ## Mandatory final code review, cross-validation, and factual integrity
 

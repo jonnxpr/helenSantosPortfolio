@@ -6,6 +6,21 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 
 > Gate: see PRE-FLIGHT.md — begin each response with `Preflight OK: ...` or `BLOCKED: preflight incompleto`
 
+## Mandatory loading order
+
+1. `.copilot/base-instructions.md`
+2. `CLAUDE.md`
+3. `.github/copilot-instructions.md`
+4. `.github/instructions/*.instructions.md`
+5. `.github/skills/development-standards/SKILL.md`
+6. `.opencode/skills/development-standards/SKILL.md`
+7. `.agent/skills/development-standards/SKILL.md`
+8. `.agent/rules/development-standards.md`
+9. `.github/skills/code-review/SKILL.md` or `.agent/skills/code-review/SKILL.md` when reviewing
+10. `.github/skills/gh-operations/SKILL.md` or `.opencode/skills/gh-operations/SKILL.md` when handling GitHub/`gh` tasks
+11. `.github/skills/glab-operations/SKILL.md` or `.opencode/skills/glab-operations/SKILL.md` when handling GitLab/`glab` tasks
+12. `.github/skills/testing-standards/SKILL.md` or `.opencode/skills/testing-standards/SKILL.md` when handling testing tasks
+
 ## Workflow orchestration
 
 - Plan first for non-trivial work.

@@ -43,6 +43,11 @@ Technical memory for implementation and refactor in this workspace.
 - Consult Context7 MCP for latest framework/library/language guidance before implementation/refactor/review.
 - Prefer modern and suitable features when compatibility is verified against project constraints.
 
+## Related task routing
+
+- For GitHub repository, workflow run, pull request, issue, release, or project-status tasks via `gh`, use `.opencode/skills/gh-operations/SKILL.md`, `.github/skills/gh-operations/SKILL.md`, or `.agent/skills/gh-operations/SKILL.md` as the primary task skill.
+- For GitLab repository, pipeline, merge request, issue, release, or project-status tasks via `glab`, use `.opencode/skills/glab-operations/SKILL.md`, `.github/skills/glab-operations/SKILL.md`, or `.agent/skills/glab-operations/SKILL.md` as the primary task skill.
+
 ## Mandatory final code review, cross-validation, and factual integrity
 
 - At the end of every implementation/refactor/fix, perform a final code review before marking the task complete.
