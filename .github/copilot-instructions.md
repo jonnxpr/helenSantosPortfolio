@@ -87,9 +87,14 @@ and include one single objective action to unblock.
 
 - For GitLab repository, pipeline, merge request, issue, release, or project-status tasks via `glab`, also apply `.github/skills/glab-operations/SKILL.md`, `.opencode/skills/glab-operations/SKILL.md`, or `.agent/skills/glab-operations/SKILL.md`.
 
-## Speckit skill (mandatory by context)
+## GitHub/gh skill (mandatory by context)
 
-- For specification-driven workflow tasks (`/speckit.*`, specification authoring, clarification, constitution, planning, tasks, analysis, checklist, or implementation from `specs/` artifacts), also apply `.github/skills/speckit-workflow/SKILL.md`, `.opencode/skills/speckit-workflow/SKILL.md`, or `.agent/skills/speckit-workflow/SKILL.md`.
+- For GitHub repository, workflow run, pull request, issue, release, or project-status work via `gh`, also apply `.github/skills/gh-operations/SKILL.md`, `.opencode/skills/gh-operations/SKILL.md`, or `.agent/skills/gh-operations/SKILL.md`.
+
+## Speckit safe parity (mandatory)
+
+- Keep `.specify/`, `specs/`, and `.opencode/commands/` scoped to this repository.
+- Never let Speckit automation rewrite home-dir configs or unrelated governance files outside this repository.
 
 ## MCP credential discovery and connection consent (mandatory)
 
@@ -111,3 +116,4 @@ and include one single objective action to unblock.
 - Secret scan: `./tools/governance/scan-secrets.ps1`
 - Instruction sync: `python ./tools/governance/sync-instructions.py`
 - Compliance audit: `python ./tools/governance/audit-compliance.py`
+- Precedence audit: `python ./tools/governance/verify-precedence.py`

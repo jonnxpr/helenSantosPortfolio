@@ -68,6 +68,12 @@ Then include one single objective next action to unblock.
 - Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `C:\Users\jonathan.tavares\Documents\helen-santos-portfolio-governance`.
 - This primary repository remains authoritative for product code, content, repo-local instructions, and product automation.
 
+## Speckit safe parity (mandatory)
+
+- Repo-local Speckit assets live under `.specify/` and `specs/` inside this repository.
+- OpenCode custom Speckit commands live under `.opencode/commands/`.
+- Never let Speckit automation rewrite home-dir configs or unrelated governance files outside this repository.
+
 ## MCP credential discovery and connection consent (mandatory)
 
 - Before connecting to any MCP server, request user confirmation and list the credential source(s) to be used (redacted; never print secret values).
@@ -88,3 +94,4 @@ Then include one single objective next action to unblock.
 - Secret scan: `./tools/governance/scan-secrets.ps1`
 - Instruction sync: `python ./tools/governance/sync-instructions.py`
 - Compliance audit: `python ./tools/governance/audit-compliance.py`
+- Precedence audit: `python ./tools/governance/verify-precedence.py`
