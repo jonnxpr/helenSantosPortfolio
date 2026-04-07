@@ -58,6 +58,7 @@ and provide one objective next step.
 - GitHub repository, workflow run, pull request, issue, release, or project-status work via `gh`: also load `.github/skills/gh-operations/SKILL.md` or `.opencode/skills/gh-operations/SKILL.md`.
 - GitLab repository, pipeline, merge request, issue, release, or project-status work via `glab`: also load `.github/skills/glab-operations/SKILL.md` or `.opencode/skills/glab-operations/SKILL.md`.
 - Build validation, smoke testing, regression, or automated test work: also load `.github/skills/testing-standards/SKILL.md` or `.opencode/skills/testing-standards/SKILL.md`.
+- Governance architecture, instructions, skills, preflight gates, routing, CLI-native parity, mirror scope, or governance-toolkit audit/fix loops: also load `.github/skills/governance-audit-loop/SKILL.md` or `.opencode/skills/governance-audit-loop/SKILL.md`.
 
 ## Speckit safe parity
 
@@ -98,8 +99,7 @@ and provide one objective next step.
 
 ## Mandatory multi-agent orchestration skill
 
-- For non-trivial tasks, apply `orchestrate-multi-agents` before implementation and keep the `Template DAG 100% compliance`.
-- For non-trivial tasks, instantiate the `Template DAG 100% compliance` from `orchestrate-multi-agents`; owners/tasks may be reduced only when not applicable, but mandatory gates cannot be removed.
+- For non-trivial tasks, apply `orchestrate-multi-agents` before implementation and keep the `Template DAG 100% compliance`; owners/tasks may be reduced only when not applicable, but mandatory gates cannot be removed.
 
 ## Mandatory final code review, cross-validation, and factual integrity
 
@@ -110,4 +110,5 @@ and provide one objective next step.
 - Secret scan: `./tools/governance/scan-secrets.ps1`
 - Instruction sync: `python ./tools/governance/sync-instructions.py`
 - Compliance audit: `python ./tools/governance/audit-compliance.py`
+- Workspace baseline audit: `python ./tools/governance/audit-workspace-baseline.py`
 - Precedence audit: `python ./tools/governance/verify-precedence.py`

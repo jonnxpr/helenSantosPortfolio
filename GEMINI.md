@@ -50,6 +50,7 @@ and provide one objective next step.
 - Historical lessons must never be replaced by placeholders.
 - `tasks/todo.md` must track the current non-trivial work with objective, execution plan, expected evidence, and status/result.
 - For GitLab repository, pipeline, merge request, issue, release, or project-status tasks via `glab`, also load `.github/skills/glab-operations/SKILL.md` or `.opencode/skills/glab-operations/SKILL.md`.
+- For governance architecture, instructions, skills, preflight gates, routing, CLI-native parity, mirror scope, or governance-toolkit audit/fix loops, also load `.github/skills/governance-audit-loop/SKILL.md`, `.opencode/skills/governance-audit-loop/SKILL.md`, or `.agent/skills/governance-audit-loop/SKILL.md`.
 - This is a non-Java workspace.
 
 ## Context7 documentation policy (mandatory)
