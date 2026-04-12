@@ -4,7 +4,7 @@ Single page sensory ritual site for Helen Santos, with a premium editorial direc
 
 ## Governanca compartilhada
 
-- A memoria compartilhada de governanca, templates reutilizaveis e notas de rollout que precisam evoluir fora do historico do site agora possuem repositorio irmao dedicado: `C:\Users\jonathan.tavares\Documents\helen-santos-portfolio-governance` (`https://github.com/jonnxpr/helen-santos-portfolio-governance`).
+- A memoria compartilhada de governanca, templates reutilizaveis e notas de rollout que precisam evoluir fora do historico do site agora possuem repositorio irmao dedicado: `~/Documentos/helen-santos-portfolio-governance` (`https://github.com/jonnxpr/helen-santos-portfolio-governance`).
 - Este repositorio `HelenSantosPortfolio/` continua sendo a fonte de verdade para codigo, conteudo, assets, instrucoes repo-locais e automacoes do produto.
 
 ## Caracteristicas
@@ -64,8 +64,11 @@ HelenSantosPortfolio/
 │   ├── pillars.js
 │   └── rituals.js
 ├── scripts/
-│   ├── discover-git-repo.ps1
+│   ├── discover-git-repo.sh
 │   ├── prepare-pages-artifact.mjs
+│   ├── start-static.mjs
+│   ├── validate.ps1
+│   ├── validate.sh
 │   └── verify-metadata-sync.mjs
 ├── tasks/
 └── tools/
@@ -99,6 +102,15 @@ npm install
 
 ```bash
 npm start
+```
+
+Os scripts de start usam o servidor estatico em `scripts/start-static.mjs`, sem depender de Python local.
+
+Validacoes rapidas multiplataforma:
+
+```bash
+bash scripts/validate.sh fast
+pwsh -NoProfile -File scripts/validate.ps1 -Mode fast
 ```
 
 ### 3. Minificar assets durante o desenvolvimento

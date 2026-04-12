@@ -37,6 +37,7 @@ and provide one objective next step.
 10. `.github/skills/gh-operations/SKILL.md` or `.agent/skills/gh-operations/SKILL.md` for GitHub/`gh` tasks
 11. `.github/skills/speckit-workflow/SKILL.md` or `.agent/skills/speckit-workflow/SKILL.md` for Speckit workflow tasks
 12. `.agent/rules/development-standards.md`
+13. `sonarqube-local` for local SonarQube scans, quality gates, hotspots, issue review, coverage, or `sonar-project.properties` against `http://localhost:9001`
 
 ## Mandatory rules
 
@@ -51,6 +52,7 @@ and provide one objective next step.
 - `tasks/todo.md` must track the current non-trivial work with objective, execution plan, expected evidence, and status/result.
 - For GitLab repository, pipeline, merge request, issue, release, or project-status tasks via `glab`, also load `.github/skills/glab-operations/SKILL.md` or `.opencode/skills/glab-operations/SKILL.md`.
 - For governance architecture, instructions, skills, preflight gates, routing, CLI-native parity, mirror scope, or governance-toolkit audit/fix loops, also load `.github/skills/governance-audit-loop/SKILL.md`, `.opencode/skills/governance-audit-loop/SKILL.md`, or `.agent/skills/governance-audit-loop/SKILL.md`.
+- For local SonarQube tasks (scans, quality gates, issue review, hotspots, coverage, or `sonar-project.properties`) against `http://localhost:9001`, also load `sonarqube-local`.
 - This is a non-Java workspace.
 
 ## Context7 documentation policy (mandatory)
@@ -81,7 +83,7 @@ and provide one objective next step.
 
 ## Governance automation (mandatory)
 
-- Secret scan: `./tools/governance/scan-secrets.ps1`
-- Instruction sync: `python ./tools/governance/sync-instructions.py`
-- Compliance audit: `python ./tools/governance/audit-compliance.py`
-- Precedence audit: `python ./tools/governance/verify-precedence.py`
+- Secret scan: `./tools/governance/scan-secrets.sh`
+- Instruction sync: `python3 ./tools/governance/sync-instructions.py`
+- Compliance audit: `python3 ./tools/governance/audit-compliance.py`
+- Precedence audit: `python3 ./tools/governance/verify-precedence.py`

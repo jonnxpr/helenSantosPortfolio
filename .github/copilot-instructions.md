@@ -72,7 +72,7 @@ and include one single objective action to unblock.
 
 ## Shared governance repository (mandatory context)
 
-- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `C:\Users\jonathan.tavares\Documents\helen-santos-portfolio-governance`.
+- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `~/Documentos/helen-santos-portfolio-governance`.
 - This primary repository remains authoritative for product code, content, repo-local instructions, and product automation.
 
 ## Context7 documentation policy (mandatory)
@@ -104,6 +104,10 @@ and include one single objective action to unblock.
 
 - For governance architecture, instructions, skills, preflight gates, routing, CLI-native parity, mirror scope, or governance-toolkit audit/fix loop tasks, also apply `.github/skills/governance-audit-loop/SKILL.md` or `.opencode/skills/governance-audit-loop/SKILL.md`.
 
+## SonarQube skill (mandatory by context)
+
+- For local SonarQube tasks (scans, quality gates, issue review, hotspots, coverage, or `sonar-project.properties`) against `http://localhost:9001`, also apply `sonarqube-local`.
+
 ## MCP credential discovery and connection consent (mandatory)
 
 - Before connecting to any MCP server, request user confirmation and list the credential source(s) to be used (redacted; never print secret values).
@@ -120,7 +124,7 @@ and include one single objective action to unblock.
 
 ## Governance automation (mandatory)
 
-- Secret scan: `./tools/governance/scan-secrets.ps1`
-- Instruction sync: `python ./tools/governance/sync-instructions.py`
-- Compliance audit: `python ./tools/governance/audit-compliance.py`
-- Precedence audit: `python ./tools/governance/verify-precedence.py`
+- Secret scan: `./tools/governance/scan-secrets.sh`
+- Instruction sync: `python3 ./tools/governance/sync-instructions.py`
+- Compliance audit: `python3 ./tools/governance/audit-compliance.py`
+- Precedence audit: `python3 ./tools/governance/verify-precedence.py`

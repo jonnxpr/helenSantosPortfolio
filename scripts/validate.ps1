@@ -17,6 +17,39 @@ Set-StrictMode -Version Latest
 $RootDir = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $Failures = [System.Collections.Generic.List[string]]::new()
 
+function Get-PythonCommand {
+    $py = Get-Command py -ErrorAction SilentlyContinue
+    if ($py) {
+        return @('py', '-3')
+    }
+
+    $python3 = Get-Command python3 -ErrorAction SilentlyContinue
+    if ($python3) {
+        return @('python3')
+    }
+
+    $python = Get-Command python -ErrorAction SilentlyContinue
+    if ($python) {
+        return @('python')
+    }
+
+    throw 'Python launcher not found. Expected py -3, python3, or python.'
+}
+
+$PythonCommand = @(Get-PythonCommand)
+
+function Invoke-PythonScript {
+    param([string[]]$Arguments)
+
+    if ($PythonCommand.Count -gt 1) {
+        $pythonPrefixArgs = @($PythonCommand[1..($PythonCommand.Count - 1)])
+        & $PythonCommand[0] @pythonPrefixArgs @Arguments
+        return
+    }
+
+    & $PythonCommand[0] @Arguments
+}
+
 function Invoke-Gate([string]$Label, [string]$WorkDir, [scriptblock]$Action) {
     Write-Host "`n=== $Label ===" -ForegroundColor Cyan
     $saved = Get-Location
@@ -35,7 +68,7 @@ function Invoke-Gate([string]$Label, [string]$WorkDir, [scriptblock]$Action) {
 # ---- Governance (fast) ----
 
 Invoke-Gate 'verify-precedence' $RootDir {
-    python tools/governance/verify-precedence.py
+    Invoke-PythonScript @('tools/governance/verify-precedence.py')
     if ($LASTEXITCODE -ne 0) { throw "verify-precedence exit code $LASTEXITCODE" }
 }
 

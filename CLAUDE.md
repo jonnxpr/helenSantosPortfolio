@@ -58,7 +58,7 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 
 ## Shared governance repository (mandatory context)
 
-- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `C:\Users\jonathan.tavares\Documents\helen-santos-portfolio-governance`.
+- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `~/Documentos/helen-santos-portfolio-governance`.
 - This primary repository remains authoritative for product code, content, and repo-local AI assets.
 
 ## Integral instruction read (mandatory)
@@ -97,10 +97,10 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 
 ## Governance automation (mandatory)
 
-- Secret scan: `./tools/governance/scan-secrets.ps1`
-- Instruction sync: `python ./tools/governance/sync-instructions.py`
-- Compliance audit: `python ./tools/governance/audit-compliance.py`
-- Precedence audit: `python ./tools/governance/verify-precedence.py`
+- Secret scan: `./tools/governance/scan-secrets.sh`
+- Instruction sync: `python3 ./tools/governance/sync-instructions.py`
+- Compliance audit: `python3 ./tools/governance/audit-compliance.py`
+- Precedence audit: `python3 ./tools/governance/verify-precedence.py`
 
 ## Skill routing
 
@@ -112,14 +112,15 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 - GitLab repository, pipeline, merge request, issue, release, or project-status work via `glab`: also load `.github/skills/glab-operations/SKILL.md` or `.opencode/skills/glab-operations/SKILL.md`.
 - Build validation, smoke testing, regression, or automated test work: also load `.github/skills/testing-standards/SKILL.md` or `.opencode/skills/testing-standards/SKILL.md`.
 - Governance architecture, instructions, skills, preflight gates, routing, CLI-native parity, mirror scope, or governance-toolkit audit/fix loops: also load `.github/skills/governance-audit-loop/SKILL.md` or `.opencode/skills/governance-audit-loop/SKILL.md`.
+- Local SonarQube work (scans, quality gates, hotspots, issue review, coverage, or `sonar-project.properties`) against `http://localhost:9001`: also load `sonarqube-local`.
 
 ## Orchestration Reference
 
 - Operational matrix, modes, and parallelization rules:
-  see ~/Documents/preflight-prompt/docs/orchestration-matrix.md
+  see ~/Documentos/preflight-prompt/docs/orchestration-matrix.md
 - Orchestration templates (S0-S4):
-  see ~/Documents/preflight-prompt/docs/orchestration-templates.md
+  see ~/Documentos/preflight-prompt/docs/orchestration-templates.md
 - validate-fast/full commands for this ecosystem:
-  see ~/Documents/preflight-prompt/docs/validate-catalog.md
+  see ~/Documentos/preflight-prompt/docs/validate-catalog.md
 - Ownership registry for this ecosystem:
-  see ~/Documents/helen-santos-portfolio-governance/docs/ownership-registry.md
+  see ~/Documentos/helen-santos-portfolio-governance/docs/ownership-registry.md

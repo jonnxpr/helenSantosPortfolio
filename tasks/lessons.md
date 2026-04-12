@@ -8,10 +8,13 @@ Registre aqui licoes apos correcoes explicitas do usuario para evitar repeticao 
 - Regra preventiva:
 - Como validar na proxima vez:
 
-- Add preventive lessons only after explicit user correction.
-- For GitHub Pages workflows, keep `actions/upload-pages-artifact` and `actions/deploy-pages` on current major versions to avoid indirect deprecations from `upload-artifact@v3`.
-- Keep `README.md` synchronized with current runtime modules and dynamic data sources (`js/*` and `data/*`) whenever architecture changes.
-- For smooth-scroll navigation highlights, keep clicked menu state locked until transition ends to avoid temporary wrong active-link feedback.
+## 2026-03-27 - Regras preventivas consolidadas do repositorio
+
+- Data: 2026-03-27
+- Contexto: consolidacao de regras operacionais genericas que estavam soltas logo abaixo do bloco canonico de `tasks/lessons.md`.
+- Correcao recebida: registrar essas orientacoes como uma unica entrada datada no formato canonico, sem perder o conteudo original.
+- Regra preventiva: adicionar licoes preventivas apenas apos correcao explicita do usuario; em GitHub Pages manter `actions/upload-pages-artifact` e `actions/deploy-pages` em majors atuais para evitar deprecacoes indiretas de `upload-artifact@v3`; manter `README.md` sincronizado com modulos runtime e fontes dinamicas (`js/*` e `data/*`) quando a arquitetura mudar; em highlights de smooth-scroll, manter o estado do menu clicado travado ate o fim da transicao para evitar feedback temporariamente incorreto.
+- Como validar na proxima vez: revisar se novas licoes entram sempre no formato canonico, conferir workflow do GitHub Pages sem warnings de acao depreciada, validar `README.md` contra a arquitetura atual e verificar highlights sem flicker durante smooth-scroll.
 
 - Data: 2026-03-29
 - Contexto: consolidacao da arquitetura de governanca compartilhada do workspace.

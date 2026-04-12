@@ -9,9 +9,8 @@
     "newrelic": {
       "type": "local",
       "command": [
-        "cmd",
-        "/c",
-        "%USERPROFILE%/.config/mcp/wrappers/newrelic-mcp.bat"
+        "bash",
+        "/home/jonathan/.config/mcp/wrappers/newrelic-mcp.sh"
       ],
       "environment": {
         "NEW_RELIC_API_KEY": "{env:NEW_RELIC_API_KEY}"

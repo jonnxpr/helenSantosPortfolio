@@ -21,10 +21,10 @@
     "javascript"
   ],
   "scripts": {
-    "start": "python -m http.server 8000 --bind localhost",
-    "start:localhost": "python -m http.server 8000 --bind localhost",
-    "start:127": "python -m http.server 8000 --bind 127.0.0.1",
-    "start:all": "python -m http.server 8000 --bind 0.0.0.0",
+    "start": "node scripts/start-static.mjs",
+    "start:localhost": "node scripts/start-static.mjs --host localhost",
+    "start:127": "node scripts/start-static.mjs --host 127.0.0.1",
+    "start:all": "node scripts/start-static.mjs --host 0.0.0.0",
     "verify:metadata": "node scripts/verify-metadata-sync.mjs",
     "prepare:pages": "node scripts/prepare-pages-artifact.mjs",
     "verify:metadata:artifact": "node scripts/verify-metadata-sync.mjs --root .pages-artifact --label Pages-artifact-metadata",

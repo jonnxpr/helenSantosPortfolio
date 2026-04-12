@@ -86,6 +86,45 @@ def read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8", errors="ignore")
 
 
+def existing_mcp_runtime_targets():
+    home = Path.home()
+    targets = [
+        home / ".config" / "opencode" / "opencode.json",
+        home / ".copilot" / "mcp-config.json",
+        home / ".gemini" / "antigravity" / "mcp_config.json",
+        home / ".config" / "Code" / "User" / "mcp.json",
+    ]
+    linux_profiles = home / ".config" / "Code" / "User" / "profiles"
+    if linux_profiles.exists():
+        targets.extend(sorted(linux_profiles.glob("*/mcp.json")))
+    appdata = os.environ.get("APPDATA")
+    if appdata:
+        appdata_path = Path(appdata)
+        targets.append(appdata_path / "Code" / "User" / "mcp.json")
+        windows_profiles = appdata_path / "Code" / "User" / "profiles"
+        if windows_profiles.exists():
+            targets.extend(sorted(windows_profiles.glob("*/mcp.json")))
+        targets.append(appdata_path / "Antigravity" / "User" / "mcp.json")
+    return targets
+
+
+def has_context7_runtime_reference(path: Path) -> bool:
+    return path.exists() and "context7" in read_text(path).lower()
+
+
+def has_context7_credential_source() -> bool:
+    if os.environ.get("CONTEXT7_API_KEY"):
+        return True
+    home = Path.home()
+    env_targets = [
+        home / ".config" / "environment.d" / "mcp.conf",
+        home / ".config" / "mcp" / "mcp.env",
+    ]
+    return any(
+        path.exists() and "CONTEXT7_API_KEY" in read_text(path) for path in env_targets
+    )
+
+
 def rel(path: Path) -> str:
     try:
         return path.relative_to(ROOT).as_posix()
@@ -479,25 +518,20 @@ def check_global_copilot_cli_skills(findings):
 
 def check_user_mcp_runtime(findings):
     home = Path.home()
-    appdata = Path(os.environ.get("APPDATA", "")) if os.environ.get("APPDATA") else None
-    runtime_targets = [
-        home / ".config" / "opencode" / "opencode.json",
-        home / ".copilot" / "mcp-config.json",
-        home / ".gemini" / "antigravity" / "mcp_config.json",
+    runtime_targets = existing_mcp_runtime_targets()
+    wrapper_targets = [
+        home / ".config" / "mcp" / "wrappers" / "context7-mcp.sh",
+        home / ".config" / "mcp" / "wrappers" / "context7-mcp.bat",
+        home / ".config" / "mcp" / "wrappers" / "context7-mcp.ps1",
     ]
-    if appdata:
-        runtime_targets.append(appdata / "Code" / "User" / "mcp.json")
-        profiles_dir = appdata / "Code" / "User" / "profiles"
-        if profiles_dir.exists():
-            runtime_targets.extend(sorted(profiles_dir.glob("*/mcp.json")))
-        runtime_targets.append(appdata / "Antigravity" / "User" / "mcp.json")
-    found_context7 = False
-    for path in runtime_targets:
-        if path.exists():
-            text = read_text(path)
-            if "context7" in text and "CONTEXT7_API_KEY" in text:
-                found_context7 = True
-                break
+    found_context7 = any(
+        has_context7_runtime_reference(path) for path in runtime_targets
+    )
+    if not found_context7:
+        found_context7 = any(
+            path.exists() and "context7" in read_text(path).lower()
+            for path in wrapper_targets
+        )
     if not found_context7:
         add_finding(
             findings,
@@ -506,7 +540,7 @@ def check_user_mcp_runtime(findings):
             "Context7 runtime configuration was not found in user/global MCP configs.",
             "Configure Context7 in OpenCode, Copilot, and Antigravity MCP config files.",
         )
-    if not os.environ.get("CONTEXT7_API_KEY"):
+    if not has_context7_credential_source():
         add_finding(
             findings,
             "missing_context7_env",

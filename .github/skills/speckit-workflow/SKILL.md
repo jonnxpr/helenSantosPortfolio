@@ -80,9 +80,9 @@ description: Local Copilot CLI skill for safe-parity Speckit workflow in the Hel
 
 1. Executar validacoes do repo (build, testes, smoke, etc.).
 2. Executar o toolkit completo de governanca quando existir no workspace/repo dono:
-   - `./tools/governance/scan-secrets.ps1`
-   - `python ./tools/governance/sync-instructions.py`
-   - `python ./tools/governance/audit-compliance.py`
+   - `./tools/governance/scan-secrets.sh`
+   - `python3 ./tools/governance/sync-instructions.py`
+   - `python3 ./tools/governance/audit-compliance.py`
 3. Finalizar com code review e cross-validation baseados em evidencias.
 
 ## Regra para pedidos parciais

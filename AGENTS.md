@@ -10,7 +10,7 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 - Use active files as the source of truth.
 - Ignore generated artifacts unless the task targets them.
 - This workspace is non-Java.
-- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `C:\Users\jonathan.tavares\Documents\helen-santos-portfolio-governance`.
+- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `~/Documentos/helen-santos-portfolio-governance`.
 
 ## Instruction loading strategy
 
@@ -48,6 +48,7 @@ and provide one objective next step.
 10. `.github/skills/gh-operations/SKILL.md` or `.opencode/skills/gh-operations/SKILL.md` when handling GitHub/`gh` tasks
 11. `.github/skills/glab-operations/SKILL.md` or `.opencode/skills/glab-operations/SKILL.md` when handling GitLab/`glab` tasks
 12. `.github/skills/testing-standards/SKILL.md` or `.opencode/skills/testing-standards/SKILL.md` when handling testing tasks
+13. `sonarqube-local` when handling local SonarQube scans, quality gates, hotspots, issue review, coverage, or `sonar-project.properties` against `http://localhost:9001`
 
 ## Skill routing
 
@@ -59,6 +60,7 @@ and provide one objective next step.
 - GitLab repository, pipeline, merge request, issue, release, or project-status work via `glab`: also load `.github/skills/glab-operations/SKILL.md` or `.opencode/skills/glab-operations/SKILL.md`.
 - Build validation, smoke testing, regression, or automated test work: also load `.github/skills/testing-standards/SKILL.md` or `.opencode/skills/testing-standards/SKILL.md`.
 - Governance architecture, instructions, skills, preflight gates, routing, CLI-native parity, mirror scope, or governance-toolkit audit/fix loops: also load `.github/skills/governance-audit-loop/SKILL.md` or `.opencode/skills/governance-audit-loop/SKILL.md`.
+- Local SonarQube work (scans, quality gates, hotspots, issue review, coverage, or `sonar-project.properties`) against `http://localhost:9001`: also load `sonarqube-local`.
 
 ## Speckit safe parity
 
@@ -107,8 +109,8 @@ and provide one objective next step.
 
 ## Governance automation (mandatory)
 
-- Secret scan: `./tools/governance/scan-secrets.ps1`
-- Instruction sync: `python ./tools/governance/sync-instructions.py`
-- Compliance audit: `python ./tools/governance/audit-compliance.py`
-- Workspace baseline audit: `python ./tools/governance/audit-workspace-baseline.py`
-- Precedence audit: `python ./tools/governance/verify-precedence.py`
+- Secret scan: `./tools/governance/scan-secrets.sh`
+- Instruction sync: `python3 ./tools/governance/sync-instructions.py`
+- Compliance audit: `python3 ./tools/governance/audit-compliance.py`
+- Workspace baseline audit: `python3 ./tools/governance/audit-workspace-baseline.py`
+- Precedence audit: `python3 ./tools/governance/verify-precedence.py`

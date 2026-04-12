@@ -11,7 +11,7 @@ outside this repository.
 
 ## Constraints
 
-- Keep all writes inside `C:\Users\jonathan.tavares\Documents\HelenSantosPortfolio`.
+- Keep all writes inside `~/Documentos/helenSantosPortfolio`.
 - Reuse safe-parity assets from an existing static-site repository in this
   workspace.
 - Keep GitHub issue export on `gh`; do not add MCP issue-write tooling.

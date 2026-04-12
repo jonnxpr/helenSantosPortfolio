@@ -1,10 +1,10 @@
 ---
-description: Audit governance across the repository until audits return zero findings.
+description: Audit governance across the repository until no actionable findings remain.
 ---
 
 # Governance Audit Loop
 
-Revise tudo que foi feito, garanta que não haja falhas, problemas, brechas ou pontas soltas. Caso encontre problemas corrija. Faça este loop de verificar e corrigir de forma 100% autônoma. A condição de parada para o loop encerrar é não haver mais nenhum problema.
+Revise tudo que foi feito, garanta que não haja falhas, problemas, brechas ou pontas soltas. Caso encontre problemas corrija. Faça este loop de verificar e corrigir de forma 100% autônoma. A condição de parada para o loop encerrar é restarem zero actionable findings.
 
 Only stop to request user input when there is destructive risk, real conflict, material ambiguity, unavoidable external block, or `--dry-run`.
 
@@ -15,4 +15,4 @@ Only stop to request user input when there is destructive risk, real conflict, m
 3. Apply the next smallest safe fix batch inside this repository autonomously.
 4. Keep every write inside this repository.
 5. Re-run inspection and scripts.
-6. Repeat until zero unresolved CRITICAL or WARNING findings remain.
+6. Repeat until zero actionable findings remain.
