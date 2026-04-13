@@ -58,7 +58,7 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 
 ## Shared governance repository (mandatory context)
 
-- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `~/Documentos/helen-santos-portfolio-governance`.
+- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `/media/jonathan/Dados/Documentos/helen-santos-portfolio-governance`.
 - This primary repository remains authoritative for product code, content, and repo-local AI assets.
 
 ## Integral instruction read (mandatory)
@@ -117,10 +117,10 @@ Canonical precedence: `.copilot/base-instructions.md` -> `CLAUDE.md` -> `.github
 ## Orchestration Reference
 
 - Operational matrix, modes, and parallelization rules:
-  see ~/Documentos/preflight-prompt/docs/orchestration-matrix.md
+  see /media/jonathan/Dados/Documentos/preflight-prompt/docs/orchestration-matrix.md
 - Orchestration templates (S0-S4):
-  see ~/Documentos/preflight-prompt/docs/orchestration-templates.md
+  see /media/jonathan/Dados/Documentos/preflight-prompt/docs/orchestration-templates.md
 - validate-fast/full commands for this ecosystem:
-  see ~/Documentos/preflight-prompt/docs/validate-catalog.md
+  see /media/jonathan/Dados/Documentos/preflight-prompt/docs/validate-catalog.md
 - Ownership registry for this ecosystem:
-  see ~/Documentos/helen-santos-portfolio-governance/docs/ownership-registry.md
+  see /media/jonathan/Dados/Documentos/helen-santos-portfolio-governance/docs/ownership-registry.md
