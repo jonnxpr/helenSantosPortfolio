@@ -4,7 +4,7 @@ Single page sensory ritual site for Helen Santos, with a premium editorial direc
 
 ## Governanca compartilhada
 
-- A memoria compartilhada de governanca, templates reutilizaveis e notas de rollout que precisam evoluir fora do historico do site agora possuem repositorio irmao dedicado: `/media/jonathan/Dados/Documentos/helen-santos-portfolio-governance` (`https://github.com/jonnxpr/helen-santos-portfolio-governance`).
+- A memoria compartilhada de governanca, templates reutilizaveis e notas de rollout que precisam evoluir fora do historico do site agora possuem repositorio irmao dedicado: `/media/jonathan/Dados2/Documentos/helen-santos-portfolio-governance` (`https://github.com/jonnxpr/helen-santos-portfolio-governance`).
 - Este repositorio `HelenSantosPortfolio/` continua sendo a fonte de verdade para codigo, conteudo, assets, instrucoes repo-locais e automacoes do produto.
 
 ## Caracteristicas

@@ -68,7 +68,7 @@ Then include one single objective next action to unblock.
 
 ## Shared governance repository (mandatory context)
 
-- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `/media/jonathan/Dados/Documentos/helen-santos-portfolio-governance`.
+- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `/media/jonathan/Dados2/Documentos/helen-santos-portfolio-governance`.
 - This primary repository remains authoritative for product code, content, repo-local instructions, and product automation.
 
 ## Speckit safe parity (mandatory)
