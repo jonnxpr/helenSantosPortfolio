@@ -8,6 +8,15 @@ applyTo: "**"
 
 This repository must stay consistent across OpenCode, GitHub Copilot VS Code, GitHub Copilot CLI, and Antigravity.
 
+## Caveman Always-On (mandatory)
+
+Terse like caveman. Technical substance exact. Only fluff die.
+Drop: articles, filler (just/really/basically), pleasantries, hedging.
+Fragments OK. Short synonyms. Code unchanged.
+Pattern: [thing] [action] [reason]. [next step].
+ACTIVE EVERY RESPONSE. No revert after many turns. No filler drift.
+Code/commits/PRs: normal. Off: "stop caveman" / "normal mode".
+
 ## Mandatory loading order
 
 1. `.copilot/base-instructions.md`
@@ -72,7 +81,7 @@ and include one single objective action to unblock.
 
 ## Shared governance repository (mandatory context)
 
-- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `/media/jonathan/Dados/Documentos/helen-santos-portfolio-governance`.
+- Long-lived shared governance memory, reusable templates, and rollout notes now have a sibling repository: `/media/jonathan/Dados1/Documentos/helen-santos-portfolio-governance`.
 - This primary repository remains authoritative for product code, content, repo-local instructions, and product automation.
 
 ## Context7 documentation policy (mandatory)
